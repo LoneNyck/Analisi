@@ -31,17 +31,17 @@ All’interno di $\mathbb{Q}$ la rappresentazione decimale non è unica.
 Un esempio può essere costituito dal caso $0,\bar9 = 1$
 
 
-## 1.4 I numeri reali $\R$
+## 1.4 I numeri reali $\mathbb{R}$
 
 L’insieme dei numeri reali è definito come 
-$\R = \{r=\pm a_0,a_1a_2...a_k, a_0\in\mathbb{N}, a_k\in\{0,1,...,9\} \forall k \in \mathbb{N}, k\neq 0\}$ 
+$\mathbb{R} = \{r=\pm a_0,a_1a_2...a_k, a_0\in\mathbb{N}, a_k\in\{0,1,...,9\} \forall k \in \mathbb{N}, k\neq 0\}$ 
 e contiene **tutti i numeri che hanno rappresentazione decimale finita, infinita e periodica e infinita e non periodica.**
 
-I numeri che appartengono all’insieme $\R \setminus\mathbb{Q} = r\in\R:r\notin \mathbb{Q}$ sono detti **irrazionali** e fanno parte di questa categoria di numeri $\pi$, $\sqrt{2}$, $\sqrt{3}$,…
+I numeri che appartengono all’insieme $\mathbb{R} \setminus\mathbb{Q} = r\in\mathbb{R}:r\notin \mathbb{Q}$ sono detti **irrazionali** e fanno parte di questa categoria di numeri $\pi$, $\sqrt{2}$, $\sqrt{3}$,…
 
 ## 1.5 I numeri complessi $\mathbb{C}$
 
-L’insieme dei numeri complessi è definito come $\mathbb{C} = \{z = a+bi:a,b\in\R, i^2 = -1\}$ [vedi [5. Numeri complessi](5%20Numeri%20complessi%2010c34a788515800ea48ac9acd1bbe90a.md) per il capitolo dedicato ai numeri complessi].
+L’insieme dei numeri complessi è definito come $\mathbb{C} = \{z = a+bi:a,b\in\mathbb{R}, i^2 = -1\}$ [vedi [5. Numeri complessi](5%20Numeri%20complessi%2010c34a788515800ea48ac9acd1bbe90a.md) per il capitolo dedicato ai numeri complessi].
 
 ![Venn diagram of Numbers](1%20Introduzione%20insiemi%20numerici,%20logica%20e%20quantifi/Venn_Diagram_of_Numbers_Expanded.svg)
 
@@ -50,11 +50,11 @@ Venn diagram of Numbers
 ---
 
 I vari insiemi numerici possono essere **ordinati** nel seguente modo sfruttando le relazioni tra insiemi: 
-$\mathbb{N} \sub \mathbb{Z} \sub \mathbb{Q} \sub \R \sub \mathbb{C}$
+$\mathbb{N} \sub \mathbb{Z} \sub \mathbb{Q} \sub \mathbb{R} \sub \mathbb{C}$
 
-# 2. Operazioni in $\R$ e in $\mathbb{Q}$
+# 2. Operazioni in $\mathbb{R}$ e in $\mathbb{Q}$
 
-In $\R$ e $\mathbb{Q}$ sono definite due operazioni - **somma** e **prodotto** (e le relative inverse, rispettivamente differenza e divisione) - con le seguenti proprietà:
+In $\mathbb{R}$ e $\mathbb{Q}$ sono definite due operazioni - **somma** e **prodotto** (e le relative inverse, rispettivamente differenza e divisione) - con le seguenti proprietà:
 
 ### Somma
 
@@ -83,7 +83,7 @@ Esiste poi la proprietà distributiva, che si applica quando somma e prodotto in
 
 $(a+b)c = ac+bc$
 
-I due insieme sono anche caratterizzati dalla proprietà di essere ordinabili. In $\R$ e in $\mathbb{Q}$ è definita una **relazione d’ordine totale:** ciò significa che ogni elemento del campo [per la definizione di campo vai a [3. Campi, insiemistica e intervalli](3%20Campi,%20insiemistica%20e%20intervalli%20eb86f163c8994969a366838e8e38ffc6.md), par.1] può essere confrontato con un altro elemento dello stesso campo. La relazione d’ordine ha le seguenti proprietà:
+I due insieme sono anche caratterizzati dalla proprietà di essere ordinabili. In $\mathbb{R}$ e in $\mathbb{Q}$ è definita una **relazione d’ordine totale:** ciò significa che ogni elemento del campo [per la definizione di campo vai a [3. Campi, insiemistica e intervalli](3%20Campi,%20insiemistica%20e%20intervalli%20eb86f163c8994969a366838e8e38ffc6.md), par.1] può essere confrontato con un altro elemento dello stesso campo. La relazione d’ordine ha le seguenti proprietà:
 
 - Riflessività: $a \le a, \forall a$
 - Antisimmetria: $a \le b \, e \, b\le a \Rightarrow a = b$

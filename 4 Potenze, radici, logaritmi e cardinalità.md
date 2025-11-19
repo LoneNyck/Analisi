@@ -8,8 +8,8 @@ Data lezione: 25/09/2024
 
 ## 1.1  Potenza
 > Teorema
-> **Sia $y \in \R: y \ge 0, n \in \mathbb{N} , n\ge 1$. 
-Allora $\exists! x \in \R : x \ge 0$ e $x^n = y$**
+> **Sia $y \in \mathbb{R}: y \ge 0, n \in \mathbb{N} , n\ge 1$. 
+Allora $\exists! x \in \mathbb{R} : x \ge 0$ e $x^n = y$**
 >
 
 Questo teorema segue dal fatto che la funzione $f: (-\infty, +\infty), f(x) = x^n$  è monotona strettamente crescente, continua, con $\lim_{x\to-\infty}f(x) = 0^+$ e $\lim_{x\to\infty}f(x) = +\infty$
@@ -20,29 +20,29 @@ Questo teorema segue dal fatto che la funzione $f: (-\infty, +\infty), f(x) = x^
 > **Il numero reale $x$ siffatto prende il nome di radice reale di $y$**
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazioni**
-- $\sqrt{a^2} = |a|, \forall a \in \R$ 
+- $\sqrt{a^2} = |a|, \forall a \in \mathbb{R}$ 
 $\sqrt[n]{y} \ge 0, \forall y >0, \forall n\in\mathbb{N}, n>0$
 $\sqrt[n]{y^n} = y, \forall y > 0, \forall n\in\mathbb{N}, n>0$
 - $\forall a>0\Rightarrow a^0 = 1$ 
 $a^m = a\cdot a \cdot a...$ $m$ volte
 $a^{1\over n} = \sqrt[n]{a}$
 $a^{m\over n} = (a^{m})^{1\over n} = \sqrt[n]{a^m}$, $\forall a\ge0, m, n \in \mathbb{N}, n\neq 0$
-- $\forall a \in \R, a > 0, a^{-1} = \frac{1}{a}$
+- $\forall a \in \mathbb{R}, a > 0, a^{-1} = \frac{1}{a}$
 $a^{-{1\over m}}  =(a^{1\over m})^{-1} = {1 \over a^{1 \over m}}$, $\forall a >0, m \in \mathbb{N}, m\neq 0$
 </aside>
 
-## 1.3 Definire $a^b, a, b\in \R, a>0$
+## 1.3 Definire $a^b, a, b\in \mathbb{R}, a>0$
 
-Si dice che $a^b$ è **ben definito** $\forall a \in \R, a>0$  e $b \in \mathbb{Q}$, ma come si può definire la medesima equazione se $b \in \R$?
+Si dice che $a^b$ è **ben definito** $\forall a \in \mathbb{R}, a>0$  e $b \in \mathbb{Q}$, ma come si può definire la medesima equazione se $b \in \mathbb{R}$?
 
 Data l’espansione decimale di $b$  possiamo costruire una successione $\pm a^{b_0}, \pm a^{b_0, b_1}, \pm a^{b_0, b_1b_2}, ..., \pm a^{b_0,b_1...b_k}$  con $k \in \mathbb{N}$ ben definita secondo le precedenti definizioni, infatti $b_0,b_1...b_k \in \mathbb{Q}$.  $a^b$ sarà quindi il limite per $k \to +\infty$ della suddetta successione. Si dimostra che $a^b$ può essere anche caratterizzato come $\sup\{ \pm a^{b_0,b_1...b_k} : k \in \mathbb{N}\}$ oppure $\inf\{ \pm a^{b_0,b_1...b_k} : k \in \mathbb{N}\}$ a seconda che la successione sia crescente o decrescente. 
 
-Possiamo quindi concludere che $a^b$ è **ben definito** $\forall a \in \R, a>0$  e $b \in \R$ e anche che 
-$a^b > 0$;  di contro, se $a < 0$  e $b \in \R$, $a^b$ può essere definito solo per alcuni valori…
+Possiamo quindi concludere che $a^b$ è **ben definito** $\forall a \in \mathbb{R}, a>0$  e $b \in \mathbb{R}$ e anche che 
+$a^b > 0$;  di contro, se $a < 0$  e $b \in \mathbb{R}$, $a^b$ può essere definito solo per alcuni valori…
 
 ## 1.4 Logaritmo
 > Definizione: Logaritmo
-> **Dati $y, a \in \R$ con $y > 0, a >0 , a \neq 1$ $\Rightarrow$ $\exists! x \in \R: a^x = y$.**
+> **Dati $y, a \in \mathbb{R}$ con $y > 0, a >0 , a \neq 1$ $\Rightarrow$ $\exists! x \in \mathbb{R}: a^x = y$.**
 > **Definiamo quindi il logaritmo $x= \log_ay$ l’unica soluzione dell’equazione $a^x = y$**
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione** 
@@ -106,33 +106,33 @@ $\begin{matrix} \mathbb{N}& 0 & 1 & 2 & 3 & 4 & ... & 2n-1 & 2n&...  \\ \mathbb{
 ## 2.2 Potenza del continuo
 
 > Teorema
-> **$\R$ non è numerabile.**
+> **$\mathbb{R}$ non è numerabile.**
 
-Poiché $\R$ non è numerabile, ma $\mathbb{N} \sub \R$, diremo che $\R$ ha **cardinalità maggiore** di $\mathbb{N}$.
+Poiché $\mathbb{R}$ non è numerabile, ma $\mathbb{N} \sub \mathbb{R}$, diremo che $\mathbb{R}$ ha **cardinalità maggiore** di $\mathbb{N}$.
 
 > Definizione: Cardinalità del continuo
->**La cardinalità di $\R$ si chiama potenza del continuo.**
+>**La cardinalità di $\mathbb{R}$ si chiama potenza del continuo.**
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
-$\R = \mathbb{Q} + \R/\mathbb{Q} \Rightarrow \R/\mathbb{Q}$  non è numerabile, ha cardinalità maggiore di $\mathbb{N}$ e si dimostra avere potenza del continuo.
+$\mathbb{R} = \mathbb{Q} + \mathbb{R}/\mathbb{Q} \Rightarrow \mathbb{R}/\mathbb{Q}$  non è numerabile, ha cardinalità maggiore di $\mathbb{N}$ e si dimostra avere potenza del continuo.
 
 > Teorema
-> **$\R$ ha la stessa cardinalità di ogni insieme al suo interno.**
+> **$\mathbb{R}$ ha la stessa cardinalità di ogni insieme al suo interno.**
 
 
 Infatti si può dimostrare ad esempio che:
 
-- $\R$ ha la stessa cardinalità di $(0; +\infty)$
+- $\mathbb{R}$ ha la stessa cardinalità di $(0; +\infty)$
 
 ![$f(x) = e^x$](4%20Potenze,%20radici,%20logaritmi%20e%20cardinalit%C3%A0/image.png)
 
 $f(x) = e^x$
 
-- $\R$ ha la stessa cardinalità di $(-{\pi \over 2}; {\pi \over 2})$
+- $\mathbb{R}$ ha la stessa cardinalità di $(-{\pi \over 2}; {\pi \over 2})$
 
 ![$f(x) = \arctan x$](4%20Potenze,%20radici,%20logaritmi%20e%20cardinalit%C3%A0/image%201.png)
 
 $f(x) = \arctan x$
 
 > Teorema
-> **Si dimostra che $\R$  e $\mathbb{C}$ hanno la stessa cardinalità.**
+> **Si dimostra che $\mathbb{R}$  e $\mathbb{C}$ hanno la stessa cardinalità.**

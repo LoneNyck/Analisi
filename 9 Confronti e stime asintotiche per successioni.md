@@ -10,7 +10,7 @@ Data lezione: 09/10/2024
 Siano $a_n$  e $b_n$ successioni **infinite**, $b_n \neq 0$ definitivamente.
 
 - $\lim_{n\to\infty}\frac{a_n}{b_n} = 0 \Rightarrow$ $a_n$ è infinito di **ordine inferiore** rispetto a $b_n$.
-- $\lim_{n\to\infty}\frac{a_n}{b_n} = l\in\R\setminus\{0\} \Rightarrow$ $a_n$ e $b_n$ sono infiniti dello **stesso ordine.**
+- $\lim_{n\to\infty}\frac{a_n}{b_n} = l\in\mathbb{R}\setminus\{0\} \Rightarrow$ $a_n$ e $b_n$ sono infiniti dello **stesso ordine.**
 - $\lim_{n\to\infty}\frac{a_n}{b_n} = \pm \infty \Rightarrow$ $b_n$ è infinito di **ordine inferiore** rispetto a $a_n$.
 - $\nexists\lim_{n\to\infty}\frac{a_n}{b_n}  \Rightarrow$ $a_n$, $b_n$ sono infiniti, ma **non** sono **confrontabili.**
 
@@ -19,7 +19,7 @@ Siano $a_n$  e $b_n$ successioni **infinite**, $b_n \neq 0$ definitivamente.
 Siano $a_n$  e $b_n$ successioni **infinitesime**, $b_n \neq 0$ definitivamente.
 
 - $\lim_{n\to\infty}\frac{a_n}{b_n} = 0 \Rightarrow$ $a_n$ è infinitesimo di **ordine superiore** rispetto a $b_n$.
-- $\lim_{n\to\infty}\frac{a_n}{b_n} = l\in\R -\{0\} \Rightarrow$ $a_n$ e $b_n$ sono infinitesimi dello **stesso ordine.**
+- $\lim_{n\to\infty}\frac{a_n}{b_n} = l\in\mathbb{R} -\{0\} \Rightarrow$ $a_n$ e $b_n$ sono infinitesimi dello **stesso ordine.**
 - $\lim_{n\to\infty}\frac{a_n}{b_n} = \pm \infty \Rightarrow$ $b_n$ è infinito di **ordine superiore** rispetto a $a_n$.
 - $\nexists\lim_{n\to\infty}\frac{a_n}{b_n}  \Rightarrow$ $a_n$, $b_n$ sono infinitesimi, ma **non** sono **confrontabili.**
 
@@ -34,7 +34,7 @@ Siano $a_n$  e $b_n$ successioni **infinitesime**, $b_n \neq 0$ definitivamente.
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
 
 - $\lim_{n\to\infty}\frac{a_n}{b_n}=\pm\infty$ $\Rightarrow$ $\lim_{n\to\infty}\frac{b_n}{a_n}=0$ $\Rightarrow$  $b_n = o(a_n)$
-- $\lim_{n\to\infty}\frac{a_n}{b_n}=\ell\in\R-\{0\}$ $\Rightarrow$  $\lim_{n\to\infty}\frac{a_n}{\ell b_n}=1$ $\Rightarrow$ $a \sim\ell b_n$
+- $\lim_{n\to\infty}\frac{a_n}{b_n}=\ell\in\mathbb{R}-\{0\}$ $\Rightarrow$  $\lim_{n\to\infty}\frac{a_n}{\ell b_n}=1$ $\Rightarrow$ $a \sim\ell b_n$
 
 È possibile dimostrare che valgono le seguenti proprietà per la relazione di asintotico:
 

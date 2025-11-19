@@ -5,12 +5,12 @@ Data lezione: 25/09/2024
 
 # 1. Unità immaginaria
 
-$x^2 +1 = 0$ non ha soluzione in $\R$ o in alcun campo ordinato, in quanto:
+$x^2 +1 = 0$ non ha soluzione in $\mathbb{R}$ o in alcun campo ordinato, in quanto:
 $x^2 \ge 0, \forall x \in X$
 $1>0$
 $\Rightarrow x^2 +1 \ge 1 > 0 \Rightarrow x^2 +1 \neq 0$
 
-È possibile estendere $\R$ per far sì che l’equazione ammetta soluzione?
+È possibile estendere $\mathbb{R}$ per far sì che l’equazione ammetta soluzione?
 
 > Definizione: Unità immaginaria
 >**L’unità immaginaria $i$ è definita come $i^2 +1 = 0$**
@@ -19,7 +19,7 @@ $\Rightarrow x^2 +1 \ge 1 > 0 \Rightarrow x^2 +1 \neq 0$
 # 2. Insieme dei numeri complessi e forma algebrica
 
 > Definizione: Insieme dei numeri complessi
->**Definiamo $\mathbb{C} = \{ z = a+bi: a, b \in \R, i^2+1 = 0\}$** 
+>**Definiamo $\mathbb{C} = \{ z = a+bi: a, b \in \mathbb{R}, i^2+1 = 0\}$** 
 
 >Definizione: forma algebrica
 >**$z = a+bi$ prende il nome di forma algebrica del numero complesso $z$.**
@@ -28,7 +28,7 @@ $\Rightarrow x^2 +1 \ge 1 > 0 \Rightarrow x^2 +1 \neq 0$
 $a$ prende il nome di **parte reale** del numero complesso e viene indicata come $\Re{z}$; $b$  prende invece il nome di **parte immaginaria** del numero complesso e viene indicata come $\Im z$
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px"/> **Osservazione**
-$\Re z , \Im z \in \R, \forall z \in \mathbb{C}$
+$\Re z , \Im z \in \mathbb{R}, \forall z \in \mathbb{C}$
 
 
 # 3. Operazioni in $\mathbb{C}$
@@ -65,10 +65,10 @@ $z^{-1}= {1 \over z} = {a \over a^ 2 + b^2} -{b \over a^ 2 + b^2}i$
 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
-$\R$ è un **sottocampo** di $\mathbb{C}$.
+$\mathbb{R}$ è un **sottocampo** di $\mathbb{C}$.
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
-$\R$ può essere identificato con i punti di una retta, $\mathbb{C}$ con quelli di un **piano** - che prende il nome di piano di Gauss.  $z = a+bi$ corrisponde pertanto al punto $Z$ di coordinate $(a,b) \in \R^2$. In particolare, inoltre, ogni numero complesso può essere pensato come un vettore nel piano applicato in $O$ e avente l’altro estremo in $Z$, orientato da $O$ a $Z.$
+$\mathbb{R}$ può essere identificato con i punti di una retta, $\mathbb{C}$ con quelli di un **piano** - che prende il nome di piano di Gauss.  $z = a+bi$ corrisponde pertanto al punto $Z$ di coordinate $(a,b) \in \mathbb{R}^2$. In particolare, inoltre, ogni numero complesso può essere pensato come un vettore nel piano applicato in $O$ e avente l’altro estremo in $Z$, orientato da $O$ a $Z.$
 
 
 La somma tra due numeri complessi a livello geometrico corrisponde quindi alla somma di due vettori, corrispondente quindi ad una traslazione.
@@ -82,7 +82,7 @@ La somma tra due numeri complessi a livello geometrico corrisponde quindi alla s
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazioni**
 - $|z| = 0 \Leftrightarrow a = 0 \wedge b = 0 \Leftrightarrow  z= 0$
 - $| z| \ge 0 , \forall z \in \mathbb{C}$
-- $z = \overline z \Leftrightarrow z \in \R$
+- $z = \overline z \Leftrightarrow z \in \mathbb{R}$
 
 
 $\overline z$  è il **simmetrico** di $z \in \mathbb{C}$ rispetto all’asse reale $\forall z \in \mathbb{C}$; $|z|$ è la distanza di $z \in \mathbb{C}$ da $O$ nel piano complesso, $\forall z \in \mathbb{C}$. $|z-w|$  è la **distanza** di $z \in \mathbb{C}$ da $w \in \mathbb{C}$ nel piano complesso.
@@ -199,7 +199,7 @@ La radice *n-esima* di un numero complesso **NON è una funzione** da $\mathbb{C
 
 Date $a,b,c, \in \mathbb{C}, a\neq0$ $\Rightarrow$  $az^2+bz+c = 0$ ha necessariamente due soluzioni per quanto detto nel paragrafo precedente.
 
-Per risolvere tale equazione è possibile **sostituire** $z = x +iy$ e risolvere un sistema a due equazioni e due variabili in $\R$; alternativamente possiamo porre $\Delta = b^2 -4ac$, da cui
+Per risolvere tale equazione è possibile **sostituire** $z = x +iy$ e risolvere un sistema a due equazioni e due variabili in $\mathbb{R}$; alternativamente possiamo porre $\Delta = b^2 -4ac$, da cui
 $z_1,z_2 = {-b + \sqrt{\Delta}\over 2a}$, con $\Delta \in \mathbb{C}$.
 
 In particolare vale la **formula di fattorizzazione** delle radici di un’equazione, per la quale

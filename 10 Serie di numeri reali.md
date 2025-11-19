@@ -6,20 +6,20 @@ Data lezione: 16/10/2024
 # 1. Somme parziali, serie, convergenza e carattere
 
 >Definizione: Serie
->**Data una successione di numeri reali $a_n$, definiamo successione delle somme parziali di $a_n$ $S_N=\sum_{n=0}^N a_n= a_0+a_1+...+a_N, \forall N\in \mathbb{N}$. Chiamiamo serie degli $a_n$ la scrittura formale $\sum_{n=0}^{+\infty} a_n$, che formalmente indica la somma degli infiniti termini $a_n$. Diremo che la serie converge a $s\in \R$ se $\exists \lim_{N\to \infty}S_N=s$ e scriveremo $\sum_{n=0}^{+\infty} a_n = \lim_{N\to \infty}S_N = s \in \R$. Diremo che la serie diverge a $\pm \infty$ se $\exists \lim_{N\to \infty}S_N=\pm \infty$ e scriveremo $\sum_{n=0}^{+\infty} a_n = \lim_{N\to \infty}S_N = \pm \infty$. Nel primo caso diremo che $s\in \R$ è la somma della serie, nel secondo caso che $\pm \infty$ è la somma della serie. In ambedue i casi - ossia se $\exists \lim_{N\to \infty}S_N=s \in \overline \R$ diremo che la serie è regolare. Altrimenti, diremo che essa è irregolare o indeterminata.**
+>**Data una successione di numeri reali $a_n$, definiamo successione delle somme parziali di $a_n$ $S_N=\sum_{n=0}^N a_n= a_0+a_1+...+a_N, \forall N\in \mathbb{N}$. Chiamiamo serie degli $a_n$ la scrittura formale $\sum_{n=0}^{+\infty} a_n$, che formalmente indica la somma degli infiniti termini $a_n$. Diremo che la serie converge a $s\in \mathbb{R}$ se $\exists \lim_{N\to \infty}S_N=s$ e scriveremo $\sum_{n=0}^{+\infty} a_n = \lim_{N\to \infty}S_N = s \in \mathbb{R}$. Diremo che la serie diverge a $\pm \infty$ se $\exists \lim_{N\to \infty}S_N=\pm \infty$ e scriveremo $\sum_{n=0}^{+\infty} a_n = \lim_{N\to \infty}S_N = \pm \infty$. Nel primo caso diremo che $s\in \mathbb{R}$ è la somma della serie, nel secondo caso che $\pm \infty$ è la somma della serie. In ambedue i casi - ossia se $\exists \lim_{N\to \infty}S_N=s \in \overline \mathbb{R}$ diremo che la serie è regolare. Altrimenti, diremo che essa è irregolare o indeterminata.**
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazioni**
 
-- La somma della serie è $s= \sum_{n=0}^{+\infty} a_n = \lim_{N\to \infty}S_N=s \in \overline \R$
+- La somma della serie è $s= \sum_{n=0}^{+\infty} a_n = \lim_{N\to \infty}S_N=s \in \overline \mathbb{R}$
 - $S_N= \sum_{n=0}^{N-1} a_n + a_{N} = S_{N-1}+a_N ,\forall N$, con $s_0= a_0$
 
-Studiare il **carattere** di una serie significa stabilire se essa converga, diverga o sia irregolare. Ammesso che essa sia convergente, calcolare $\sum_{n=0}^{+\infty} a_n \in \R$ è in generale un problema molto difficile, soprattutto essendo difficile trovare una forma esplicita di $S_N = \sum_{n=0}^{N} a_n$. Diventa pertanto fondamentale determinare condizioni necessarie o sufficienti affinché una serie converga o diverga. Dopo aver determinato ciò è possibile provare a calcolare un valore approssimato della somma.
+Studiare il **carattere** di una serie significa stabilire se essa converga, diverga o sia irregolare. Ammesso che essa sia convergente, calcolare $\sum_{n=0}^{+\infty} a_n \in \mathbb{R}$ è in generale un problema molto difficile, soprattutto essendo difficile trovare una forma esplicita di $S_N = \sum_{n=0}^{N} a_n$. Diventa pertanto fondamentale determinare condizioni necessarie o sufficienti affinché una serie converga o diverga. Dopo aver determinato ciò è possibile provare a calcolare un valore approssimato della somma.
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
 Studiare una serie coinvolge sempre **due** **successioni**: $a_n$ e $S_N$.
 
 
-I **primi** $n_0\in \mathbb{N}$ termini della successione sono **ininfluenti** **per determinare il carattere** della serie. Di contro, se la serie converge, allora **tutti** i termini sono **rilevanti** **per stabilire il valore** di $s= \sum_{n=0}^{+\infty} a_n\in \R$. Inoltre, in una serie, i termini della stessa vanno sommati nel giusto **ordine**, senza alterarlo.
+I **primi** $n_0\in \mathbb{N}$ termini della successione sono **ininfluenti** **per determinare il carattere** della serie. Di contro, se la serie converge, allora **tutti** i termini sono **rilevanti** **per stabilire il valore** di $s= \sum_{n=0}^{+\infty} a_n\in \mathbb{R}$. Inoltre, in una serie, i termini della stessa vanno sommati nel giusto **ordine**, senza alterarlo.
 
 # 2. Serie geometrica di ragione $q$
 
@@ -42,14 +42,14 @@ $S_N-qS_N=S_N(1-q)=1-q^{N+1}$, cancellandosi i vari termini delle sommatorie tra
 
 # 3. Considerazioni sulle serie basate sul teorema dell’algebra dei limiti
 
-Date $\sum_{n=0}^{+\infty} a_n$ e $\sum_{n=0}^{+\infty} b_n$, $\alpha, \beta \in \R$ si può dimostrare applicando la definizione di serie e le proprietà della sommatoria che
+Date $\sum_{n=0}^{+\infty} a_n$ e $\sum_{n=0}^{+\infty} b_n$, $\alpha, \beta \in \mathbb{R}$ si può dimostrare applicando la definizione di serie e le proprietà della sommatoria che
 $\sum_{n=0}^{+\infty}(\alpha a_n + \beta b_n) = \alpha\sum_{n=0}^{+\infty} a_n+\beta\sum_{n=0}^{+\infty} b_n$ nel caso in cui $\sum_{n=0}^{+\infty} a_n$ e $\sum_{n=0}^{+\infty} b_n$ siano indifferentemente convergenti oppure divergenti e il termine a destra dell’uguale non sia una forma di indeterminatezza.
 
 # 4. Serie telescopiche
 >Definizoine: Serie Telescopiche
 >**Prendono il nome di serie telescopiche tutte le serie nella forma $\sum_{n=0}^{+\infty} a_n$,  con  $a_n = b_n-b_{n+1}$.**
 
-Sostituendo $a_n$ e sviluppando la sommatoria si dimostra che che $S_N = b_0-b_{N+1}$, in maniera molto simile a quanto fatto nella dimostrazione sulle serie geometriche. Di conseguenza è possibile dedurre che $\exists \lim_{N\to\infty} S_N=\sum_{n=0}^{+\infty} a_n \Leftrightarrow \exists\lim_{N\to\infty}b_N= b^* \in \overline\R$.
+Sostituendo $a_n$ e sviluppando la sommatoria si dimostra che che $S_N = b_0-b_{N+1}$, in maniera molto simile a quanto fatto nella dimostrazione sulle serie geometriche. Di conseguenza è possibile dedurre che $\exists \lim_{N\to\infty} S_N=\sum_{n=0}^{+\infty} a_n \Leftrightarrow \exists\lim_{N\to\infty}b_N= b^* \in \overline\mathbb{R}$.
 Possiamo quindi dedurre che $\sum_{n=0}^{+\infty} a_n  = b_0-b^*.$
 
 Un esempio di serie telescopica è la **serie di Mengoli** $\sum_{n=0}^{+\infty} \frac{1}{n(n+1)}$, dove $\frac{1}{n(n+1)} = \frac{1}{n} -\frac{1}{n+1}.$
@@ -69,7 +69,7 @@ Qualsiasi serie di una successione divergente o di una successione che ha limite
 
 ## 5.1 Dimostrazione
 
-Sia $\sum_{n=0}^{N} a_n = S_N$. Per ipotesi, convergendo la serie, sappiamo che esiste il limite delle somme parziali ed è un numero finito $s\in \R$. Osserviamo, utilizzando le proprietà delle sommatorie che $S_N=\sum_{n=0}^{N-1} a_n  + a_N=S_{N-1}+a_N \Rightarrow a_N=S_N-S_{N-1}$. Per l’algebra dei limiti è possibile dimostrare che $\lim_{N\to\infty} S_N = \lim_{N\to\infty} S_{N-1} = s\in\R$. $\lim_{N\to\infty} a_N = \lim_{N\to\infty} S_N - \lim_{N\to\infty} S_{N-1} = s -s = 0$
+Sia $\sum_{n=0}^{N} a_n = S_N$. Per ipotesi, convergendo la serie, sappiamo che esiste il limite delle somme parziali ed è un numero finito $s\in \mathbb{R}$. Osserviamo, utilizzando le proprietà delle sommatorie che $S_N=\sum_{n=0}^{N-1} a_n  + a_N=S_{N-1}+a_N \Rightarrow a_N=S_N-S_{N-1}$. Per l’algebra dei limiti è possibile dimostrare che $\lim_{N\to\infty} S_N = \lim_{N\to\infty} S_{N-1} = s\in\mathbb{R}$. $\lim_{N\to\infty} a_N = \lim_{N\to\infty} S_N - \lim_{N\to\infty} S_{N-1} = s -s = 0$
 
 ---
 

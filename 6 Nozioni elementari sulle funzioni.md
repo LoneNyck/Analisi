@@ -27,9 +27,9 @@ In generale $Im_f \subseteq B$, ma può accadere che $Im_f \sub B$.
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
 
-$f: \R \to \R$: $f(x) = x^2$
+$f: \mathbb{R} \to \mathbb{R}$: $f(x) = x^2$
 
-$f:\R \to [0,+\infty)$: $g(x) = x^2$
+$f:\mathbb{R} \to [0,+\infty)$: $g(x) = x^2$
 
 e $f: (-\infty; 0] \to [0,+\infty)$: $h(x) = x^2$
 
@@ -60,10 +60,10 @@ $G_f = \{(x,y) \in (A\times B): x \in A, y = f(x) \in B \}$**
 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
-Se $f: A\to B$ e $A,B \subseteq \R$ $\Rightarrow$ $G_f = \R^2$
+Se $f: A\to B$ e $A,B \subseteq \mathbb{R}$ $\Rightarrow$ $G_f = \mathbb{R}^2$
 
 
-Il fatto che $\forall x_0 \in A$ esiste **un’unica** **immagine** $y_0 \in B$, $A,B \subseteq \R$, si interpreta geometricamente nel grafico di $f$ osservando che ogni retta verticale lo interseca al più una volta; in particolare 0 volte se $x \notin A$, 1 volta se $x \in A$. In quest’ultimo caso l’ordinata del punto sul grafico è $y = f(x_0)$. 
+Il fatto che $\forall x_0 \in A$ esiste **un’unica** **immagine** $y_0 \in B$, $A,B \subseteq \mathbb{R}$, si interpreta geometricamente nel grafico di $f$ osservando che ogni retta verticale lo interseca al più una volta; in particolare 0 volte se $x \notin A$, 1 volta se $x \in A$. In quest’ultimo caso l’ordinata del punto sul grafico è $y = f(x_0)$. 
 
 Il **dominio** della funzione non è altro che la **proiezione** del grafico sull’asse delle **ascisse**.
 
@@ -74,14 +74,14 @@ L’**insieme delle immagini** non è altro che la **proiezione** del grafico su
 # 5. Funzioni limitate
 
 >Definizione: funzione limitata
-> **Data $f: A \subseteq \R\to \R$ diremo che:**
-> **$f$ è limitata dall’alto se $\operatorname{Im}f \subseteq \R$ è limitato superiormente, cioè $\exists M\in \R : f(x) < M, \forall x \in A$**
+> **Data $f: A \subseteq \mathbb{R}\to \mathbb{R}$ diremo che:**
+> **$f$ è limitata dall’alto se $\operatorname{Im}f \subseteq \mathbb{R}$ è limitato superiormente, cioè $\exists M\in \mathbb{R} : f(x) < M, \forall x \in A$**
 > 
-> **$f$ è limitata dal basso se $\operatorname{Im}f \subseteq \R$ è limitato inferiormente, cioè 
-$\exists m\in \R : f(x) > m, \forall x \in A$**
+> **$f$ è limitata dal basso se $\operatorname{Im}f \subseteq \mathbb{R}$ è limitato inferiormente, cioè 
+$\exists m\in \mathbb{R} : f(x) > m, \forall x \in A$**
 >
-> **$f$ è limitata se $\operatorname{Im}f\subseteq \R$ è limitato sia dall’alto che dal basso, cioè
-$\exists m,M\in \R : m< f(x) < M, \forall x \in A$**
+> **$f$ è limitata se $\operatorname{Im}f\subseteq \mathbb{R}$ è limitato sia dall’alto che dal basso, cioè
+$\exists m,M\in \mathbb{R} : m< f(x) < M, \forall x \in A$**
 > 
 
 Inoltre possiamo anche definire come per gli insiemi:
@@ -92,16 +92,16 @@ Inoltre possiamo anche definire come per gli insiemi:
 - $\min f(x) = \min \operatorname{Im}f$ **minimo** di $f$
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
-$\sup f(x)$ e $\inf f(x)$ esistono sempre in $\R \cup\{\pm\infty\}$ e sono eventualmente infiniti. Inoltre se esistono massimo e minimo della funzione, allora essi coincidono con estremo superiore ed inferiore.
+$\sup f(x)$ e $\inf f(x)$ esistono sempre in $\mathbb{R} \cup\{\pm\infty\}$ e sono eventualmente infiniti. Inoltre se esistono massimo e minimo della funzione, allora essi coincidono con estremo superiore ed inferiore.
 
-In molti casi una funzione reale in variabili reali viene assegnata solo mediante la sua espressione **analitica**, non dichiarando esplicitamente dominio o codominio; in generale il codominio sottinteso è $\R$ mentre il dominio corrisponde al più grande sottoinsieme $A \subseteq \R$ dove la regola analitica assegnata è ben definita e si parla in questo caso di **campo di esistenza**.
+In molti casi una funzione reale in variabili reali viene assegnata solo mediante la sua espressione **analitica**, non dichiarando esplicitamente dominio o codominio; in generale il codominio sottinteso è $\mathbb{R}$ mentre il dominio corrisponde al più grande sottoinsieme $A \subseteq \mathbb{R}$ dove la regola analitica assegnata è ben definita e si parla in questo caso di **campo di esistenza**.
 
 # 6. Funzioni pari e dispari, monotonia e periodicità
 
 ## 6.1 Simmetrie di una funzione
 
 >Definzione: funzini pari e dispari
->**Dato $a >0, f: (-a,a) \subseteq \R\to \R$, con $a$  non necessariamente finito, $f$ si dice pari se vale $f(x) = f(-x), \forall x \in (a,-a)$. 
+>**Dato $a >0, f: (-a,a) \subseteq \mathbb{R}\to \mathbb{R}$, con $a$  non necessariamente finito, $f$ si dice pari se vale $f(x) = f(-x), \forall x \in (a,-a)$. 
 Si dirà invece dispari se vale $-f(x) = f(-x), \forall x \in (a,-a)$.
 In caso nessuna condizione precedente sia soddisfatta, $f$ non sarà né pari né dispari.**
 
@@ -109,7 +109,7 @@ Le funzioni pari hanno grafico simmetrico rispetto a $x=0$; quelle dispari rispe
 
 ## 6.2 Monotonia
 
-Sia data $f: A \subseteq \R\to \R$.
+Sia data $f: A \subseteq \mathbb{R}\to \mathbb{R}$.
 
 >Definizione: monotonia
 > **Se $\forall x_1, x_2 \in A, x_1<x_2 \Rightarrow f(x_1)\le f(x_2)$ allora essa si dirà monotona crescente.**
@@ -138,7 +138,7 @@ Inoltre una funzione del tipo $f(x) = k, k\in R$ si dice **sia crescente che dec
 ## 6.3 Periodicità
 
 > Definizione: periodicità
->**Sia $f: A \subseteq \R\to \R$; diremo che si tratta di una funzione periodica di periodo $T$ se $f(x+T) = f(x), \forall x \in A$.
+>**Sia $f: A \subseteq \mathbb{R}\to \mathbb{R}$; diremo che si tratta di una funzione periodica di periodo $T$ se $f(x+T) = f(x), \forall x \in A$.
 Ogni intervallo lungo $T$ contenuto in $A$ si chiama intervallo di periodicità.**
 
 
@@ -158,7 +158,7 @@ Non tutte le funzioni possono essere composte, in quanto potrebbero insorgere pr
 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
-Se $f: A\to B$ e $g: D \subseteq B \to C$ possiamo definire $g \circ f: \text{Dom}_f \to C$, $\text{Dom}_f = \{x\in A: f(x) \in D \} = A \cap f^{-1}(D) \subseteq A$. Un esempio è dato delle funzioni $f(x) = \sqrt{x}$, definita solo in $[0,+\infty),$ e $g(t) = t^2$, definita in tutto $\R$. La composizione tra le due sarà pertanto $g \circ f = x, x \ge 0$.
+Se $f: A\to B$ e $g: D \subseteq B \to C$ possiamo definire $g \circ f: \text{Dom}_f \to C$, $\text{Dom}_f = \{x\in A: f(x) \in D \} = A \cap f^{-1}(D) \subseteq A$. Un esempio è dato delle funzioni $f(x) = \sqrt{x}$, definita solo in $[0,+\infty),$ e $g(t) = t^2$, definita in tutto $\mathbb{R}$. La composizione tra le due sarà pertanto $g \circ f = x, x \ge 0$.
 
 # 8. Iniettività e invertibilità
 
@@ -191,7 +191,7 @@ $f^{-1}: Im_f\subseteq B\to A$.**
 ## 8.1 Teorema sulla monotonia e sull’invertibilità
 
 >Teorema: monotonia e iniettività implicano invertibilità
-> **$f: A\subseteq \R \to \R$ strettamente monotona in $A$ $\Rightarrow$ $f$  è iniettiva $\Rightarrow$ $f$ è invertibile.
+> **$f: A\subseteq \mathbb{R} \to \mathbb{R}$ strettamente monotona in $A$ $\Rightarrow$ $f$  è iniettiva $\Rightarrow$ $f$ è invertibile.
 Inoltre la funzione inversa sarà anch’essa strettamente monotona.**
 > 
 
