@@ -38,7 +38,7 @@ $f$ e $g$ sono asintotici tra loro se il limite del loro rapporto tende a $1$. O
 
 La relazione di asintotico può quindi essere usata senza limitazioni per quanto riguarda **prodotti**, **rapporti** e **potenze**.
 
-1. Se $f\sim g$ per $x\to x_0$ allora $\exist \lim_{x\to x_0}f(x)\in \overline\R$ $\Leftrightarrow$ $\exist \lim_{x\to x_0}g(x)\in \overline \R$. Inoltre, se i due limiti esistono, essi sono uguali.
+1. Se $f\sim g$ per $x\to x_0$ allora $\exists \lim_{x\to x_0}f(x)\in \overline\R$ $\Leftrightarrow$ $\exists \lim_{x\to x_0}g(x)\in \overline \R$. Inoltre, se i due limiti esistono, essi sono uguali.
 
 ### 1.1 comma 1 - Dimostrazione
 

@@ -16,7 +16,7 @@ Esistono diverse formulazioni equivalenti dell’integrale di Riemann.
 
 Definiamo in seguito l’integrale di Riemann per $f:[a,b]\to\R$ limitata in $[a,b]$.
 
-Per ogni $n\in \N$ dividiamo $[a,b]$ in n punti di uguale lunghezza $\frac {b-a}n$ tramite i punti 
+Per ogni $n\in \mathbb{N}$ dividiamo $[a,b]$ in n punti di uguale lunghezza $\frac {b-a}n$ tramite i punti 
 $x_0= a<x_1<x_2<...<x_{n-1}< x_n=b$ equispaziati e a distanza $\frac {b-a}n$ dal precedente e dal successivo. In ogni intervallo $[x_{k-1}, x_k]$ poi scegliamo arbitrariamente un punto
 $t_k^{(n)}\in [x_{k-1},x_k], k = 1,...,n$.
 
@@ -71,7 +71,7 @@ $f(x)= \begin{cases} f_1(x) , &x\in [a,c)\\\alpha , &x= c\\f_2(x) ,& x\in (c,b]\
 > 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
-Vale un risultato analogo anche nel caso di un numero finito di punti $c_1,...,c_n\in [a,b], \forall n \in \N$.
+Vale un risultato analogo anche nel caso di un numero finito di punti $c_1,...,c_n\in [a,b], \forall n \in \mathbb{N}$.
 
 
 # 3. Teoremi per integrali definiti
@@ -104,7 +104,7 @@ $|\int_a^b f(x) \ dx| \ge \int_a^b |f(x)| \ dx$**
 # 4. Teorema della media integrale
 
 >Teorema della media integrale
-> **Sia $f:[a,b]\to\R$ continua in $[a,b]$. Allora $\exist x_0\in[a,b]$ tale che $f(x_0)=\frac 1{b-a}\int_a^bf(x)\ dx$.**
+> **Sia $f:[a,b]\to\R$ continua in $[a,b]$. Allora $\exists x_0\in[a,b]$ tale che $f(x_0)=\frac 1{b-a}\int_a^bf(x)\ dx$.**
 > 
 
 >Definizione: Valor medio
@@ -123,7 +123,7 @@ $$
 \int _a^b m \ dx \le \int _a^bf(x)\ dx \le \int _a^bM\ dx\\m(b-a) \le \int _a^bf(x)\ dx \le M(b-a)\\m\le \frac 1{b-a}\int_a^bf(x)\ dx\le M
 $$
 
-Essendo $f$ continua, per il teorema dei valori intermedi $\operatorname{Im}f= [m,M]$. Quindi $\frac 1{b-a}\int_a^bf(x)\ dx\in \operatorname{Im}f\Rightarrow \exist x_0\in [a,b]: f(x_0)=\frac 1{b-a}\int_a^bf(x)\ dx$.
+Essendo $f$ continua, per il teorema dei valori intermedi $\operatorname{Im}f= [m,M]$. Quindi $\frac 1{b-a}\int_a^bf(x)\ dx\in \operatorname{Im}f\Rightarrow \exists x_0\in [a,b]: f(x_0)=\frac 1{b-a}\int_a^bf(x)\ dx$.
 
 # 5. Teorema fondamentale del calcolo integrale I
 

@@ -5,9 +5,9 @@ Data lezione: 18/09/2024
 
 # 1. Insiemi numerici
 
-## 1.1 I numeri naturali $\N$
+## 1.1 I numeri naturali $\mathbb{N}$
 
-$\N$  è l’insieme dei numeri naturali e comprende tutti i **numeri interi non negativi**. La sua rappresentazione per elencazione è $\N = \{0,1,2,...\}$
+$\mathbb{N}$  è l’insieme dei numeri naturali e comprende tutti i **numeri interi non negativi**. La sua rappresentazione per elencazione è $\mathbb{N} = \{0,1,2,...\}$
 
 ## 1.2 I numeri relativi $\mathbb{Z}$
 
@@ -21,7 +21,7 @@ $\mathbb{Q}$ è l’insieme dei numeri razionali e comprende tutte le **multiple
 Due frazioni sono tra loro equivalenti se $\frac{m}{n} = \frac{a}{b} \Leftrightarrow ma=nb, b\neq 0.$
 
 Ogni numero $r\in\mathbb{Q}$ può anche essere espresso sotto forma di numero decimale. In tal maniera l’insieme dei numeri razionali può anche essere scritto come 
-$\mathbb{Q} = \{r= \pm a_0,a_1a_2...a_k, a_0\in\N, a_k\in\{0,1,...,9\} \forall k \in \N, k\neq 0 \text{ e la rappresentazione decimale sia finita o infinita e periodica}$
+$\mathbb{Q} = \{ r= \pm a_0,a_1a_2...a_k, a_0\in\mathbb{N}, a_k\in\{0,1,...,9\} \forall k \in \mathbb{N}, k\neq 0 \text{ e la rappresentazione decimale sia finita o infinita e periodica}\}$
 
 Quest’ultima definizione fa notare come nell’insieme dei razionali manchino tutti quei numeri con espansione decimale infinita e non periodica, quali $\pi$, $\sqrt{2}$,…
 
@@ -34,7 +34,7 @@ Un esempio può essere costituito dal caso $0,\bar9 = 1$
 ## 1.4 I numeri reali $\R$
 
 L’insieme dei numeri reali è definito come 
-$\R = \{r=\pm a_0,a_1a_2...a_k, a_0\in\N, a_k\in\{0,1,...,9\} \forall k \in \N, k\neq 0\}$ 
+$\R = \{r=\pm a_0,a_1a_2...a_k, a_0\in\mathbb{N}, a_k\in\{0,1,...,9\} \forall k \in \mathbb{N}, k\neq 0\}$ 
 e contiene **tutti i numeri che hanno rappresentazione decimale finita, infinita e periodica e infinita e non periodica.**
 
 I numeri che appartengono all’insieme $\R \setminus\mathbb{Q} = r\in\R:r\notin \mathbb{Q}$ sono detti **irrazionali** e fanno parte di questa categoria di numeri $\pi$, $\sqrt{2}$, $\sqrt{3}$,…
@@ -50,7 +50,7 @@ Venn diagram of Numbers
 ---
 
 I vari insiemi numerici possono essere **ordinati** nel seguente modo sfruttando le relazioni tra insiemi: 
-$\N \sub \mathbb{Z} \sub \mathbb{Q} \sub \R \sub \mathbb{C}$
+$\mathbb{N} \sub \mathbb{Z} \sub \mathbb{Q} \sub \R \sub \mathbb{C}$
 
 # 2. Operazioni in $\R$ e in $\mathbb{Q}$
 
@@ -133,15 +133,15 @@ Al fine di stabilire il valore di verità di una proposizione è necessario attr
 
 > **I quantificatori sono:**
 >- **$\forall$, che corrisponce a ‘per ogni’**
->- **$\exist$ che corrisponde a ‘esiste’**
->- **$\exist!$ che corrisponde a ‘esiste ed è unico’**
+>- **$\exists$ che corrisponde a ‘esiste’**
+>- **$\exists!$ che corrisponde a ‘esiste ed è unico’**
 >- **$\nexists$ che corrisponde a ‘non esiste alcun’**
 
 Dato $P(x), x\in A$:
 - per $x=x_0:P(x)$
 - $\forall x \in A:P(x)$
 - $\exists x\in A:P(x)$
-- $\exist! x \in A: P(x)$
+- $\exists! x \in A: P(x)$
 - $\nexists x \in A: P(x)$
 
 in generale sono proposizioni diverse.

@@ -72,10 +72,10 @@ $f= |x|$ è convessa anche se non è derivabile in tutto $\R$
 
 >Definizione: Punto di flesso
 >**Data una funzione $f:(a,b) \to \R$ derivabile in $x_0$, con $x_0\in (a,b)$ , chiameremo $x_0$ punto di flesso per $f$ se 
-$\exist \delta >0: f(x)\ge f(x_0)+f'(x_0)(x-x_0), \forall x \in [x_0,x_0+\delta)$ e se 
+$\exists \delta >0: f(x)\ge f(x_0)+f'(x_0)(x-x_0), \forall x \in [x_0,x_0+\delta)$ e se 
 $f(x)\le f(x_0)+f'(x_0)(x-x_0), \forall x \in (x_0-\delta,x_0]$
 oppure se 
-$\exist \delta >0: f(x)\le f(x_0)+f'(x_0)(x-x_0), \forall x \in [x_0,x_0+\delta)$ e se 
+$\exists \delta >0: f(x)\le f(x_0)+f'(x_0)(x-x_0), \forall x \in [x_0,x_0+\delta)$ e se 
 $f(x)\ge f(x_0)+f'(x_0)(x-x_0), \forall x \in (x_0-\delta,x_0]$**
 
 
@@ -86,7 +86,7 @@ Con abuso di notazione, per estensione, se $f$ è continua in $x_0$ e $f'(x_0)=\
 ![image.png](19%20Convessit%C3%A0%20e%20concavit%C3%A0/image%201.png)
 
 >Definizione: Cambio di concavità 
->**Data una funzione $f:(a,b) \to \R$ diremo che $x_0\in (a,b)$ è punto di cambio di concavità per $f$ se $\exist\delta >0$ tale che $f$ sia convessa (o concava) in $[x,x_0+\delta)$ e concava (o convessa, rispettivamente) in $(x_0-\delta,x_0]$.**
+>**Data una funzione $f:(a,b) \to \R$ diremo che $x_0\in (a,b)$ è punto di cambio di concavità per $f$ se $\exists\delta >0$ tale che $f$ sia convessa (o concava) in $[x,x_0+\delta)$ e concava (o convessa, rispettivamente) in $(x_0-\delta,x_0]$.**
 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**

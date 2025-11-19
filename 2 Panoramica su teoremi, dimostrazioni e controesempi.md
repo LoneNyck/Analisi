@@ -27,7 +27,7 @@ Sfrutta anch’esso la definizione di teorema, utilizzando però la negazione de
 
 Utilizzato per smentire un teorema, cerca di sfruttare il fatto che $P \Rightarrow Q$  sia falsa quando $P$ è vera e $Q$ è falsa.
 
-Per un’implicazione universale, mostrare che essa sia falsa significa mostrare che $\exist x_0 \in A : P(x_0) \Rightarrow Q(x_0)$ sia falsa e $x_0$ prende il nome di **controesempio**. 
+Per un’implicazione universale, mostrare che essa sia falsa significa mostrare che $\exists x_0 \in A : P(x_0) \Rightarrow Q(x_0)$ sia falsa e $x_0$ prende il nome di **controesempio**. 
 
 ## 2.4 Dimostrazione per assurdo
 
@@ -39,7 +39,7 @@ $P \wedge Q   \Rightarrow contr. \Rightarrow P \wedge Q \, falsa \Rightarrow\neg
 
 ## 2.5 Dimostrazione per induzione
 
-Utilizzata per dimostrare la verità di un’implicazione universale nella forma $\forall n \in \N , P(n)$ è vera. Si articola in due passi:
+Utilizzata per dimostrare la verità di un’implicazione universale nella forma $\forall n \in \mathbb{N} , P(n)$ è vera. Si articola in due passi:
 
 1. $P(0)$ è vera
-2. $P(n+1)$  è vera se $P(n)$ è vera $\forall n \in \N$, che si traduce in $\forall n \in \N, P(n) \Rightarrow P(n+1)$, dove $P(n)$ prende il nome di **ipotesi di induzione**
+2. $P(n+1)$  è vera se $P(n)$ è vera $\forall n \in \mathbb{N}$, che si traduce in $\forall n \in \mathbb{N}, P(n) \Rightarrow P(n+1)$, dove $P(n)$ prende il nome di **ipotesi di induzione**

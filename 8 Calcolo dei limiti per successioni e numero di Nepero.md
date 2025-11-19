@@ -5,7 +5,7 @@ Tags: Limiti, Successioni
 # 1. Teorema sull’algebra dei limiti
 
 >Teorema
->**Siano $a_n$  e $b_n$ due successioni ed $\exist\lim_{n\to\infty}a_n=a\in \R$ ed $\exist\lim_{n\to\infty}b_n=b\in \R$.
+>**Siano $a_n$  e $b_n$ due successioni ed $\exists\lim_{n\to\infty}a_n=a\in \R$ ed $\exists\lim_{n\to\infty}b_n=b\in \R$.
 Allora:**
 >
 >1. **$\lim_{n\to\infty}a_n\pm b_n = a \pm b$**
@@ -18,17 +18,17 @@ La dimostrazione del punto i. è relativamente semplice e fa uso della disuguagl
 ## 1.1 Corollario sull’algebra dei limiti
 
 >Corollario
->**Siano $a_n$  e $b_n$ due successioni ed $\exist\lim_{n\to\infty}a_n=a\in \R$ ed $\exist\lim_{n\to\infty}b_n=b\in \R$.**
+>**Siano $a_n$  e $b_n$ due successioni ed $\exists\lim_{n\to\infty}a_n=a\in \R$ ed $\exists\lim_{n\to\infty}b_n=b\in \R$.**
 >**Allora:**
->1. **$a>b$ $\Rightarrow$ $a_n>b_n$ definitivamente in $n\in\N$**
->2. **$a_n \ge b_n$ definitivamente in $n \in \N$ $\Rightarrow$  $a\ge b$**
+>1. **$a>b$ $\Rightarrow$ $a_n>b_n$ definitivamente in $n\in\mathbb{N}$**
+>2. **$a_n \ge b_n$ definitivamente in $n \in \mathbb{N}$ $\Rightarrow$  $a\ge b$**
 
 La dimostrazione di ambedue i punti fa utilizzo di una successione $c_n = a_n-b_n$ e dei teoremi di permanenza del segno [[7. Successioni e introduzione ai limiti](7%20Successioni%20e%20introduzione%20ai%20limiti%2011334a78851580b9b79fcb0887cf2531.md), 2.10].
 
 # 2. Teorema del confronto
 >Teorema del confronto
-> **Date tre successioni $a_n$, $b_n$ e $c_n$ : $a_n \le b_n \le c_n$ definitivamente in $n \in \N$ ed $\exist\lim_{n\to\infty}a_n=\lim_{n\to\infty}c_n=l\in \R$
-$\Rightarrow$  $\exist \lim_{n\to\infty}b_n = l \in \R$**
+> **Date tre successioni $a_n$, $b_n$ e $c_n$ : $a_n \le b_n \le c_n$ definitivamente in $n \in \mathbb{N}$ ed $\exists\lim_{n\to\infty}a_n=\lim_{n\to\infty}c_n=l\in \R$
+$\Rightarrow$  $\exists \lim_{n\to\infty}b_n = l \in \R$**
 > 
 
 ### 2.0 comma 1 - Dimostrazione
@@ -39,11 +39,11 @@ Questo teorema si basa interamente sulla definizione di limite di $a_n$  e $c_n$
 
 Dal teorema del confronto è possibile anche dedurre il seguente teorema.
 >Teorema
-> **Date due successioni $a_n$ e $b_n$ : $a_n \le b_n$  definitivamente in $n \in \N$**
-> - **se $a_n$ diverge ed $\exist\lim_{n\to\infty}a_n=+\infty$ 
-> $\Rightarrow$  $\exist \lim_{n\to\infty}b_n = +\infty$**
-> - **se $b_n$ diverge ed $\exist\lim_{n\to\infty}b_n=-\infty$ 
-> $\Rightarrow$  $\exist \lim_{n\to\infty}a_n = -\infty$**
+> **Date due successioni $a_n$ e $b_n$ : $a_n \le b_n$  definitivamente in $n \in \mathbb{N}$**
+> - **se $a_n$ diverge ed $\exists\lim_{n\to\infty}a_n=+\infty$ 
+> $\Rightarrow$  $\exists \lim_{n\to\infty}b_n = +\infty$**
+> - **se $b_n$ diverge ed $\exists\lim_{n\to\infty}b_n=-\infty$ 
+> $\Rightarrow$  $\exists \lim_{n\to\infty}a_n = -\infty$**
 
 ### 2.1.1 Dimostrazione
 
@@ -52,14 +52,14 @@ Come la precedente, anche questo teorema si basa sulla definizione di limite per
 ## 2.2 Corollario del teorema del confronto
 
 > Corollario
->1. **Date due successioni $a_n$ e $b_n$ : $|a_n| \le |b_n |$ definitivamente in $n \in \N$ ed 
->$\exist\lim_{n\to\infty}b_n=0 \in \R$ $\Rightarrow$ $\exist\lim_{n\to\infty}a_n=0 \in \R$**
->2. **Date due successioni $a_n$ e $b_n$ tali che $a_n$ sia limitata e $\exist\lim_{n\to\infty}b_n=0$ $\Rightarrow$ $\exist\lim_{n\to\infty}a_nb_n=0$**
+>1. **Date due successioni $a_n$ e $b_n$ : $|a_n| \le |b_n |$ definitivamente in $n \in \mathbb{N}$ ed 
+>$\exists\lim_{n\to\infty}b_n=0 \in \R$ $\Rightarrow$ $\exists\lim_{n\to\infty}a_n=0 \in \R$**
+>2. **Date due successioni $a_n$ e $b_n$ tali che $a_n$ sia limitata e $\exists\lim_{n\to\infty}b_n=0$ $\Rightarrow$ $\exists\lim_{n\to\infty}a_nb_n=0$**
 
 ### 2.2.1 Dimostrazione
 
 1. Il primo punto del corollario si basa unicamente sulla definizione di disuguaglianza con valore assoluto e sul teorema del confronto;
-2. Il secondo punto si basa sul concetto di limitatezza di una successione: $a_n$ limitata $\Rightarrow \exists M > 0 : |a_n| < M, \forall n \in \N$. Moltiplicando per $|b_n|$ da ambedue i lati otteniamo che $|a_nb_n|< M|b_n|$. Sapendo che in $\lim_{n\to\infty}M|b_n|=0$ ci siamo ricondotti al primo punto del corollario, dimostrando pertanto che $\exist\lim_{n\to\infty}a_nb_n=0$
+2. Il secondo punto si basa sul concetto di limitatezza di una successione: $a_n$ limitata $\Rightarrow \exists M > 0 : |a_n| < M, \forall n \in \mathbb{N}$. Moltiplicando per $|b_n|$ da ambedue i lati otteniamo che $|a_nb_n|< M|b_n|$. Sapendo che in $\lim_{n\to\infty}M|b_n|=0$ ci siamo ricondotti al primo punto del corollario, dimostrando pertanto che $\exists\lim_{n\to\infty}a_nb_n=0$
 
 # 3. Gerarchia degli infiniti
 >Gerarchia degli infiniti
@@ -121,7 +121,7 @@ NON sono forme di indeterminatezza le seguenti:
 La dimostrazione si articola in due punti: i. mostrare che $a_n$ è crescente; ii. mostrare che $a_n$ è limitata.
 
 1. Mostrare che una successione è crescente  $a_n \ge a_{n-1}, \forall n\ge2$ $\Rightarrow$ $\frac{a_n}{a_{n-1}}\ge1$, in cui il passaggio fondamentale per la dimostrazione della disuguaglianza è la disuguaglianza di Bernoulli.
-2. Per dimostrare che a_n sia limitata introduciamo la successione b_n decrescente : $a_n \le b_n \forall n\in\N, n>1$ $\Rightarrow$ $a_n \le b_n \le b_1 ,\forall n\ge1$. 
+2. Per dimostrare che a_n sia limitata introduciamo la successione b_n decrescente : $a_n \le b_n \forall n\in\mathbb{N}, n>1$ $\Rightarrow$ $a_n \le b_n \le b_1 ,\forall n\ge1$. 
 $b_n = (1+\frac{1}{n})^{n+1}=a_n(1+\frac{1}{n})$, quindi effettivamente $b_n \ge a_n$. Ora sarà sufficiente dimostrare che $b_n$ è decrescente con il medesimo metodo utilizzato nel punto i, quindi $\frac{b_{n-1}}{b_{n}}\ge1$.
 
 ---
@@ -148,7 +148,7 @@ Il numero di Nepero può essere anche visto come l’estremo superiore di $a_n$.
 # 6. Criterio del rapporto tra successioni
 
 >Teorema: criterio del rapporto tra successioni
-> **Sia $a_n$ una successione tale che $a_n >0$ definitivamente e $\exist \ell=\lim_{n\to\infty}\frac{a_{n+1}}{a_n}\in \overline\R$.**
+> **Sia $a_n$ una successione tale che $a_n >0$ definitivamente e $\exists \ell=\lim_{n\to\infty}\frac{a_{n+1}}{a_n}\in \overline\R$.**
 > 
 > - **$\ell > 1 \Rightarrow \lim_{n\to\infty}a_n=+\infty$;**
 > - **$0< \ell < 1 \Rightarrow \lim_{n\to\infty}a_n=0$;**

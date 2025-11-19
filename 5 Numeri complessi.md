@@ -162,7 +162,7 @@ Se $z = 1$ $\Rightarrow$  ${1\over \sigma}(\cos(\phi) - i \sin(\phi)) = {1\over 
 Dalla formula di De Moivre per il prodotto è possibile ricavare la formula per la potenza di un numero complesso $z$.
 
 >Teorema 
-> **Dati $z \in \mathbb{C}$, $n \in \N$, $z^n = \rho^n (\cos n\theta +i\sin n\theta) = \rho^n e ^{i n\theta}$**
+> **Dati $z \in \mathbb{C}$, $n \in \mathbb{N}$, $z^n = \rho^n (\cos n\theta +i\sin n\theta) = \rho^n e ^{i n\theta}$**
 > 
 > **Inoltre se $z\neq 0$, $z^{-n} = {1 \over z^n} (\cos n\theta -i\sin n\theta) =  {1 \over z^n}e ^{-in\theta}$**
 > 
@@ -172,7 +172,7 @@ Tutte le precedenti sono formule **coerenti** con l’algebra degli esponenziali
 # 7. Radici *n-esime* del numero complesso
 
 >Definizione: radice n-esima del numero complesso
->**Se $w \in \mathbb{C}$, $n \in \N, n\ge 1$ $\Rightarrow$  ogni numero complesso $z \in \mathbb{C}$ tale che $z^n = w$ prende il nome di radice *n-esima* di $w$.**
+>**Se $w \in \mathbb{C}$, $n \in \mathbb{N}, n\ge 1$ $\Rightarrow$  ogni numero complesso $z \in \mathbb{C}$ tale che $z^n = w$ prende il nome di radice *n-esima* di $w$.**
 
 > Teroema
 > **Si dimostra che esistono esattamente  $n$ radici complesse *n-esime* di $w$.**
@@ -210,7 +210,7 @@ $\forall z \in \mathbb{C}, az^2+bz+c = a(z-z_1)(z-z_2)$
 >Teorema fondamentale dell'alegbra
 > **Un’equazione polinomiale della forma 
 $a_nz^n+a_{n-1}z^{n-1}+...+a_1z+a_0 = 0$, con 
-$a_n, a_{n-1},...,a_1, a_0 \in \mathbb{C}, a_n \neq 0, n\in \N, n\ge1$  ha esattamente $n$ soluzioni in $\mathbb{C}$ se ciascuna di esse è contata con le dovute molteplicità - ossia le radici possono essere non tutte distinte.**
+$a_n, a_{n-1},...,a_1, a_0 \in \mathbb{C}, a_n \neq 0, n\in \mathbb{N}, n\ge1$  ha esattamente $n$ soluzioni in $\mathbb{C}$ se ciascuna di esse è contata con le dovute molteplicità - ossia le radici possono essere non tutte distinte.**
 > 
 
 Dette $z_0, z_1,...,z_{n-1} \in \mathbb{C}$ tali soluzioni, allora $\forall z \in \mathbb{C}$ vale

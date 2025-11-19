@@ -5,7 +5,7 @@ Data lezione: 06/11/2024
 
 # 1. Teorema degli zeri
 >Teorema degli zeri 
-> **Sia $f: [a,b]\to \R$, $a,b \in \R, a < b,$ $f$ continua nel dominio e tale che $f(a) f(b) <0$. Allora $\exist x_0 \in [a,b]$ tale che $f(x_0) = 0$. Inoltre se $f$ è strettamente monotona, allora tale $x_0$ è unico.**
+> **Sia $f: [a,b]\to \R$, $a,b \in \R, a < b,$ $f$ continua nel dominio e tale che $f(a) f(b) <0$. Allora $\exists x_0 \in [a,b]$ tale che $f(x_0) = 0$. Inoltre se $f$ è strettamente monotona, allora tale $x_0$ è unico.**
 > 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazioni**
@@ -30,9 +30,9 @@ Data lezione: 06/11/2024
     3. $0\le b_n-a_n= \frac{b-a}{2^n}$
     4. $a_n,b_n\in (a,b)$
     
-    $a_n$  e $b_n$ sono due successioni monotone limitate per le proprietà i. e iv. quindi per il teorema dell’esistenza del limite per successioni monotone $\exist \lim _{n\to\infty}a_n = \overline a$ ed 
-    $\exist \lim _{n\to\infty}b_n = \overline b$. Dal punto iii. deduciamo che 
-    $\exist \lim _{n\to\infty}b_n -a_n = \overline b -\overline a = \lim_{n\to\infty}\frac{b-a}{2^n}=0$, quindi che $\overline b =\overline a$.
+    $a_n$  e $b_n$ sono due successioni monotone limitate per le proprietà i. e iv. quindi per il teorema dell’esistenza del limite per successioni monotone $\exists \lim _{n\to\infty}a_n = \overline a$ ed 
+    $\exists \lim _{n\to\infty}b_n = \overline b$. Dal punto iii. deduciamo che 
+    $\exists \lim _{n\to\infty}b_n -a_n = \overline b -\overline a = \lim_{n\to\infty}\frac{b-a}{2^n}=0$, quindi che $\overline b =\overline a$.
     Chiamiamo quindi $x_0 =\overline b =\overline a\in (a,b)$. Per continuità di $f$ possiamo dedurre che $\lim _{n\to\infty}f(a_n)=f(\lim _{n\to\infty}a_n) = f(x_0)$ e la stessa cosa può essere fatta per $b_n$.
     Per algebra dei limiti $\lim _{n\to\infty}f(a_n)f(b_n)=f^2(x_0)$.
     Per permanenza del segno, essendo da ii. $f(a_n)f(b_n)<0$, abbiamo che $\lim _{n\to\infty}f(a_n)f(b_n)=f^2(x_0)\le 0$, che può verificarsi solo nel caso in cui $f(x_0)= 0$.
@@ -45,7 +45,7 @@ Data lezione: 06/11/2024
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" />**Osservazioni**
 
 - Il teorema fornisce un algoritmo che produce approssimazioni della soluzione di $x_0$, in quanto $a_k$ cresce, $b_k$ decresce e $\lim_{n\to\infty}a_k=\lim_{n\to\infty}b_k= x_0$
-- $\forall k \in \N$ vale che $0 \le x_0 -a_k \le b_k -a_k \le \frac{b-a}{2}$ e  $0 \le b_k - x_0 \le b_k -a_k \le \frac{b-a}{2}$
+- $\forall k \in \mathbb{N}$ vale che $0 \le x_0 -a_k \le b_k -a_k \le \frac{b-a}{2}$ e  $0 \le b_k - x_0 \le b_k -a_k \le \frac{b-a}{2}$
 
 # 2. Teorema di Weierstrass
 
@@ -54,7 +54,7 @@ Data lezione: 06/11/2024
 >**Se $f: I \subseteq \R \to \R$ e $x_M\in I :  f(x_M) =\max f(x)$ per $x\in[a,b]$, $x_M$ si dice punto di massimo per $f$ e $f(x_M)$ si dice massimo della funzione.**
 
 >Teorema di Weierstrass
-> **Sia $f: [a,b]\to \R$, $a,b \in \R, a < b,$ $f$ continua nel dominio. Allora $f$ ammette massimi e minimi assoluti in $[a,b]$, ossia $\exist x_m, x_M\in [a,b]: f(x_m) \le f(x)\le f(x_M) \forall x\in [a,b]$.
+> **Sia $f: [a,b]\to \R$, $a,b \in \R, a < b,$ $f$ continua nel dominio. Allora $f$ ammette massimi e minimi assoluti in $[a,b]$, ossia $\exists x_m, x_M\in [a,b]: f(x_m) \le f(x)\le f(x_M) \forall x\in [a,b]$.
 Inoltre $f(x_m) = \min f(x), x\in [a,b]$ e $f(x_M) = \max f(x), x\in [a,b]$.**
 > 
 
@@ -71,7 +71,7 @@ Inoltre $f(x_m) = \min f(x), x\in [a,b]$ e $f(x_M) = \max f(x), x\in [a,b]$.**
 
 ## 3.1 Dimostrazione
 
-Per il teorema di Weierstrass $f$ ammette massimo e minimo assoluti in $[a,b]$, quindi $\exist x_m, x_M:f(x_m)=\min f(x)=m$ e $f(x_M)=\max f(x) = M$. 
+Per il teorema di Weierstrass $f$ ammette massimo e minimo assoluti in $[a,b]$, quindi $\exists x_m, x_M:f(x_m)=\min f(x)=m$ e $f(x_M)=\max f(x) = M$. 
 
 Se $\lambda = m$  oppure $\lambda = M$ abbiamo concluso, avendo trovato i valori per i quali questo si verifica.
 
@@ -79,7 +79,7 @@ Se $\lambda \in (m,M)$, assumiamo $x_m<x_M$  per comodità. Consideriamo la funz
 $g:[x_m,x_M]\to \R$, $g(x) = f(x)-\lambda$. Possiamo dedurre che $g$ sia continua dal fatto che $[x_m,x_M]\subseteq [a,b]$ e dal fatto che $f$ sia continua. Avendo $m<\lambda< M$ - il caso uguale è già stato preso in considerazione - possiamo concludere che
 $g(x_m)= f(x_m)-\lambda=m-\lambda<0$
 $g(x_M) = f(x_M)-\lambda = M-\lambda >0$
-Per il teorema degli zeri $\exist x_0\in (x_m,x_M)\subseteq(a,b)$ tale che $g(x_0) = 0$. Questo equivale a dire che $f(x_0)= \lambda$.
+Per il teorema degli zeri $\exists x_0\in (x_m,x_M)\subseteq(a,b)$ tale che $g(x_0) = 0$. Questo equivale a dire che $f(x_0)= \lambda$.
 
 ## 3.2 Conseguenza del teorema dei valori intermedi
 >Corollario
@@ -124,7 +124,7 @@ In tal caso inoltre $f^{-1}: \operatorname{Im} f \subseteq \R \to \R$ è stretta
 
 Una funzione continua e invertibile ha inversa continua. In particolare sono continue nei loro domini: 
 
-- $x^{1/n}, \forall n \in \N$
+- $x^{1/n}, \forall n \in \mathbb{N}$
 - $\arcsin x , \arccos x , \arctan x$
 
 - $\log_a x, a > 0, a \ne 1$

@@ -35,11 +35,11 @@ Sia $X = \R\, o  \, X = \mathbb{Q}$ e consideriamo sottoinsiemi non vuoti $E \su
 
 
 >Definizione: Insiemi limitati\
->**Dato un sottoinsieme non vuoto $E \subseteq X$, esso si dice limitato superiormente (o dall’alto) se $\exist M\in X: x \le M,\, \forall x\in E$**
+>**Dato un sottoinsieme non vuoto $E \subseteq X$, esso si dice limitato superiormente (o dall’alto) se $\exists M\in X: x \le M,\, \forall x\in E$**
 >
->**Dato un sottoinsieme non vuoto $E \subseteq X$, esso si dice limitato inferiormente (o dal basso) se  $\exist m\in X: m \le x,\, \forall x\in E$**
+>**Dato un sottoinsieme non vuoto $E \subseteq X$, esso si dice limitato inferiormente (o dal basso) se  $\exists m\in X: m \le x,\, \forall x\in E$**
 >
->**Un insieme è detto limitato se è limitato sia dal basso che dall’alto. $\exist m, M\in X: m \le x \le M,\, \forall x\in E$**
+>**Un insieme è detto limitato se è limitato sia dal basso che dall’alto. $\exists m, M\in X: m \le x \le M,\, \forall x\in E$**
 
 ## 3.2 Massimo e minimo
 
@@ -58,7 +58,7 @@ Condizione necessaria, ma non sufficiente, affinché esista massimo o minimo è 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**\
 Non sempre esistono $\max{E}$ o $\min{E}$, anche se $E$ è limitato.
 
-$E = \{  \frac{1}{n} : n \in \N, n\ge1\}$  è limitato superiormente e inferiormente, pur non avendo un minimo. Infatti $\max{E} = 1$, mentre inferiormente la sequenza tende a 0, senza mai giungerci. 
+$E = \{  \frac{1}{n} : n \in \mathbb{N}, n\ge1\}$  è limitato superiormente e inferiormente, pur non avendo un minimo. Infatti $\max{E} = 1$, mentre inferiormente la sequenza tende a 0, senza mai giungerci. 
 
 ## 3.3 Maggioranti e minoranti
 
@@ -78,8 +78,8 @@ Se $h$ è minorante di $E$ e $k \in E$, $\Rightarrow$ $h = \min{E}$
 
 ### Esempi
 
-- In $E = \N$ ogni $k \le 0$ è minorate, ma non esistono maggioranti.
-- In $E = \{  \frac{1}{n} : n \in \N, n\ge1\}$   ogni $h \le 0$  è minorante, ogni $k \ge 1$ è maggiorante.
+- In $E = \mathbb{N}$ ogni $k \le 0$ è minorate, ma non esistono maggioranti.
+- In $E = \{  \frac{1}{n} : n \in \mathbb{N}, n\ge1\}$   ogni $h \le 0$  è minorante, ogni $k \ge 1$ è maggiorante.
 - In $E = \{ r \in \mathbb{Q} : r \ge 0, r^2 \le 2\} \sub \R$ ogni $h \le 0$  è minorante, ogni $k \ge \sqrt{2}$ è maggiorante.
 
 ## 3.4 Estremi superiore ed inferiore
@@ -98,23 +98,23 @@ Il $\sup{E}$ è il migliore dei maggioranti, il più piccolo; l’$\inf{E}$ è i
 **Dato $E \subseteq \R$ non vuoto e limitato dall’alto, $M \in \R$ è l’estremo superiore se:** 
 
 - **$\forall x \in E, x \le M$**
-- **$\forall k < M, \exist x \in E : k < x \le M$ o equivalentemente $\forall \epsilon > 0\exist x_0 \in E : x_0 > M-\epsilon$**
+- **$\forall k < M, \exists x \in E : k < x \le M$ o equivalentemente $\forall \epsilon > 0\exists x_0 \in E : x_0 > M-\epsilon$**
 
 
 
 **Dato $E \subseteq \R$ non vuoto e limitato dal basso, $m \in \R$ è l’estremo inferiore se:** 
 
 - **$\forall x \in E, m \le x$**
-- **$\forall h > m, \exist x \in E : m<x <h$ o equivalentemente $\forall \epsilon > 0\exist x_0 \in E : x_0 < m+\epsilon$**
+- **$\forall h > m, \exists x \in E : m<x <h$ o equivalentemente $\forall \epsilon > 0\exists x_0 \in E : x_0 < m+\epsilon$**
 
 
 ### Esempi
 
-$E = \N$ 
+$E = \mathbb{N}$ 
 $\nexists\sup{E}$
 $\min{E} = \inf{E} = 0$
 
-$E = \{  \frac{1}{n} : n \in \N, n\ge1\}$ 
+$E = \{  \frac{1}{n} : n \in \mathbb{N}, n\ge1\}$ 
 $\max{E} = \sup{E} = 1$
 $\nexists \min{E}$
 $\inf{E} = 0$
@@ -258,7 +258,7 @@ $(-\infty,+\infty) = \R$ è un **intervallo illimitato** e si dice che esso è *
 # 7. Densità
 
 > Definizone: Densità
->**$\forall x, y \in \R: x < y, \, \exist r \in \mathbb{Q} : x < r<y$**
+>**$\forall x, y \in \R: x < y, \, \exists r \in \mathbb{Q} : x < r<y$**
 **Si dice pertanto che $\mathbb{Q}$ è denso in $\R$.**
 
 Ossia tra due numeri reali c’è un razionale e tra due razionali c’è un reale.

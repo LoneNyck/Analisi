@@ -20,7 +20,7 @@ $$
 
 >Insieme immagine
 >**Si chiama immagine di $A$ tramite $f$ (o immagine di $f$) l’insieme
-$Im_f = f(A) = \{ y \in B: \exist x \in A: f(x) = y \}$ degli elementi di $B$ che provengono da qualche elemento di $A$ tramite $f$.**
+$Im_f = f(A) = \{ y \in B: \exists x \in A: f(x) = y \}$ degli elementi di $B$ che provengono da qualche elemento di $A$ tramite $f$.**
 
 
 In generale $Im_f \subseteq B$, ma può accadere che $Im_f \sub B$.
@@ -75,13 +75,13 @@ L’**insieme delle immagini** non è altro che la **proiezione** del grafico su
 
 >Definizione: funzione limitata
 > **Data $f: A \subseteq \R\to \R$ diremo che:**
-> **$f$ è limitata dall’alto se $\operatorname{Im}f \subseteq \R$ è limitato superiormente, cioè $\exist M\in \R : f(x) < M, \forall x \in A$**
+> **$f$ è limitata dall’alto se $\operatorname{Im}f \subseteq \R$ è limitato superiormente, cioè $\exists M\in \R : f(x) < M, \forall x \in A$**
 > 
 > **$f$ è limitata dal basso se $\operatorname{Im}f \subseteq \R$ è limitato inferiormente, cioè 
-$\exist m\in \R : f(x) > m, \forall x \in A$**
+$\exists m\in \R : f(x) > m, \forall x \in A$**
 >
 > **$f$ è limitata se $\operatorname{Im}f\subseteq \R$ è limitato sia dall’alto che dal basso, cioè
-$\exist m,M\in \R : m< f(x) < M, \forall x \in A$**
+$\exists m,M\in \R : m< f(x) < M, \forall x \in A$**
 > 
 
 Inoltre possiamo anche definire come per gli insiemi:
@@ -165,13 +165,13 @@ Se $f: A\to B$ e $g: D \subseteq B \to C$ possiamo definire $g \circ f: \text{Do
 > **Data $f: A\to B$, se equivalentemente**
 > 1. **$\forall x_1, x_2  \in A, x_1 \neq x_2 \Rightarrow f(x_1) \neq f(x_2)$**
 > 2. $\forall x_1, x_2  \in A, f(x_1) = f(x_2)\Rightarrow x_1 = x_2$ 
-> 3. $\forall y \in Im_f \exist! x\in A: f(x) = y$
+> 3. $\forall y \in Im_f \exists! x\in A: f(x) = y$
 >
 >**allora $f$ è iniettiva.**
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazioni**
 
-- Se $y \in \text{Im}_f \Rightarrow \exist x \in \text{Dom}_f : f(x) = y$  per definizione, mentre se 
+- Se $y \in \text{Im}_f \Rightarrow \exists x \in \text{Dom}_f : f(x) = y$  per definizione, mentre se 
 $y \notin Im_f \Rightarrow \nexists x \in Dom_f$  siffatta
 
 Se $f$ è **suriettiva**, essa **ammette** **sempre** una **soluzione**  $x \in Dom_f$ $\forall y \in Im_f$; se $f$  è **iniettiva**, essa **può** **non** **avere soluzione**   $x \in Dom_f$ $\forall y \in Im_f$, ma quando quest’ultima esiste, allora è **necessariamente** **unica**.
@@ -186,7 +186,7 @@ $f^{-1}: Im_f\subseteq B\to A$.**
 - $f^{-1}(f(x)) = x$
 - $f(f^{-1}(y)) = y$
 
-**Se $f$ è iniettiva, diremo allora che essa è invertibile sulla propria immagine, cioè $\exist f^{-1}:Im_f \subseteq B \to A$**
+**Se $f$ è iniettiva, diremo allora che essa è invertibile sulla propria immagine, cioè $\exists f^{-1}:Im_f \subseteq B \to A$**
 
 ## 8.1 Teorema sulla monotonia e sull’invertibilità
 

@@ -6,7 +6,7 @@ Data lezione: 23/10/2024
 # 1. Convergenza assoluta
 
 > Definizione: Convergenza assoluta
-> **Data una serie $\sum_{n=1}^{+\infty} a_n$, diremo che essa converge assolutamente se $\sum_{n=0}^{+\infty} |a_n|$ converge, ossia $\exist \lim_{N\to\infty}\sum_{n=0}^{N} |a_n| = M \in \R$.**
+> **Data una serie $\sum_{n=1}^{+\infty} a_n$, diremo che essa converge assolutamente se $\sum_{n=0}^{+\infty} |a_n|$ converge, ossia $\exists \lim_{N\to\infty}\sum_{n=0}^{N} |a_n| = M \in \R$.**
 
 Per distinguere questa nuova definizione di convergenza da quella data in precedenza in [10. Serie di numeri reali](10%20Serie%20di%20numeri%20reali%2012134a7885158025ab5eda4c4a2cb72b.md), par. 1, chiameremo la vecchia nozione di convergenza “**convergenza semplice**”.
 
@@ -50,7 +50,7 @@ Inoltre se $S = \sum_{n=0}^{+\infty} (-1)^n a_n$, allora:
 
 1. $S_{2N} = \sum_{n=0}^{2N} (-1)^n a_n$ $\downarrow S$ (ossia la serie limitata da un numero pari si avvicina a S dall’alto)
 2. $S_{2N+1} = \sum_{n=0}^{2N+1} (-1)^n a_n$ $\uparrow S$ (ossia la serie limitata da un numero dispari dei termini si avvicina a S dal basso)
-3. $|R_N| = |S-S_N| = |\sum_{n=N+1}^{+\infty} (-1)^n a_n| \le a_{N+1}$ $\forall N \in \N$
+3. $|R_N| = |S-S_N| = |\sum_{n=N+1}^{+\infty} (-1)^n a_n| \le a_{N+1}$ $\forall N \in \mathbb{N}$
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
 

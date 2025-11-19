@@ -34,7 +34,7 @@ Se $I = (1;2)$ o $I = [1;2)$ o $I = (1;2]$ o $I = [1;2]$, allora i punti di accu
 Se $I = (3;+\infty)$ o $I = [3;+\infty)$, allora i punti di accumulazione di $I$  sono
 $[3;+\infty) \cup \{+\infty\}$.
 
-Se $I = \N$, l’unico punto di accumulazione è $+\infty$.
+Se $I = \mathbb{N}$, l’unico punto di accumulazione è $+\infty$.
 
 Se $I = \mathbb{Q}$, i suoi punti di accumulazione sono $\R\cup \{+\infty\} \cup \{-\infty\} = \overline \R$.
 
@@ -43,7 +43,7 @@ Se $I = \mathbb{Q}$, i suoi punti di accumulazione sono $\R\cup \{+\infty\} \cup
 ## 2.1 Definizione successionale
 
 >Definizione successionale
-**Sia $f: I \subseteq\R \to \R$ e sia >$x_0\in\overline\R$ un punto di accumulazione per $I$ e $\ell \in \overline \R$. Se per ogni successione $x_n$ tale che: i. $x_n \in I \ \forall n \in \N$, ii. $x_n \neq x_0 \ \forall n \in \N$ e iii. $\lim_{n\to\infty}x_n = x_0$ vale che $\lim_{n\to\infty}f(x_n) = \ell$, allora diremo che $\lim_{x\to x_0}f(x) = \ell$.**
+**Sia $f: I \subseteq\R \to \R$ e sia >$x_0\in\overline\R$ un punto di accumulazione per $I$ e $\ell \in \overline \R$. Se per ogni successione $x_n$ tale che: i. $x_n \in I \ \forall n \in \mathbb{N}$, ii. $x_n \neq x_0 \ \forall n \in \mathbb{N}$ e iii. $\lim_{n\to\infty}x_n = x_0$ vale che $\lim_{n\to\infty}f(x_n) = \ell$, allora diremo che $\lim_{x\to x_0}f(x) = \ell$.**
 
 
 Dalla definizione successionale di limite è molto facile **verificare che il limite di una funzione non esista.** Infatti se esistono due successione $x_n$  e $z_n$ che soddisfano i punti i. ii. e iii. della definizione tali che $\lim_{n\to\infty}f(x_n) \neq \lim_{n\to\infty}f(z_n)$ , allora $\nexists\lim_{x\to\infty}f(x)$.
@@ -62,13 +62,13 @@ Supponiamo per assurdo che esistano due limiti $\ell _1$  e $\ell_2 \in \overlin
 >Definizone topologica
 >**Sia $f: I \subseteq\R \to \R$ e sia $x_0\in\overline\R$ un punto di accumulazione per $I$ e $\ell \in \overline \R$. Diremo che $\lim_{x\to x_0}f(x) = \ell$ se e solo se per ogni intorno $U(\ell)$ di $\ell$ esiste un intorno $U (x_0)$ di $x_0$ tale che: i.  $x \in U(x_0)$, ii. $x\in U(x_0)\Rightarrow f(x) \in U(\ell)$, iii. $x \neq x_0$.**
 
-Tradotto in linguaggio matematico, la definizione topologica di limite corrisponde a: $\red{\forall U(\ell) \exist U(x_0): x\in U(x_0) \Rightarrow f(x) \in U(\ell)}$
+Tradotto in linguaggio matematico, la definizione topologica di limite corrisponde a: $\red{\forall U(\ell) \exists U(x_0): x\in U(x_0) \Rightarrow f(x) \in U(\ell)}$
 
 > **La definizione successionale di limite e quella topologica sono equivalenti per $f: I \subseteq\R \to \R$ e $x_0\in\overline\R$ un punto di accumulazione per $I$ e $\ell \in \overline \R$.**
 > 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
-$f: \N \to \R$ è incluso nella definizione topologica di limite con $I = \N$, $x_0 = +\infty$ e $\lim_{n\to\infty}f(n) = \ell \in\overline \R$.
+$f: \mathbb{N} \to \R$ è incluso nella definizione topologica di limite con $I = \mathbb{N}$, $x_0 = +\infty$ e $\lim_{n\to\infty}f(n) = \ell \in\overline \R$.
 
 
 ## 2.4 Definizioni metriche di limite
@@ -88,11 +88,11 @@ Specificando nella definizione topologica di limite la forma esplicita degli int
 ## 3.2 Limite per eccesso e per difetto
 
 >Definizione: Limite per eccesso e per difetto
->**Se $\ell \in \R, x_0 \in \overline \R$ si dice che $\lim_{x\to x_0}f(x)= \ell^+$ se $\lim_{x\to x_0} f(x)= \ell$ ed $\exist U(x_0): f(x) \ge \ell \ \forall x \in U(x_0), x\neq x_0.$ Si parla in questo caso di limite per eccesso.** 
->$$\forall \epsilon > 0 \exist \delta  > 0: 0<|x-x_0| < \delta \Rightarrow \ell\le f(x) < \ell + \epsilon$$
+>**Se $\ell \in \R, x_0 \in \overline \R$ si dice che $\lim_{x\to x_0}f(x)= \ell^+$ se $\lim_{x\to x_0} f(x)= \ell$ ed $\exists U(x_0): f(x) \ge \ell \ \forall x \in U(x_0), x\neq x_0.$ Si parla in questo caso di limite per eccesso.** 
+>$$\forall \epsilon > 0 \exists \delta  > 0: 0<|x-x_0| < \delta \Rightarrow \ell\le f(x) < \ell + \epsilon$$
 >
->**Se $\ell \in \R, x_0 \in \overline \R$ si dice che $\lim_{x\to x_0}f(x)= \ell^-$ se $\lim_{x\to x_0} f(x)= \ell$ ed $\exist U(x_0): f(x) \le \ell \ \forall x \in U(x_0), x\neq x_0.$ Si parla in questo caso di limite per difetto.** 
->$$\forall \epsilon > 0 \exist \delta  > 0: 0<|x-x_0| < \delta \Rightarrow \ell - \epsilon < f(x) \le \ell$$
+>**Se $\ell \in \R, x_0 \in \overline \R$ si dice che $\lim_{x\to x_0}f(x)= \ell^-$ se $\lim_{x\to x_0} f(x)= \ell$ ed $\exists U(x_0): f(x) \le \ell \ \forall x \in U(x_0), x\neq x_0.$ Si parla in questo caso di limite per difetto.** 
+>$$\forall \epsilon > 0 \exists \delta  > 0: 0<|x-x_0| < \delta \Rightarrow \ell - \epsilon < f(x) \le \ell$$
 
 
 ## 3.3 Asintoto obliquo
@@ -116,9 +116,9 @@ Si dimostra che $f (x)- (mx +q) = o(1),$ ossia che per $x\to \infty$ ${f (x)- (m
 Talvolta è necessario distinguere il comportamento al limite di $f$ a seconda che $x$ si avvicini a $x_0$ da destra (per eccesso) o da sinistra (per difetto).
 
 >Definizone: limite desto e sinitro
->**Data $f: I \subseteq \R \to \R$, $x_0 \in \R$ punto di accumulazione per $I$, diremo che $\lim_{x\to x_0^+}f (x)= + \infty$  se $\forall M > 0\exist \delta > 0: x_0 < x< x_0 + \delta \Rightarrow f(x) > M$.**
+>**Data $f: I \subseteq \R \to \R$, $x_0 \in \R$ punto di accumulazione per $I$, diremo che $\lim_{x\to x_0^+}f (x)= + \infty$  se $\forall M > 0\exists \delta > 0: x_0 < x< x_0 + \delta \Rightarrow f(x) > M$.**
 >
-> **Data $f: I \subseteq \R \to \R$, $x_0 \in \R$ punto di accumulazione per $I$, diremo che $\lim_{x\to x_0^-}f (x)= + \infty$  se $\forall M > 0\exist \delta > 0: x_0 - \delta < x< x_0\Rightarrow f(x) > M$.**
+> **Data $f: I \subseteq \R \to \R$, $x_0 \in \R$ punto di accumulazione per $I$, diremo che $\lim_{x\to x_0^-}f (x)= + \infty$  se $\forall M > 0\exists \delta > 0: x_0 - \delta < x< x_0\Rightarrow f(x) > M$.**
 
 >Teorema
 > **Siano $f: I \subseteq \R \to \R$, $x_0 \in \R$ punto di accumulazione per $I$, $\ell \in \overline \R$. Allora vale che  $\lim_{x\to x_0}f (x)= \ell \Leftrightarrow \lim_{x\to x_0^+}f (x)= \ell = \lim_{x\to x_0^-}f (x)= \ell$.**
@@ -142,7 +142,7 @@ Si noti che nella definizione di $\lim_{x\to x_0}f (x)= \ell$, con $x_0$  e $\el
 >Definizone: continuità 
 **Data $f: I \subseteq \R \to \R$, $x_0 \in \R$ punto di accumulazione per $I$, $x_0 \in I$, se $\lim_{x\to x_0}f (x)= f(x_0)$, diremo che $f$ è continua in $x_0$. Diremo che $f$ è continua in $I$ se $f$ è continua in $x_0$, $\forall x_0 \in I$. Scriveremo allora che $f\in C^0(I)$.**
 
-Se una funzione è continua, allora possiamo riscrivere la definizione di limite finito al finito come $\forall \epsilon > 0 \exist \delta >0: |x-x_0|<\delta \Rightarrow |f(x) - f(x_0)| < \epsilon$. In aggiunta, utilizzando le definizione successionale di limite possiamo dedurre che $\forall x_n: x_n \in I \ \forall n \in \N , \lim_{n\to\infty}x_n = x_0$ allora $\lim_{n\to\infty} f(x_n) = f(x_0) = f(\lim_{n\to\infty}x_n)$, ossia **per le funzioni continue il limite scala all’argomento**.
+Se una funzione è continua, allora possiamo riscrivere la definizione di limite finito al finito come $\forall \epsilon > 0 \exists \delta >0: |x-x_0|<\delta \Rightarrow |f(x) - f(x_0)| < \epsilon$. In aggiunta, utilizzando le definizione successionale di limite possiamo dedurre che $\forall x_n: x_n \in I \ \forall n \in \mathbb{N} , \lim_{n\to\infty}x_n = x_0$ allora $\lim_{n\to\infty} f(x_n) = f(x_0) = f(\lim_{n\to\infty}x_n)$, ossia **per le funzioni continue il limite scala all’argomento**.
 
 # 5. Punti di discontinuità
 
@@ -156,7 +156,7 @@ Siano d’ora in avanti **$f: I \subseteq \R \to \R$, $x_0 \in \R$ punto di accu
 
 
 >Definizione: Discontinuità eliminabile 
-**Se $\exist \lim_{x\to x_0} f(x) = \ell\in \R$, con $\ell \ne f(x_0)$ diremo che $x_0$ è punto di discontinuità eliminabile per $f$.**
+**Se $\exists \lim_{x\to x_0} f(x) = \ell\in \R$, con $\ell \ne f(x_0)$ diremo che $x_0$ è punto di discontinuità eliminabile per $f$.**
 
 Questo significa che è possibile ridefinire $f$ in $x=x_0$ ponendo $\tilde{f}= \begin{cases} f(x),& x\ne x_0\\ \ell, & \ x = x_0\end{cases}$
 La funzione così definita sarà continua in  $x_0$.
@@ -168,7 +168,7 @@ Similmente se $f$ non è definita in $x_0$ ma esiste il limite della funzione pe
 ## 5.2 Discontinuità di I specie
 
 >Definizione: Discontinuità di I specie
-**Se $\exist \lim_{x\to x_0^-} f(x) =\ell_1, \exist \lim_{x\to x_0^+} f(x)= \ell_2, \ell_1\ne\ell_2$, diremo che $x_0$ è punto di discontinuità di I specie o di tipo salto per $f$, con salto $s(x_0) = \ell_2-\ell_1$**
+**Se $\exists \lim_{x\to x_0^-} f(x) =\ell_1, \exists \lim_{x\to x_0^+} f(x)= \ell_2, \ell_1\ne\ell_2$, diremo che $x_0$ è punto di discontinuità di I specie o di tipo salto per $f$, con salto $s(x_0) = \ell_2-\ell_1$**
 
 
 Se $f(x_0) = \lim_{x\to x_0^-} f(x)$ diremo che $f$ è continua da sinistra, altrimenti se 
@@ -179,7 +179,7 @@ $f(x_0) = \lim_{x\to x_0^+} f(x)$ diremo che $f$ è continua da destra.
 ## 5.3 Discontinuità di II specie
 
 >Definizione: Discontinuità di II specie
->**Se $\exist \lim_{x\to x_0^-} f(x) =\ell_1, \exist \lim_{x\to x_0^+} f(x)= \ell_2$ con almeno uno dei due infinito oppure non esistente, diremo che $x_0$ è punto di discontinuità di II specie per $f$.**
+>**Se $\exists \lim_{x\to x_0^-} f(x) =\ell_1, \exists \lim_{x\to x_0^+} f(x)= \ell_2$ con almeno uno dei due infinito oppure non esistente, diremo che $x_0$ è punto di discontinuità di II specie per $f$.**
 
 
 ![image.png](13%20Limiti%20di%20funzioni/image%205.png)

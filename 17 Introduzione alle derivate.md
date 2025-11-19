@@ -64,7 +64,7 @@ f(x)-f(x_0)\sim f'(x_0)(x-x_0) ,x\to x_0
 $$
 
 >Definizione: Differenziabilità
->**Data $f:(a,b)\to \R, x_0 \in (a,b)$ diremo che $f$ è differenziabile in $x_0$ se $\exist m\in \R$ tale che $f(x)=f(x_0)+m(x-x_0)+o(x-x_0)$ per $x\to x_0$.**
+>**Data $f:(a,b)\to \R, x_0 \in (a,b)$ diremo che $f$ è differenziabile in $x_0$ se $\exists m\in \R$ tale che $f(x)=f(x_0)+m(x-x_0)+o(x-x_0)$ per $x\to x_0$.**
 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
@@ -81,7 +81,7 @@ $f(x)-f(x_0)-m(x-x_0)=o(x-x_0), x\to x_0$$\Leftrightarrow$  $\lim_{x\to x_0}\fra
 1. $f \text{ derivabile} \Rightarrow f \text{ differenziabile, con }m = f'(x_0)$ per definizione di derivata e di retta tangente
 2. $f \text{ differenziabile in }x_0$ 
     
-    $\Rightarrow$ $\exist m \in \R: f(x)=f(x_0)+m(x-x_0)+o(x-x_0)$
+    $\Rightarrow$ $\exists m \in \R: f(x)=f(x_0)+m(x-x_0)+o(x-x_0)$
     
     $\Rightarrow \frac{f(x)-f(x_0)}{x-x_0} = m +\frac{o(x-x_0)}{x-x_0}$
     
@@ -110,7 +110,7 @@ Sia $f:(a,b) \to \R, x_0\in (a,b)$ e $f$ continua in $x_0$.
 ## 6.1 Punto angoloso
 
 >Definizione: Punto angoloso
-**Se $\exist$  finito $\lim_{h\to 0}\frac{f(x_o+h)-f(x_0)}{h}\in \R$, ma $f'_+(x_0)\ne f'_-(x_0)$, allora diremo che $x_0$ è punto angoloso per $f$**
+**Se $\exists$  finito $\lim_{h\to 0}\frac{f(x_o+h)-f(x_0)}{h}\in \R$, ma $f'_+(x_0)\ne f'_-(x_0)$, allora diremo che $x_0$ è punto angoloso per $f$**
 
 
 ![image.png](17%20Introduzione%20alle%20derivate/image.png)
@@ -120,13 +120,13 @@ Sia $f:(a,b) \to \R, x_0\in (a,b)$ e $f$ continua in $x_0$.
 ![image.png](17%20Introduzione%20alle%20derivate/image%201.png)
 
 >Definizione: Punto di flesso
-**Se $\exist$  infinito $\lim_{h\to 0}\frac{f(x_o+h)-f(x_0)}{h}= \pm \infty$ diremo che $x_0$ è punto di flesso a tangente verticale per $f$. $x= x_0$ è la retta tangente al grafico in $P(x_0,f(x_0))$.**
+**Se $\exists$  infinito $\lim_{h\to 0}\frac{f(x_o+h)-f(x_0)}{h}= \pm \infty$ diremo che $x_0$ è punto di flesso a tangente verticale per $f$. $x= x_0$ è la retta tangente al grafico in $P(x_0,f(x_0))$.**
 
 
 ## 6.3 Punto di cuspide
 
 >Definizione: punto di cuspide
-**Se $\exist$  infiniti e discordi in segno $f'_+(x_0)$ e $f'_-(x_0)$, allora diremo che $x_0$ è punto di cuspide per $f$.**
+**Se $\exists$  infiniti e discordi in segno $f'_+(x_0)$ e $f'_-(x_0)$, allora diremo che $x_0$ è punto di cuspide per $f$.**
 
 
 ![image.png](17%20Introduzione%20alle%20derivate/image%202.png)

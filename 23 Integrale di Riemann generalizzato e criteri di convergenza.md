@@ -109,7 +109,7 @@ Se $f:[a,b)\to \R$ è Riemann integrabile in $[a,h], \forall h \in (a,b)$ e $f(x
 
 ## 2.1 Criterio del confronto
 >Teorema: Criterio del confronto inetegrale
-> **Siano $f,g:[a,b]\to\R$ tali che $f,g$  siano Riemann integrabili in $[a,h],\forall h \in (a,b)$. Supponiamo $\exist x_0\in (a,b):0\le f(x)\le g(x) , \forall x \in [x_0,b).$
+> **Siano $f,g:[a,b]\to\R$ tali che $f,g$  siano Riemann integrabili in $[a,h],\forall h \in (a,b)$. Supponiamo $\exists x_0\in (a,b):0\le f(x)\le g(x) , \forall x \in [x_0,b).$
 Allora $\int_a^b f(x) \ dx , \int_a^b g(x) \ dx$  esistono in $\overline \R$ e inoltre vale che:**
 > 
 > 1. **Se $\int_a^b f(x) \ dx$  diverge, allora anche $\int_a^b g(x) \ dx$   diverge;**
@@ -120,7 +120,7 @@ Allora $\int_a^b f(x) \ dx , \int_a^b g(x) \ dx$  esistono in $\overline \R$ e i
 
 ## 2.2 Criterio del confronto asintotico
 >Teorema: Criterio del confronto asintotico
-> **Siano $f,g:[a,b]\to\R$ tali che $f,g$  siano Riemann integrabili in $[a,h],\forall h \in (a,b)$. Supponiamo $\exist x_0\in (a,b): f(x)\ge 0,  g(x) \ge 0, \forall x \in [x_0,b).$
+> **Siano $f,g:[a,b]\to\R$ tali che $f,g$  siano Riemann integrabili in $[a,h],\forall h \in (a,b)$. Supponiamo $\exists x_0\in (a,b): f(x)\ge 0,  g(x) \ge 0, \forall x \in [x_0,b).$
 Allora, se $f\sim g$ per $x\to b^-$, $\int_a^b f(x) \ dx , \int_a^b g(x) \ dx$  esistono entrambi in $\overline \R$ e i due integrali hanno lo stesso carattere, ossia o convergono entrambi, o divergono a $+\infty$**
 > 
 
@@ -151,13 +151,13 @@ C’è un collegamento tra serie ed integrali impropri.
 
 $$
 \sum_{n=1}^\infty a_n \leftrightarrow \int_1^\infty g(x) \ dx \\
-\text {con }g(x) = a_n , \forall x \in [n,n+1], \forall n \in \N, n\ge 1
+\text {con }g(x) = a_n , \forall x \in [n,n+1], \forall n \in \mathbb{N}, n\ge 1
 $$
 
 Si può dimostrare che $\sum a_n$ converge, diverge o è irregolare se e solo se $\int g(x) \ dx$ rispettivamente converge, diverge o è irregolare.
 
 >Teorema
-> **Siano $M \in \N$ , $f:[M,\infty)\to\R$ decrescente e non negativa. Allora 
+> **Siano $M \in \mathbb{N}$ , $f:[M,\infty)\to\R$ decrescente e non negativa. Allora 
 $\sum_{n=1}^\infty f(n)$ converge o diverge se e solo se $\int_{1}^\infty f(x) \ dx$ converge o diverge rispettivamente.**
 > 
 > 

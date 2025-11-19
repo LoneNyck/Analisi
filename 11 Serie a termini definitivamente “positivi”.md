@@ -5,23 +5,23 @@ Data lezione: 17/10/2024
 
 # 1. Definizione
 >Definizione: Serie a termini positivi
->**Data la serie $\sum_{n=0}^{+\infty} a_n$ , essa si dice a termini “positivi” - o non negativi - se $a_n \ge 0$ definitivamente in $n\in \N$.**
+>**Data la serie $\sum_{n=0}^{+\infty} a_n$ , essa si dice a termini “positivi” - o non negativi - se $a_n \ge 0$ definitivamente in $n\in \mathbb{N}$.**
 
 # 2. Teorema della convergenza o divergenza per serie a termini positivi
 >Teorema: Convergenza per serie a termini positivi
-> **Se la serie $\sum_{n=0}^{+\infty} a_n$  è a termini positivi definitivamente in $n\in \N$, allora essa converge o diverge a $+\infty$.**
+> **Se la serie $\sum_{n=0}^{+\infty} a_n$  è a termini positivi definitivamente in $n\in \mathbb{N}$, allora essa converge o diverge a $+\infty$.**
 > 
 
 ## 2.1 Dimostrazione
 
 L’idea della dimostrazione è mostrare che la successione delle somme parziali sia definitivamente crescente, ossia per il teorema di esistenza di successioni monotone [[7. Successioni e introduzione ai limiti](7%20Successioni%20e%20introduzione%20ai%20limiti%2011334a78851580b9b79fcb0887cf2531.md), par. 2.9.2] deve esistere il limite di $S_N \in \overline \R$, cioè $\sum_{n=0}^{+\infty} a_n = s \in \overline \R$. 
 
-Per ipotesi $a_n$ è definitivamente positiva, ossia $\exist n_0 \in \N: \forall n \ge n_0$  $a_n\ge0$. Di conseguenza $\forall N \ge n_0$  $S_N = S_{N-1} + a_N \ge S_{N-1}$$\Rightarrow$ $S_N$ è definitivamente crescente.
+Per ipotesi $a_n$ è definitivamente positiva, ossia $\exists n_0 \in \mathbb{N}: \forall n \ge n_0$  $a_n\ge0$. Di conseguenza $\forall N \ge n_0$  $S_N = S_{N-1} + a_N \ge S_{N-1}$$\Rightarrow$ $S_N$ è definitivamente crescente.
 
 # 3. Confronto per serie a termini positivi
 
 >Teorema del confronto
-> **Siano date le successioni $a_n$  e $b_n$  : $0\le a_n \le b_n$ definitivamente in $n\in \N$.**
+> **Siano date le successioni $a_n$  e $b_n$  : $0\le a_n \le b_n$ definitivamente in $n\in \mathbb{N}$.**
 > 
 > 1. **Se $\sum_{n=0}^{+\infty} a_n$  diverge $\Rightarrow$ $\sum_{n=0}^{+\infty} b_n$  diverge;**
 > 2. **Se $\sum_{n=0}^{+\infty} b_n$  converge $\Rightarrow$ $\sum_{n=0}^{+\infty} a_n$  converge;**
@@ -31,13 +31,13 @@ Per ipotesi $a_n$ è definitivamente positiva, ossia $\exist n_0 \in \N: \forall
 
 ## 3.1 Dimostrazione
 
-Supponiamo che $0\le a_n\le b_n \forall n\in \N$.
+Supponiamo che $0\le a_n\le b_n \forall n\in \mathbb{N}$.
 
-Chiamiamo $S_N = \sum_{n=0}^{N} a_n$  e $\sigma_N = \sum_{n=0}^{N} b_n$ . Dalla condizione dell’ipotesi segue che $\sum_{n=0}^{N}a_n < \sum_{n=0}^{N}b_n$ ossia che $S_N <\sigma_N, \forall N\in \N$. 
+Chiamiamo $S_N = \sum_{n=0}^{N} a_n$  e $\sigma_N = \sum_{n=0}^{N} b_n$ . Dalla condizione dell’ipotesi segue che $\sum_{n=0}^{N}a_n < \sum_{n=0}^{N}b_n$ ossia che $S_N <\sigma_N, \forall N\in \mathbb{N}$. 
 
 Per il teorema visto al punto 2. di questo capitolo $S_N$ e $\sigma_N$ sono entrambe monotone crescenti. Questo significa che esistono i due limiti delle due somme parziali $\in \overline \R$, che chiameremo $s$  e $\sigma$. 
 
-1. Se $\sum_{n=0}^{N}a_n$ diverge $\Rightarrow$  $s = +\infty$ ed essendo $S_N <\sigma_N, \forall N\in \N$, allora $s<\sigma$ 
+1. Se $\sum_{n=0}^{N}a_n$ diverge $\Rightarrow$  $s = +\infty$ ed essendo $S_N <\sigma_N, \forall N\in \mathbb{N}$, allora $s<\sigma$ 
 $\Rightarrow \sigma = +\infty$ $\Rightarrow \sum_{n=0}^{N}b_n$ diverge.
 2. Se $\sum_{n=0}^{N}b_n$ converge $\Rightarrow$  $\sigma \in \R$. $S_N \le \sigma_N \le \sigma$ $\Rightarrow S_N$ è crescente e limitata
 $\Rightarrow \sum_{n=0}^{N}a_n$ converge
@@ -81,7 +81,7 @@ Anche se $a_n$ e $b_n$  convergono entrambe, in generale il risultato delle due 
 
 ## 4.1. Dimostrazione
 
-Per ipotesi sappiamo che il limite del rapporto delle due successione tende a 1. Nella definizione di limite adottiamo $\epsilon = \frac{1}{2}$. Allora per la definizione di limite avremo che$\exist N_1 \in \N: \forall n > N_1$ $1 -\epsilon < \frac{a_n}{b_n} < 1+\epsilon$ $\Rightarrow$ ${1\over 2} < \frac{a_n}{b_n} < {3\over 2}$. Essendo le due successioni definitivamente positive significa che $\exist N_2 \in \N: \forall n > N_2, a_n > 0, b_n >0$.
+Per ipotesi sappiamo che il limite del rapporto delle due successione tende a 1. Nella definizione di limite adottiamo $\epsilon = \frac{1}{2}$. Allora per la definizione di limite avremo che$\exists N_1 \in \mathbb{N}: \forall n > N_1$ $1 -\epsilon < \frac{a_n}{b_n} < 1+\epsilon$ $\Rightarrow$ ${1\over 2} < \frac{a_n}{b_n} < {3\over 2}$. Essendo le due successioni definitivamente positive significa che $\exists N_2 \in \mathbb{N}: \forall n > N_2, a_n > 0, b_n >0$.
 
 Questo implica che $\forall n> \max (N_1, N_2 )= N$
 
@@ -94,7 +94,7 @@ Applicando quindi il teorema del confronto al caso i. segue che se la serie di $
 
 ## **5.1 Criterio del rapporto per serie**
 >Teorema: Criterio del rapporto per serie
-> **Sia $a_n$ una successione di termini definitivamente positivi in $n \in \N$ e $\exist \lim_{n\to\infty}\frac{a_{n+1}}{a_n}= \ell\in \overline \R$. Allora se**
+> **Sia $a_n$ una successione di termini definitivamente positivi in $n \in \mathbb{N}$ e $\exists \lim_{n\to\infty}\frac{a_{n+1}}{a_n}= \ell\in \overline \R$. Allora se**
 > 
 > 1. **$\ell > 1\Rightarrow \sum_{n=0}^{+\infty} a_n$  diverge e  $\lim_{n\to\infty}{a_n}= +\infty$**
 > 2. **$0\le \ell < 1\Rightarrow \sum_{n=0}^{+\infty} a_n$  converge e  $\lim_{n\to\infty}{a_n}= 0$**
@@ -105,9 +105,9 @@ Se $\ell = 1$  non è possibile concludere nulla sul carattere della serie, in q
 
 ### 5.1.1. Dimostrazione
 
-Supponiamo $a_n > 0, \forall n \in \N$ e sia $\ell = \lim_{n \to \infty} \frac{a_{n+1}}{a_n}$.
+Supponiamo $a_n > 0, \forall n \in \mathbb{N}$ e sia $\ell = \lim_{n \to \infty} \frac{a_{n+1}}{a_n}$.
 
-1.  Assumiamo che sia $0\le \ell < 1$. Nella definizione di limite assumiamo $\epsilon = \frac{1-\ell}{2}$, da cui $\exist N \in \N :\forall n> N \, { a_{n+1}\over a_n} < \ell+\epsilon$. Questo significa che ${a_{n+1}\over a_n} < {1+\ell\over 2} < 1$.
+1.  Assumiamo che sia $0\le \ell < 1$. Nella definizione di limite assumiamo $\epsilon = \frac{1-\ell}{2}$, da cui $\exists N \in \mathbb{N} :\forall n> N \, { a_{n+1}\over a_n} < \ell+\epsilon$. Questo significa che ${a_{n+1}\over a_n} < {1+\ell\over 2} < 1$.
     
     Chiamiamo $q = {1+\ell\over 2}$. Questo implica che ${a_{n+1}} < q \cdot a_n < 1$.
     
@@ -116,7 +116,7 @@ Supponiamo $a_n > 0, \forall n \in \N$ e sia $\ell = \lim_{n \to \infty} \frac{a
     Poiché $0< q< 1$  per costruzione, per il criterio del confronto la serie degli $a_n$ convergerà, convergendo quella di $q^n$.
     
 2. Assumiamo ora che sia $\ell > 1$. 
-    1. Se $\ell \in \R$, assumiamo $\epsilon = \frac{\ell-1}{2}$, da cui $\exist N \in \N :\forall n> N \, { a_{n+1}\over a_n} > \ell-\epsilon>1$. Questo significa che ${a_{n+1}\over a_n} > {1+\ell\over 2} > 1$.
+    1. Se $\ell \in \R$, assumiamo $\epsilon = \frac{\ell-1}{2}$, da cui $\exists N \in \mathbb{N} :\forall n> N \, { a_{n+1}\over a_n} > \ell-\epsilon>1$. Questo significa che ${a_{n+1}\over a_n} > {1+\ell\over 2} > 1$.
         
         Chiamiamo $q = {1+\ell\over 2}$. Questo implica che ${a_{n+1}} > q \cdot a_n > 1$.
         
@@ -125,12 +125,12 @@ Supponiamo $a_n > 0, \forall n \in \N$ e sia $\ell = \lim_{n \to \infty} \frac{a
         Poiché $q>1$ per costruzione, per il criterio del confronto la serie degli $a_n$ divergerà, divergendo quella di $q^n$.
         
     2. Se $\ell = +\infty$, assumiamo $M = 2$ nella definizione di limite, da cui
-    $\exist N \in \N : \forall n\ge N \ {a_{n+1}\over a_n} > M > 2$. Questo implica che $a_{n+1}> 2a_n$ e si ripete la dimostrazione fatta al punto precedente.
+    $\exists N \in \mathbb{N} : \forall n\ge N \ {a_{n+1}\over a_n} > M > 2$. Questo implica che $a_{n+1}> 2a_n$ e si ripete la dimostrazione fatta al punto precedente.
 
 ## 5.2 Criterio della radice *n-esima*
 
 >Teorema: Criterio della radice N-esima
-> **Sia $a_n$ una successione di termini definitivamente positivi in $n \in \N$ e $\exist \lim_{n\to\infty}\sqrt[n]{a_n}= \ell\in \overline \R$. Allora se**
+> **Sia $a_n$ una successione di termini definitivamente positivi in $n \in \mathbb{N}$ e $\exists \lim_{n\to\infty}\sqrt[n]{a_n}= \ell\in \overline \R$. Allora se**
 > 
 > 1. **$\ell > 1\Rightarrow \sum_{n=0}^{+\infty} a_n$  diverge e  $\lim_{n\to\infty}{a_n}= +\infty$**
 > 2. **$0\le \ell < 1\Rightarrow \sum_{n=0}^{+\infty} a_n$  converge e  $\lim_{n\to\infty}{a_n}= 0$**

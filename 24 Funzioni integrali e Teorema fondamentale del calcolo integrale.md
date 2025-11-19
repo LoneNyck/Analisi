@@ -26,7 +26,7 @@ Allora vale che:**
 
 1. Consideriamo $f:[a,b]\to \R$ Riemann integrabile in senso proprio.
     
-    Allora $f$ deve essere limitata in $[a,b]$, ossia $\exist M >0: |f(x)|\le M$ . Sia $\overline x \in [a,b]$, $h\in \R:x+h\in [a,b]$.
+    Allora $f$ deve essere limitata in $[a,b]$, ossia $\exists M >0: |f(x)|\le M$ . Sia $\overline x \in [a,b]$, $h\in \R:x+h\in [a,b]$.
     Per $h> 0$ abbiamo che
     
     $$
@@ -53,7 +53,7 @@ Allora vale che:**
     \frac{F(x+h)- F(x)}{h}= \frac{\int_{x}^{x+h}f(t) \ dt}{h}
     $$
     
-    Poiché $f$ è continua ovunque, per $h>0$  abbiamo che $\frac{\int_{x}^{x+h}f(t) \ dt}{h}$ è il valor medio di $f$ in $[x,x+h]$ per il teorema della media integrale, quindi $\exist x_h\in [x,x+h]:\\f(x_h)= \frac{\int_{x}^{x+h}f(t) \ dt}{h}$.
+    Poiché $f$ è continua ovunque, per $h>0$  abbiamo che $\frac{\int_{x}^{x+h}f(t) \ dt}{h}$ è il valor medio di $f$ in $[x,x+h]$ per il teorema della media integrale, quindi $\exists x_h\in [x,x+h]:\\f(x_h)= \frac{\int_{x}^{x+h}f(t) \ dt}{h}$.
     
     Allora $\frac{F(x+h)- F(x)}{h}= \frac{\int_{x}^{x+h}f(t) \ dt}{h}= f(x_h)$.
     

@@ -10,7 +10,7 @@ Segue una tabella con le principali funzioni elementari e le loro derivate.
 | ${f(x)}$ | ${f'(x)}$ |
 | --- | --- |
 | $c \in \R$ | 0 |
-| $x^n$ | $n\cdot x^{n-1}, n\in \N$ |
+| $x^n$ | $n\cdot x^{n-1}, n\in \mathbb{N}$ |
 | $x^\alpha$ | $\alpha \cdot x^{\alpha -1}, \alpha \in \R$ |
 | $\sin x$ | $\cos x$ |
 | $\cos x$ | $-\sin x$ |
@@ -142,11 +142,11 @@ Tra questi punti, dove $f$ assume il valore più grande sarà il massimo assolut
 
 ## 3.2 Teorema di Lagrange (o del valor medio)
 >Teorema di Lagrange
-> **Sia $f:[a,b]\to \R$ continua in $[a,b]$ e derivabile in $(a,b)$. Allora $\exist c \in (a,b)$ tale che $f'(c) = \frac{f(b)-f(a)}{b-a}$.**
+> **Sia $f:[a,b]\to \R$ continua in $[a,b]$ e derivabile in $(a,b)$. Allora $\exists c \in (a,b)$ tale che $f'(c) = \frac{f(b)-f(a)}{b-a}$.**
 > 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione (Teorema di Rolle)**
-Se si aggiunge alle ipotesi del teorema di Lagrange che $f(b) = f(a)$  la tesi diventa $\exist c \in (a,b) : f'(c) = 0$, che prende il nome di teorema di **Rolle**.
+Se si aggiunge alle ipotesi del teorema di Lagrange che $f(b) = f(a)$  la tesi diventa $\exists c \in (a,b) : f'(c) = 0$, che prende il nome di teorema di **Rolle**.
 
 
 ### 3.2.1 Dimostrazione
@@ -187,7 +187,7 @@ Quindi $f$ è derivabile in $I$ e $f'(x) =0$
 2. Siano $x_1,x_2 \in I$ . Sia $f'(x) =0$.
 Assumiamo per semplicità che sia $x_1<x_2$ e consideriamo la funzione $g:[x_1;x_2]\to \R$, $g(x) = f(x)$. Allora $g$ è derivabile e quindi continua in $[x_1;x_2]$ essendolo $f$ per ipotesi.
     
-    Per il Teorema di Lagrange $\exist c\in (x_1,x_2)\sub I$ tale che $g'(c) = \frac{g(x_2)-g(x_1)}{x_2-x_1}$
+    Per il Teorema di Lagrange $\exists c\in (x_1,x_2)\sub I$ tale che $g'(c) = \frac{g(x_2)-g(x_1)}{x_2-x_1}$
     $\Rightarrow$  $f'(c) = \frac{f(x_2)-f(x_1)}{x_2-x_1}=0$
     
     $\Rightarrow$ $f(x_2)-f(x_1)=0$ $\Rightarrow$ $f(x_2)=f(x_1), \forall x_1,x_2 \in I$
@@ -266,9 +266,9 @@ Se $f(a,b)\to \R$ è derivabile, allora $f'(x_0)> 0\in (a,b)$ $\Rightarrow f$ è
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" />**Osservazione** sul rapporto tra funzioni e successioni
 
-Per dimostrare che una successione $a_n$ sia monotona serve dimostrare che $a_n \ge a_{n+1}, \forall n\in \N$ (o $a_n \ge a_{n+1}, \forall n\in \N$).
+Per dimostrare che una successione $a_n$ sia monotona serve dimostrare che $a_n \ge a_{n+1}, \forall n\in \mathbb{N}$ (o $a_n \ge a_{n+1}, \forall n\in \mathbb{N}$).
 
-Tuttavia se si riesce a definire una funzione $f(n):[0,+\infty)\to \R$ monotona crescente (o decrescente) tale che $f(n) = A_n ,\forall n \in \N$, allora si può dedurre che $a_n$ha la stessa monotonia della funzione.
+Tuttavia se si riesce a definire una funzione $f(n):[0,+\infty)\to \R$ monotona crescente (o decrescente) tale che $f(n) = A_n ,\forall n \in \mathbb{N}$, allora si può dedurre che $a_n$ha la stessa monotonia della funzione.
 
 $a_n = f(n) \le f(n+1)= a_{n+1}$ se $f$ cresce
 $a_n = f(n) \ge f(n+1)= a_{n+1}$  se $f$ decresce
@@ -283,9 +283,9 @@ Può accadere che $a_n$ sia monotona e che una sua interpolazione $f$ non lo sia
 > **Siano $f,g:(a,b)\to\R$ derivabili, $g,g'\ne0\in (a,b)$. Se accade che**
 > 
 > 1. **$\lim _{x\to a^+}f(x)=\lim _{x\to a^+}g(x)=0$  oppure $\lim _{x\to a^+}f(x)=\pm \infty$ e $\lim _{x\to a^+}g(x)=\pm\infty$  (non necessariamente concordi in segno)**
-> 2. $\exist \lim _{x\to a^+}\frac{f'(x)}{g'(x)}=\ell\in \overline \R$
+> 2. $\exists \lim _{x\to a^+}\frac{f'(x)}{g'(x)}=\ell\in \overline \R$
 > 
-> **allora $\exist \lim _{x\to a^+}\frac{f(x)}{g(x)}=\ell\in \overline \R$.**
+> **allora $\exists \lim _{x\to a^+}\frac{f(x)}{g(x)}=\ell\in \overline \R$.**
 > 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" />**Osservazioni**
@@ -304,13 +304,13 @@ Mediante il Teorema di de L’Hôpital è possibile dimostrare la gerarchia degl
 # 5. Teorema del prolungamento della derivata prima
 >Teorema
 > **Sia $f:[a,b)\to\R$ continua in $[a,b)$ e derivabile in $(a,b)$. Supponiamo che $\lim_{x\to a^+}f'(x)= m \in \overline \R$. 
-Allora $\exist f_+'(a)=\lim_{h\to 0^+}\frac{f(a+h)-f(a)}{h}=m\in \overline \R$**
+Allora $\exists f_+'(a)=\lim_{h\to 0^+}\frac{f(a+h)-f(a)}{h}=m\in \overline \R$**
 > 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" />**Osservazione**
 Sotto le ipotesi del teorema opportunamene modificate, vale il medesimo risultato anche per derivata sinistra $f_-'(b)$ e per la derivata $f'(x_0)$. La tesi diviene allora:
-$\exist f_-'(b)=\lim_{x\to b^+}f'(x)= m \in \overline \R$ nel primo caso;
-$\exist f'(x_0)=\lim_{x\to x_0}f'(x)= m \in \overline \R$ nel secondo caso.
+$\exists f_-'(b)=\lim_{x\to b^+}f'(x)= m \in \overline \R$ nel primo caso;
+$\exists f'(x_0)=\lim_{x\to x_0}f'(x)= m \in \overline \R$ nel secondo caso.
 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazioni**
@@ -324,16 +324,16 @@ $\exist f'(x_0)=\lim_{x\to x_0}f'(x)= m \in \overline \R$ nel secondo caso.
 
 Sia $h> 0$ in modo che $a+h \in (a,b)$. Applichiamo il teorema di Lagrange in $[a,a+h]$. Poiché $[a,a+h]\sub[a,b)$ e $(a,a+h)\sub (a,b)$, $f$ sarà continua e derivabile rispettivamente nel primo e nel secondo intervallo. 
 
-Per Lagrange $\exist c_h\in [a,a+h]:f'(c_h)= \frac{f(a+h)-f(a)}{h}$. Per costruzione vale che 
+Per Lagrange $\exists c_h\in [a,a+h]:f'(c_h)= \frac{f(a+h)-f(a)}{h}$. Per costruzione vale che 
 $a\le c_h\le a+h$, quindi per $h\to 0, c_h\to a^+$ per il teorema del confronto.
 
 $\lim_{h\to0^+}\frac{f(a+h)-f(a)}{h}=\lim_{h\to0^+}f'(c_h)=\lim_{t\to a^+}f'(t)$, con il cambio di variabile $t= c_h$, in quanto $h\to0^+,  c_h\to a^+$. Sia $\lim_{t\to a^+}f'(t)=m$.
 
-Allora $\exist f'_+(a)=\lim_{h\to0^+}\frac{f(a+h)-f(a)}{h}=m\in \overline \R$.
+Allora $\exists f'_+(a)=\lim_{h\to0^+}\frac{f(a+h)-f(a)}{h}=m\in \overline \R$.
 
 ## 5.2 Corollario
 >Corollario
-> **Sia $f:I\subseteq\R\to\R$ con $I$  intervallo. Supponiamo $\exist f':I\to\R$, ossia $f$ sia derivabile $\forall x \in I$. Allora $f'$ può avere in $I$ solo punti di discontinuità di II specie**
+> **Sia $f:I\subseteq\R\to\R$ con $I$  intervallo. Supponiamo $\exists f':I\to\R$, ossia $f$ sia derivabile $\forall x \in I$. Allora $f'$ può avere in $I$ solo punti di discontinuità di II specie**
 > 
 
 La derivata prima non può quindi presentare discontinuità eliminabili o discontinuità a salto e la funzione non può pertanto avere punti angolosi.
@@ -346,7 +346,7 @@ $f_-'(x_0)=\lim_{x\to x_0^-}f'(x)$ se tali limiti esistono. Poiché $f'(x_0)\in 
 
 # 6. Teorema di Darboux
 >Teorema
-> **Sia $f:I\subseteq\R\to\R$ con $I$  intervallo. Supponiamo $\exist f':I\to\R$. Allora per ogni coppia di punti $a,b\in I$  con $a<b$, la funzione $f'$ assume tutti i valori compresi tra $f'(a)$  e $f'(b)$ in $(a,b)\subseteq I$**
+> **Sia $f:I\subseteq\R\to\R$ con $I$  intervallo. Supponiamo $\exists f':I\to\R$. Allora per ogni coppia di punti $a,b\in I$  con $a<b$, la funzione $f'$ assume tutti i valori compresi tra $f'(a)$  e $f'(b)$ in $(a,b)\subseteq I$**
 > 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
