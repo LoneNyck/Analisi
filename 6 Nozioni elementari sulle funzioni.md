@@ -20,16 +20,16 @@ $$
 
 >Insieme immagine
 >**Si chiama immagine di $A$ tramite $f$ (o immagine di $f$) l’insieme
-$Im_f = f(A) = \{ y \in B: \exists x \in A: f(x) = y \}$ degli elementi di $B$ che provengono da qualche elemento di $A$ tramite $f$.**
+$Im_f = f(A) = \{ y \in B: \exist x \in A: f(x) = y \}$ degli elementi di $B$ che provengono da qualche elemento di $A$ tramite $f$.**
 
 
 In generale $Im_f \subseteq B$, ma può accadere che $Im_f \sub B$.
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
 
-$f: \mathbb{R} \to \mathbb{R}$: $f(x) = x^2$
+$f: \R \to \R$: $f(x) = x^2$
 
-$f:\mathbb{R} \to [0,+\infty)$: $g(x) = x^2$
+$f:\R \to [0,+\infty)$: $g(x) = x^2$
 
 e $f: (-\infty; 0] \to [0,+\infty)$: $h(x) = x^2$
 
@@ -60,10 +60,10 @@ $G_f = \{(x,y) \in (A\times B): x \in A, y = f(x) \in B \}$**
 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
-Se $f: A\to B$ e $A,B \subseteq \mathbb{R}$ $\mathbb{R}ightarrow$ $G_f = \mathbb{R}^2$
+Se $f: A\to B$ e $A,B \subseteq \R$ $\Rightarrow$ $G_f = \R^2$
 
 
-Il fatto che $\forall x_0 \in A$ esiste **un’unica** **immagine** $y_0 \in B$, $A,B \subseteq \mathbb{R}$, si interpreta geometricamente nel grafico di $f$ osservando che ogni retta verticale lo interseca al più una volta; in particolare 0 volte se $x \mathbb{N}otin A$, 1 volta se $x \in A$. In quest’ultimo caso l’ordinata del punto sul grafico è $y = f(x_0)$. 
+Il fatto che $\forall x_0 \in A$ esiste **un’unica** **immagine** $y_0 \in B$, $A,B \subseteq \R$, si interpreta geometricamente nel grafico di $f$ osservando che ogni retta verticale lo interseca al più una volta; in particolare 0 volte se $x \notin A$, 1 volta se $x \in A$. In quest’ultimo caso l’ordinata del punto sul grafico è $y = f(x_0)$. 
 
 Il **dominio** della funzione non è altro che la **proiezione** del grafico sull’asse delle **ascisse**.
 
@@ -74,14 +74,14 @@ L’**insieme delle immagini** non è altro che la **proiezione** del grafico su
 # 5. Funzioni limitate
 
 >Definizione: funzione limitata
-> **Data $f: A \subseteq \mathbb{R}\to \mathbb{R}$ diremo che:**
-> **$f$ è limitata dall’alto se $\operatorname{Im}f \subseteq \mathbb{R}$ è limitato superiormente, cioè $\exists M\in \mathbb{R} : f(x) < M, \forall x \in A$**
+> **Data $f: A \subseteq \R\to \R$ diremo che:**
+> **$f$ è limitata dall’alto se $\operatorname{Im}f \subseteq \R$ è limitato superiormente, cioè $\exist M\in \R : f(x) < M, \forall x \in A$**
 > 
-> **$f$ è limitata dal basso se $\operatorname{Im}f \subseteq \mathbb{R}$ è limitato inferiormente, cioè 
-$\exists m\in \mathbb{R} : f(x) > m, \forall x \in A$**
+> **$f$ è limitata dal basso se $\operatorname{Im}f \subseteq \R$ è limitato inferiormente, cioè 
+$\exist m\in \R : f(x) > m, \forall x \in A$**
 >
-> **$f$ è limitata se $\operatorname{Im}f\subseteq \mathbb{R}$ è limitato sia dall’alto che dal basso, cioè
-$\exists m,M\in \mathbb{R} : m< f(x) < M, \forall x \in A$**
+> **$f$ è limitata se $\operatorname{Im}f\subseteq \R$ è limitato sia dall’alto che dal basso, cioè
+$\exist m,M\in \R : m< f(x) < M, \forall x \in A$**
 > 
 
 Inoltre possiamo anche definire come per gli insiemi:
@@ -92,16 +92,16 @@ Inoltre possiamo anche definire come per gli insiemi:
 - $\min f(x) = \min \operatorname{Im}f$ **minimo** di $f$
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
-$\sup f(x)$ e $\inf f(x)$ esistono sempre in $\mathbb{R} \cup\{\pm\infty\}$ e sono eventualmente infiniti. Inoltre se esistono massimo e minimo della funzione, allora essi coincidono con estremo superiore ed inferiore.
+$\sup f(x)$ e $\inf f(x)$ esistono sempre in $\R \cup\{\pm\infty\}$ e sono eventualmente infiniti. Inoltre se esistono massimo e minimo della funzione, allora essi coincidono con estremo superiore ed inferiore.
 
-In molti casi una funzione reale in variabili reali viene assegnata solo mediante la sua espressione **analitica**, non dichiarando esplicitamente dominio o codominio; in generale il codominio sottinteso è $\mathbb{R}$ mentre il dominio corrisponde al più grande sottoinsieme $A \subseteq \mathbb{R}$ dove la regola analitica assegnata è ben definita e si parla in questo caso di **campo di esistenza**.
+In molti casi una funzione reale in variabili reali viene assegnata solo mediante la sua espressione **analitica**, non dichiarando esplicitamente dominio o codominio; in generale il codominio sottinteso è $\R$ mentre il dominio corrisponde al più grande sottoinsieme $A \subseteq \R$ dove la regola analitica assegnata è ben definita e si parla in questo caso di **campo di esistenza**.
 
 # 6. Funzioni pari e dispari, monotonia e periodicità
 
 ## 6.1 Simmetrie di una funzione
 
 >Definzione: funzini pari e dispari
->**Dato $a >0, f: (-a,a) \subseteq \mathbb{R}\to \mathbb{R}$, con $a$  non necessariamente finito, $f$ si dice pari se vale $f(x) = f(-x), \forall x \in (a,-a)$. 
+>**Dato $a >0, f: (-a,a) \subseteq \R\to \R$, con $a$  non necessariamente finito, $f$ si dice pari se vale $f(x) = f(-x), \forall x \in (a,-a)$. 
 Si dirà invece dispari se vale $-f(x) = f(-x), \forall x \in (a,-a)$.
 In caso nessuna condizione precedente sia soddisfatta, $f$ non sarà né pari né dispari.**
 
@@ -109,16 +109,16 @@ Le funzioni pari hanno grafico simmetrico rispetto a $x=0$; quelle dispari rispe
 
 ## 6.2 Monotonia
 
-Sia data $f: A \subseteq \mathbb{R}\to \mathbb{R}$.
+Sia data $f: A \subseteq \R\to \R$.
 
 >Definizione: monotonia
-> **Se $\forall x_1, x_2 \in A, x_1<x_2 \mathbb{R}ightarrow f(x_1)\le f(x_2)$ allora essa si dirà monotona crescente.**
+> **Se $\forall x_1, x_2 \in A, x_1<x_2 \Rightarrow f(x_1)\le f(x_2)$ allora essa si dirà monotona crescente.**
 >
->**Se $\forall x_1, x_2 \in A, x_1<x_2 \mathbb{R}ightarrow f(x_1)<f(x_2)$ allora essa si dirà monotona strettamente crescente.**
+>**Se $\forall x_1, x_2 \in A, x_1<x_2 \Rightarrow f(x_1)<f(x_2)$ allora essa si dirà monotona strettamente crescente.**
 >
->**Se $\forall x_1, x_2 \in A, x_1<x_2 \mathbb{R}ightarrow f(x_1) \ge f(x_2)$ allora essa si dirà monotona decrescente.**
+>**Se $\forall x_1, x_2 \in A, x_1<x_2 \Rightarrow f(x_1) \ge f(x_2)$ allora essa si dirà monotona decrescente.**
 >
->**Se $\forall x_1, x_2 \in A, x_1<x_2 \mathbb{R}ightarrow f(x_1)> f(x_2)$ allora essa si dirà monotona strettamente decrescente.**
+>**Se $\forall x_1, x_2 \in A, x_1<x_2 \Rightarrow f(x_1)> f(x_2)$ allora essa si dirà monotona strettamente decrescente.**
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
 Si noti che non è necessario che $f(x)$ sia continua per essere monotona.
@@ -130,15 +130,15 @@ Se $f$ è crescente, la disuguaglianza tra gli argomenti viene preservata, se $f
 
 Un altro modo per verificare la crescenza di una funzione è l’uso del **rapporto incrementale**:
 
-- ${f(x_2) - f(x_1) \over x_2 - x_1 } \ge 0, \forall x_1,x_2\in \operatorname{D}_f, x1 \mathbb{N}eq x_2$  $\mathbb{R}ightarrow$ $f$ è crescente
-- ${f(x_2) - f(x_1) \over x_2 - x_1 } \le 0, \forall x_1,x_2\in \operatorname{D}_f, x1 \mathbb{N}eq x_2$  $\mathbb{R}ightarrow$ $f$ è decrescente
+- ${f(x_2) - f(x_1) \over x_2 - x_1 } \ge 0, \forall x_1,x_2\in \operatorname{D}_f, x1 \neq x_2$  $\Rightarrow$ $f$ è crescente
+- ${f(x_2) - f(x_1) \over x_2 - x_1 } \le 0, \forall x_1,x_2\in \operatorname{D}_f, x1 \neq x_2$  $\Rightarrow$ $f$ è decrescente
 
 Inoltre una funzione del tipo $f(x) = k, k\in R$ si dice **sia crescente che decrescente**.
 
 ## 6.3 Periodicità
 
 > Definizione: periodicità
->**Sia $f: A \subseteq \mathbb{R}\to \mathbb{R}$; diremo che si tratta di una funzione periodica di periodo $T$ se $f(x+T) = f(x), \forall x \in A$.
+>**Sia $f: A \subseteq \R\to \R$; diremo che si tratta di una funzione periodica di periodo $T$ se $f(x+T) = f(x), \forall x \in A$.
 Ogni intervallo lungo $T$ contenuto in $A$ si chiama intervallo di periodicità.**
 
 
@@ -151,28 +151,28 @@ Ogni intervallo lungo $T$ contenuto in $A$ si chiama intervallo di periodicità.
 
 È possibile comporre anche più funzioni e si dimostra che vale la proprietà **associativa**, ossia
 $(h \circ g)\circ f = h \circ (g \circ f)$, ma in generale **non** vale quella **commutativa**, quindi
-$g \circ f \mathbb{N}eq f \circ g$
+$g \circ f \neq f \circ g$
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
 Non tutte le funzioni possono essere composte, in quanto potrebbero insorgere problemi di esistenza; un caso potrebbe essere $f(x) = -x^2$  e $g(t) = \log t$.
 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
-Se $f: A\to B$ e $g: D \subseteq B \to C$ possiamo definire $g \circ f: \text{Dom}_f \to C$, $\text{Dom}_f = \{x\in A: f(x) \in D \} = A \cap f^{-1}(D) \subseteq A$. Un esempio è dato delle funzioni $f(x) = \sqrt{x}$, definita solo in $[0,+\infty),$ e $g(t) = t^2$, definita in tutto $\mathbb{R}$. La composizione tra le due sarà pertanto $g \circ f = x, x \ge 0$.
+Se $f: A\to B$ e $g: D \subseteq B \to C$ possiamo definire $g \circ f: \text{Dom}_f \to C$, $\text{Dom}_f = \{x\in A: f(x) \in D \} = A \cap f^{-1}(D) \subseteq A$. Un esempio è dato delle funzioni $f(x) = \sqrt{x}$, definita solo in $[0,+\infty),$ e $g(t) = t^2$, definita in tutto $\R$. La composizione tra le due sarà pertanto $g \circ f = x, x \ge 0$.
 
 # 8. Iniettività e invertibilità
 
 > **Data $f: A\to B$, se equivalentemente**
-> 1. **$\forall x_1, x_2  \in A, x_1 \mathbb{N}eq x_2 \mathbb{R}ightarrow f(x_1) \mathbb{N}eq f(x_2)$**
-> 2. $\forall x_1, x_2  \in A, f(x_1) = f(x_2)\mathbb{R}ightarrow x_1 = x_2$ 
-> 3. $\forall y \in Im_f \exists! x\in A: f(x) = y$
+> 1. **$\forall x_1, x_2  \in A, x_1 \neq x_2 \Rightarrow f(x_1) \neq f(x_2)$**
+> 2. $\forall x_1, x_2  \in A, f(x_1) = f(x_2)\Rightarrow x_1 = x_2$ 
+> 3. $\forall y \in Im_f \exist! x\in A: f(x) = y$
 >
 >**allora $f$ è iniettiva.**
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazioni**
 
-- Se $y \in \text{Im}_f \mathbb{R}ightarrow \exists x \in \text{Dom}_f : f(x) = y$  per definizione, mentre se 
-$y \mathbb{N}otin Im_f \mathbb{R}ightarrow \mathbb{N}exists x \in Dom_f$  siffatta
+- Se $y \in \text{Im}_f \Rightarrow \exist x \in \text{Dom}_f : f(x) = y$  per definizione, mentre se 
+$y \notin Im_f \Rightarrow \nexists x \in Dom_f$  siffatta
 
 Se $f$ è **suriettiva**, essa **ammette** **sempre** una **soluzione**  $x \in Dom_f$ $\forall y \in Im_f$; se $f$  è **iniettiva**, essa **può** **non** **avere soluzione**   $x \in Dom_f$ $\forall y \in Im_f$, ma quando quest’ultima esiste, allora è **necessariamente** **unica**.
 
@@ -186,18 +186,18 @@ $f^{-1}: Im_f\subseteq B\to A$.**
 - $f^{-1}(f(x)) = x$
 - $f(f^{-1}(y)) = y$
 
-**Se $f$ è iniettiva, diremo allora che essa è invertibile sulla propria immagine, cioè $\exists f^{-1}:Im_f \subseteq B \to A$**
+**Se $f$ è iniettiva, diremo allora che essa è invertibile sulla propria immagine, cioè $\exist f^{-1}:Im_f \subseteq B \to A$**
 
 ## 8.1 Teorema sulla monotonia e sull’invertibilità
 
 >Teorema: monotonia e iniettività implicano invertibilità
-> **$f: A\subseteq \mathbb{R} \to \mathbb{R}$ strettamente monotona in $A$ $\mathbb{R}ightarrow$ $f$  è iniettiva $\mathbb{R}ightarrow$ $f$ è invertibile.
+> **$f: A\subseteq \R \to \R$ strettamente monotona in $A$ $\Rightarrow$ $f$  è iniettiva $\Rightarrow$ $f$ è invertibile.
 Inoltre la funzione inversa sarà anch’essa strettamente monotona.**
 > 
 
 ### 8.1.1 Dimostrazione
 
-Per ogni coppia di $x_1, x_2$, la crescenza stretta impone che se la prima è minore della seconda, allora anche l’immagine della prima sarà minore di quella della seconda. Se le due ascisse sono tra loro diverse, senza ulteriori specificazioni, la monotonia stretta impone che una sia necessariamente maggiore dell’altra, il che conferma che $x_1 \mathbb{N}eq x_2$, dimostrando l’iniettività di di $f$.
+Per ogni coppia di $x_1, x_2$, la crescenza stretta impone che se la prima è minore della seconda, allora anche l’immagine della prima sarà minore di quella della seconda. Se le due ascisse sono tra loro diverse, senza ulteriori specificazioni, la monotonia stretta impone che una sia necessariamente maggiore dell’altra, il che conferma che $x_1 \neq x_2$, dimostrando l’iniettività di di $f$.
 
 La dimostrazione prosegue per assurdo, supponendo di avere una coppia di ordinate $y_1 < y_2$ tali che $f^{-1}(y_1) = x_1>f^{-1}(y_2)=x_2$. Se $x_1 > x_2$, essendo la funzione strettamente crescente, significa che $f(x_1)= y_1> f(x_2) = y_1$, assurdo. 
 
