@@ -6,7 +6,7 @@ Data lezione: 12/12/2024
 # 1. Funzioni integrali
 
 >Definizione
-**Sia $f:I\subseteq \R\to \R$, con $I$  intervallo, $f$ Riemann integrabile in $I$  in senso proprio o improprio indifferentemente. Sia $x_0 \in I$.**
+**Sia $f:I\subseteq \mathbb{R}\to \mathbb{R}$, con $I$  intervallo, $f$ Riemann integrabile in $I$  in senso proprio o improprio indifferentemente. Sia $x_0 \in I$.**
 >
 >$$
 >F(x) = \int_{x_0}^xf(t)\ dt, \forall x\in I
@@ -16,7 +16,7 @@ Data lezione: 12/12/2024
 
 # 2. Teorema fondamentale del calcolo integrale
 >Teorema
-> **Sia $f:[a,b]\to \R$ Riemann integrabile in senso proprio o improprio indifferentemente in $[a,b]$. Sia $x_0 \in [a,b]$. Consideriamo $F(x) = \int_{x_0}^xf(t)\ dt, \forall x\in I$.
+> **Sia $f:[a,b]\to \mathbb{R}$ Riemann integrabile in senso proprio o improprio indifferentemente in $[a,b]$. Sia $x_0 \in [a,b]$. Consideriamo $F(x) = \int_{x_0}^xf(t)\ dt, \forall x\in I$.
 Allora vale che:**
 > 
 > 1. **$F$ è continua in $[a,b]$**
@@ -24,9 +24,9 @@ Allora vale che:**
 
 ### 2.1 Dimostrazione
 
-1. Consideriamo $f:[a,b]\to \R$ Riemann integrabile in senso proprio.
+1. Consideriamo $f:[a,b]\to \mathbb{R}$ Riemann integrabile in senso proprio.
     
-    Allora $f$ deve essere limitata in $[a,b]$, ossia $\exist M >0: |f(x)|\le M$ . Sia $\overline x \in [a,b]$, $h\in \R:x+h\in [a,b]$.
+    Allora $f$ deve essere limitata in $[a,b]$, ossia $\exists M >0: |f(x)|\le M$ . Sia $\overline x \in [a,b]$, $h\in \mathbb{R}:x+h\in [a,b]$.
     Per $h> 0$ abbiamo che
     
     $$
@@ -41,19 +41,19 @@ Allora vale che:**
     
     Similmente per $h< 0$ vale che $|F(x+h)- F(x)| \le M |h|$.
     
-    Di conseguenza $\forall h \in \R, |F(x+h)- F(x)| \le M |h|$, pertanto per confronto possiamo scrivere che $\lim_{h\to0}|F(x+h)- F(x)| \le \lim_{h\to0} M |h|=0$, e per teorema del confronto vale che $\lim_{h\to0}|F(x+h)- F(x)|=0$, quindi
+    Di conseguenza $\forall h \in \mathbb{R}, |F(x+h)- F(x)| \le M |h|$, pertanto per confronto possiamo scrivere che $\lim_{h\to0}|F(x+h)- F(x)| \le \lim_{h\to0} M |h|=0$, e per teorema del confronto vale che $\lim_{h\to0}|F(x+h)- F(x)|=0$, quindi
     $\lim_{h\to0}F(x+h)= F(x)$ e $F$  è continua per definizione.
     
 2. Consideriamo $f$ continua ovunque e cerchiamo di dimostrare che $F$ è derivabile ovunque e $F'(x) = f(x)$.
     
-    Sia $x \in [a,b]$, $h\in \R:x+h\in [a,b]$. Come visto sopra vale che 
+    Sia $x \in [a,b]$, $h\in \mathbb{R}:x+h\in [a,b]$. Come visto sopra vale che 
     $F(x+h)- F(x)= \int_{x}^{x+h}f(t) \ dt$, quindi deve valere anche che
     
     $$
     \frac{F(x+h)- F(x)}{h}= \frac{\int_{x}^{x+h}f(t) \ dt}{h}
     $$
     
-    Poiché $f$ è continua ovunque, per $h>0$  abbiamo che $\frac{\int_{x}^{x+h}f(t) \ dt}{h}$ è il valor medio di $f$ in $[x,x+h]$ per il teorema della media integrale, quindi $\exist x_h\in [x,x+h]:\\f(x_h)= \frac{\int_{x}^{x+h}f(t) \ dt}{h}$.
+    Poiché $f$ è continua ovunque, per $h>0$  abbiamo che $\frac{\int_{x}^{x+h}f(t) \ dt}{h}$ è il valor medio di $f$ in $[x,x+h]$ per il teorema della media integrale, quindi $\exists x_h\in [x,x+h]:\\f(x_h)= \frac{\int_{x}^{x+h}f(t) \ dt}{h}$.
     
     Allora $\frac{F(x+h)- F(x)}{h}= \frac{\int_{x}^{x+h}f(t) \ dt}{h}= f(x_h)$.
     
@@ -68,7 +68,7 @@ Allora vale che:**
 
 
 >Corollario
-> **Sia $f:[a,b]\to \R$ continua. Allora essa è Riemann integrabile in $[a,b]$ ed ammette primitiva in $[a,b]$ $F(x) = \int_a^xf(t)\ dt + c$.**
+> **Sia $f:[a,b]\to \mathbb{R}$ continua. Allora essa è Riemann integrabile in $[a,b]$ ed ammette primitiva in $[a,b]$ $F(x) = \int_a^xf(t)\ dt + c$.**
 > 
 > 
 > **Inoltre $\int_a^b f(x)\ dx=G(b)-G(a)$, dove $G$ è una primitiva qualsiasi di $f$.**
@@ -79,7 +79,7 @@ Si tratta del Teorema fondamentale del calcolo I, visto in [22. Integrale di Rie
 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
-Se $f:\R\to \R$ è continua e $\phi :\R\to \R$ è derivabile, per il teorema fondamentale del calcolo integrale II e il teorema di derivazione delle funzioni composte vale che
+Se $f:\mathbb{R}\to \mathbb{R}$ è continua e $\phi :\mathbb{R}\to \mathbb{R}$ è derivabile, per il teorema fondamentale del calcolo integrale II e il teorema di derivazione delle funzioni composte vale che
 
 $$
 G(x) = \int_{x_0}^{\phi(x)}f(t) \ dt \text{ è derivabile e }\\G'(x) = f(\phi(x))\cdot\phi'(x)

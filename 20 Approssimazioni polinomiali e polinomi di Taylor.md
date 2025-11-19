@@ -18,13 +18,13 @@ Dimostreremo che $P_n(x_0)= \sum_{k= 0}^n\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k$.
 # 1. Polinomi di Taylor
 
 >Definizione
-> **Se $f:(a,b)\to \R$, $x_0\in (a,b)$, $f$ derivabile $n$  volte in $x_0, n\ge 0,$  il polinomio $P_n(x_0)=\sum_{k= 0}^n\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k$ si chiama polinomio di Taylor centrato in $x_0$ di ordine $n$ di $f$. Se $x_0=0$,  si parla anche di polinomio di McLaurin.**
+> **Se $f:(a,b)\to \mathbb{R}$, $x_0\in (a,b)$, $f$ derivabile $n$  volte in $x_0, n\ge 0,$  il polinomio $P_n(x_0)=\sum_{k= 0}^n\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k$ si chiama polinomio di Taylor centrato in $x_0$ di ordine $n$ di $f$. Se $x_0=0$,  si parla anche di polinomio di McLaurin.**
 
 
 # 2. Teorema di Taylor con il resto in forma di Peano
 
 >Teorema
-> **Sia $f:(a,b)\to\R, x_0\in (a,b),f$ derivabile $n$  volte in $x_0,n\ge0$. Allora $f(x) = P_n(x)+o\big((x-x_0)^n\big)=\sum_{k= 0}^n\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k+o\big((x-x_0)^n\big)$, cioè $\lim_{x\to x_0}\frac{f(x)-P_n(x)}{(x-x_0)^n}=0$**
+> **Sia $f:(a,b)\to\mathbb{R}, x_0\in (a,b),f$ derivabile $n$  volte in $x_0,n\ge0$. Allora $f(x) = P_n(x)+o\big((x-x_0)^n\big)=\sum_{k= 0}^n\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k+o\big((x-x_0)^n\big)$, cioè $\lim_{x\to x_0}\frac{f(x)-P_n(x)}{(x-x_0)^n}=0$**
 > 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazioni**
@@ -36,18 +36,18 @@ Dimostreremo che $P_n(x_0)= \sum_{k= 0}^n\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k$.
 
 ## 2.1 Dimostrazione
 
-Dimostriamo il teorema di Taylor per induzione su $n\in \N , n\ge 1$.
+Dimostriamo il teorema di Taylor per induzione su $n\in \mathbb{N} , n\ge 1$.
 
 1. $P_1(x)$. 
-Se $f$ è derivabile 1 volta in $x_0\in (a,b)\Rightarrow$
+Se $f$ è derivabile 1 volta in $x_0\in (a,b)\mathbb{R}ightarrow$
 $f(x_0)+f'(x_0)(x-x_0)+o(x-x_0),$ cioè $f$ è differenziabile in $x_0$. Ciò è vero in quanto sappiamo che $f$ derivabile $\Leftrightarrow$  $f$ differenziabile.
-2. $P_{(n-1)}(x)\Rightarrow P_{(n)}(x)$. 
+2. $P_{(n-1)}(x)\mathbb{R}ightarrow P_{(n)}(x)$. 
 Se $f$ è derivabile n - 1 volte in $x_0, n\ge2$, vale che $\lim_{x\to x_0}\frac{f(x) -\sum_{j= 0}^{n-1}\frac{f^{(j)}(x_0)}{j!}(x-x_0)^j}{(x-x_0)^{n-1}}=0$ come ipotesi di induzione.
     
     Se $f$ è derivabile n volte in $x_0$, $n\ge 2$, $\lim_{x\to x_0}\frac{f(x) -\sum_{k= 0}^n\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k}{(x-x_0)^{n}}  =\lim_{x\to x_0} \frac{f'(x)-P'_n(x)}{n(x-x_0)^{n-1}}=\lim_{x\to x_0}\frac{f'(x) -\sum_{k= 0}^{n-1}\frac{(f')^{(k)}(x_0)}{k!}(x-x_0)^k}{n(x-x_0)^{n-1}}$.
     
     Per l’ipotesi di induzione vale che  $\lim_{x\to x_0}\frac{f'(x) -\sum_{k= 0}^{n-1}\frac{(f')^{(k)}(x_0)}{k!}(x-x_0)^k}{(x-x_0)^{n-1}}= 0$ 
-    $\Rightarrow\lim_{x\to x_0}\frac 0 n = 0$.
+    $\mathbb{R}ightarrow\lim_{x\to x_0}\frac 0 n = 0$.
     
     Per induzione $P_n$ è vera $\forall n\ge1$.
     
@@ -55,8 +55,8 @@ Se $f$ è derivabile n - 1 volte in $x_0, n\ge2$, vale che $\lim_{x\to x_0}\frac
 ## 2.2 Corollario del Teorema di Taylor
 
 >Corollario
-> **Sia $f:(a,b)\to\R$ derivabile n volte in $x_0\in(a,b), n\ge2$ e 
-$f'(x_0)=f''(x_0)=...=f^{(n-1)}(x_0)=0$ e $f^{(n)}(x_0)\ne 0$. Allora**
+> **Sia $f:(a,b)\to\mathbb{R}$ derivabile n volte in $x_0\in(a,b), n\ge2$ e 
+$f'(x_0)=f''(x_0)=...=f^{(n-1)}(x_0)=0$ e $f^{(n)}(x_0)\mathbb{N}e 0$. Allora**
 > 
 > 1. **se $n$ è dispari, $x_0$ è un flesso;** 
 > 2. **se $n$  è pari e $f^{(n)}(x_0)\ge 0$, $x_0$ è un minimo;**
@@ -65,14 +65,14 @@ $f'(x_0)=f''(x_0)=...=f^{(n-1)}(x_0)=0$ e $f^{(n)}(x_0)\ne 0$. Allora**
 ---
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
-Siano $f:(a,b)\to\R$, $x_0\in(a,b)$.
-Può accadere che $\exist Q(x)$ di grado al più n tale che $f(x) = Q(x) + o((x-x_0)^n), x \to x_0$, senza che $f$ ammetta n derivate.
+Siano $f:(a,b)\to\mathbb{R}$, $x_0\in(a,b)$.
+Può accadere che $\exists Q(x)$ di grado al più n tale che $f(x) = Q(x) + o((x-x_0)^n), x \to x_0$, senza che $f$ ammetta n derivate.
 L’unica eccezione è il caso $n = 1$, in cui $f$ derivabile $\Leftrightarrow$  $f$ differenziabile.
 
 
 # 3. Teorema di Taylor-Lagrange
 >Teorema
-> **Sia $f:[a,b]\to\R, x_0\in [a,b],f$ derivabile $n +1$ volte in $[a,b]$. Allora $\forall x \in [a,b]\exist c$ compreso tra $x$  e $x_0$ tale che 
+> **Sia $f:[a,b]\to\mathbb{R}, x_0\in [a,b],f$ derivabile $n +1$ volte in $[a,b]$. Allora $\forall x \in [a,b]\exists c$ compreso tra $x$  e $x_0$ tale che 
 $f(x) = P_n(x)+\frac{f^{(n+1)}(c)}{(n+1)!}(x-x_0)^{n+1} = \sum_{k= 0}^n\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k+\frac{f^{(n+1)}(c)}{(n+1)!}(x-x_0)^{n+1}$.**
 > 
 
@@ -83,24 +83,24 @@ Per $n=0$, il teorema appena visto è - essenzialmente - il Teorema del valor me
 
 # 4. Serie di Taylor
 
-Se $f:I\subseteq\R\to\R, I$ intervallo, $f$ derivabile infinite volte in $I$, $x,x_0\in I$, allora $\forall n\in \N$ possiamo scrivere il polinomio di Taylor $P_n(x)$ di ordine n centrato in $x_0$. Passando al limite $n\to\infty$ otteniamo che $\sum_{k= 0}^\infty\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k$.
+Se $f:I\subseteq\mathbb{R}\to\mathbb{R}, I$ intervallo, $f$ derivabile infinite volte in $I$, $x,x_0\in I$, allora $\forall n\in \mathbb{N}$ possiamo scrivere il polinomio di Taylor $P_n(x)$ di ordine n centrato in $x_0$. Passando al limite $n\to\infty$ otteniamo che $\sum_{k= 0}^\infty\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k$.
 
 >Definizione: Serie di Taylor
->**Se $f:I\subseteq\R\to\R, I$ intervallo, $f$ derivabile infinite volte in $x_0$, definiamo $\sum_{k= 0}^\infty\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k$ come serie di Taylor di $f$ centrata in $x_0$.**
+>**Se $f:I\subseteq\mathbb{R}\to\mathbb{R}, I$ intervallo, $f$ derivabile infinite volte in $x_0$, definiamo $\sum_{k= 0}^\infty\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k$ come serie di Taylor di $f$ centrata in $x_0$.**
 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazioni**
 
 - Le somme parziali N-esime della serie di Taylor di $f$ sono il polinomio di Taylor di ordine n di $f$.
-- Non è detto che la serie di Taylor di $f$ centrata in $x_0$ converga, per $x\ne x_0$.
-- Se la serie di Taylor di $f$ converge in $x\ne x_0$, non è detto che essa converga a $f(x)$
+- Non è detto che la serie di Taylor di $f$ centrata in $x_0$ converga, per $x\mathbb{N}e x_0$.
+- Se la serie di Taylor di $f$ converge in $x\mathbb{N}e x_0$, non è detto che essa converga a $f(x)$
 
 Alcuni esempi di serie di Taylor sono i seguenti.
 
 $$
-e^x= \sum\frac 1 {k!}x^k, \forall x \in \R \\
-\sin x= \sum \frac{(-1)^k}{(2k+1)!}x^{2k+1}, \forall x \in \R \\
-\cos x =\sum \frac{(-1)^k}{(2k)!}x^{2k}, \forall x \in \R \\
+e^x= \sum\frac 1 {k!}x^k, \forall x \in \mathbb{R} \\
+\sin x= \sum \frac{(-1)^k}{(2k+1)!}x^{2k+1}, \forall x \in \mathbb{R} \\
+\cos x =\sum \frac{(-1)^k}{(2k)!}x^{2k}, \forall x \in \mathbb{R} \\
 \frac 1 {1-x} = \sum x^k, \forall x\in (-1,1)
 $$
 

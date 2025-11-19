@@ -6,7 +6,7 @@ Data lezione: 23/10/2024
 # 1. Convergenza assoluta
 
 > Definizione: Convergenza assoluta
-> **Data una serie $\sum_{n=1}^{+\infty} a_n$, diremo che essa converge assolutamente se $\sum_{n=0}^{+\infty} |a_n|$ converge, ossia $\exist \lim_{N\to\infty}\sum_{n=0}^{N} |a_n| = M \in \R$.**
+> **Data una serie $\sum_{n=1}^{+\infty} a_n$, diremo che essa converge assolutamente se $\sum_{n=0}^{+\infty} |a_n|$ converge, ossia $\exists \lim_{N\to\infty}\sum_{n=0}^{N} |a_n| = M \in \mathbb{R}$.**
 
 Per distinguere questa nuova definizione di convergenza da quella data in precedenza in [10. Serie di numeri reali](10%20Serie%20di%20numeri%20reali%2012134a7885158025ab5eda4c4a2cb72b.md), par. 1, chiameremo la vecchia nozione di convergenza “**convergenza semplice**”.
 
@@ -22,8 +22,8 @@ Per distinguere questa nuova definizione di convergenza da quella data in preced
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
 
-- **Convergenza assoluta $\Rightarrow$  convergenza semplice**
-- **Convergenza semplice $\nRightarrow$  convergenza assoluta**
+- **Convergenza assoluta $\mathbb{R}ightarrow$  convergenza semplice**
+- **Convergenza semplice $\mathbb{N}Rightarrow$  convergenza assoluta**
 
 Da quest’ultima osservazione possiamo dedurre che esistono delle serie che convergono semplicemente ma non assolutamente. Un esempio, che può essere verificato con il criterio di Leibniz che vedremo in seguito, è $\sum_{n=0}^{+\infty}\frac{(-1)^n}{n^\alpha}, 0< \alpha \le 1$.
 
@@ -50,14 +50,14 @@ Inoltre se $S = \sum_{n=0}^{+\infty} (-1)^n a_n$, allora:
 
 1. $S_{2N} = \sum_{n=0}^{2N} (-1)^n a_n$ $\downarrow S$ (ossia la serie limitata da un numero pari si avvicina a S dall’alto)
 2. $S_{2N+1} = \sum_{n=0}^{2N+1} (-1)^n a_n$ $\uparrow S$ (ossia la serie limitata da un numero dispari dei termini si avvicina a S dal basso)
-3. $|R_N| = |S-S_N| = |\sum_{n=N+1}^{+\infty} (-1)^n a_n| \le a_{N+1}$ $\forall N \in \N$
+3. $|R_N| = |S-S_N| = |\sum_{n=N+1}^{+\infty} (-1)^n a_n| \le a_{N+1}$ $\forall N \in \mathbb{N}$
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
 
 - Non si può rimuovere dal criterio di Leibniz l’ipotesi di decrescenza.
-- $a_n \sim b_n,\ a_n, b_n> 0, \ \sum_{n=0}^{+\infty} (-1)^nb_n$ converge $\nRightarrow$ $\sum_{n=0}^{+\infty} (-1)^n a_n$ converge.
+- $a_n \sim b_n,\ a_n, b_n> 0, \ \sum_{n=0}^{+\infty} (-1)^nb_n$ converge $\mathbb{N}Rightarrow$ $\sum_{n=0}^{+\infty} (-1)^n a_n$ converge.
 Il criterio del **confronto asintotico** infatti vale **SOLO** per serie a termini **definitivamente** **positivi** e non per serie a termini di segno alterno.
-- $a_n \sim b_n$ e $b_n$ monotona $\nRightarrow$ $a_n$ monotona.
+- $a_n \sim b_n$ e $b_n$ monotona $\mathbb{N}Rightarrow$ $a_n$ monotona.
 Infatti **l’asintotico** è una relazione di equivalenza e **non** **trasmette la monotonia** come invece trasmette il segno.
 
 ### 3.1.1 Dimostrazione
