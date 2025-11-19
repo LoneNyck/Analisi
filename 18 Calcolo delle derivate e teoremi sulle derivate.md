@@ -9,9 +9,9 @@ Segue una tabella con le principali funzioni elementari e le loro derivate.
 
 | ${f(x)}$ | ${f'(x)}$ |
 | --- | --- |
-| $c \in \mathbb{R}$ | 0 |
+| $c \in {\mathbb{R}}$ | 0 |
 | $x^n$ | $n\cdot x^{n-1}, n\in \mathbb{N}$ |
-| $x^\alpha$ | $\alpha \cdot x^{\alpha -1}, \alpha \in \mathbb{R}$ |
+| $x^\alpha$ | $\alpha \cdot x^{\alpha -1}, \alpha \in {\mathbb{R}}$ |
 | $\sin x$ | $\cos x$ |
 | $\cos x$ | $-\sin x$ |
 | $e^x$ | $e^x$ |
@@ -19,7 +19,7 @@ Segue una tabella con le principali funzioni elementari e le loro derivate.
 
 ## 1.1 Teorema di continuità delle funzioni derivabili
 >Teorema
-> **Se $f:(a,b) \to \mathbb{R}, x_0 \in (a,b)$ e $f$ derivabile in $x_0$, allora $f$ è continua in $x_0$.**
+> **Se $f:(a,b) \to {\mathbb{R}}, x_0 \in (a,b)$ e $f$ derivabile in $x_0$, allora $f$ è continua in $x_0$.**
 > 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
@@ -40,11 +40,11 @@ Quindi $f(x)$ è continua in $x_0$.
 
 ## 2.1 Derivate di somma, prodotto e quoziente di funzioni
 > Teorema
-> **Siano $f,g: (a,b)\to\mathbb{R}, x_0\in (a,b)$  e $f,g$ derivabili in $x_0$. Allora:**
+> **Siano $f,g: (a,b)\to{\mathbb{R}}, x_0\in (a,b)$  e $f,g$ derivabili in $x_0$. Allora:**
 > 
 > - $\frac{d}{dx}[f(x_0)+g(x_0)] = f'(x_0) + g'(x_0)$;
 > - **$\frac{d}{dx}[f(x_0)g(x_0)] = g(x_0)f'(x_0)+f(x_0)g'(x_0)$
-> e in particolare $\forall \alpha \in \mathbb{R}$ $\frac{d}{dx}[\alpha f(x_0)]= \alpha f'(x_0)$;**
+> e in particolare $\forall \alpha \in {\mathbb{R}}$ $\frac{d}{dx}[\alpha f(x_0)]= \alpha f'(x_0)$;**
 > - $\frac{d}{dx}[\frac{f(x_0)}{g(x_0)}] = \frac{g(x_0)f'(x_0)-f(x_0)g'(x_0)}{g^2(x_0)}$.
 
 ## 2.2 Derivata di composizione di funzioni
@@ -54,30 +54,30 @@ Quindi $f(x)$ è continua in $x_0$.
 
 ## 2.3 Derivata dell’inversa di una funzione
 >Teorema
-> **Sia $f:(a,b)\to \mathbb{R}, x_0 \in (a,b), f \text { invertibile}, g = f^{-1}, f^{-1}(x_0) \ne 0, f \text{ continua in }(a,b)$. Allora $g$ è derivabile in $y_0= f(x_0)$ e $g'(y_0)= \frac 1{f'(x_0)}= \frac 1{f'(f^{-1}(y_0))}$.**
+> **Sia $f:(a,b)\to {\mathbb{R}}, x_0 \in (a,b), f \text { invertibile}, g = f^{-1}, f^{-1}(x_0) \ne 0, f \text{ continua in }(a,b)$. Allora $g$ è derivabile in $y_0= f(x_0)$ e $g'(y_0)= \frac 1{f'(x_0)}= \frac 1{f'(f^{-1}(y_0))}$.**
 > 
 
 # 3. Derivate e monotonia
 
 >Definizione: Massimo locale 
-**Sia $f:D_f\to \mathbb{R}, x_0 \in D_f$. Diremo che $x_0$ è punto di massimo locale se esiste un intorno $U(x_0)$ di $x_0$ $=(x_0 - \delta ; x_0 + \delta)$ tale che $f(x) \le f(x_0), \forall x\in U(x_0) \cap D_f$. Il corrispondente valore $f(x_0)$ si dice massimo locale.**
+**Sia $f:D_f\to {\mathbb{R}}, x_0 \in D_f$. Diremo che $x_0$ è punto di massimo locale se esiste un intorno $U(x_0)$ di $x_0$ $=(x_0 - \delta ; x_0 + \delta)$ tale che $f(x) \le f(x_0), \forall x\in U(x_0) \cap D_f$. Il corrispondente valore $f(x_0)$ si dice massimo locale.**
 
 **Si dice inoltre che esso è stretto se $f(x) < f(x_0), \forall x\in U(x_0) \cap D_f$.**
 
 
 
 >Definizione: Minimo locale
->**Sia $f:D_f\to \mathbb{R}, x_0 \in D_f$. Diremo che $x_0$ è punto di minimo locale se esiste un intorno $U(x_0)$ di $x_0$ $=(x_0 - \delta ; x_0 + \delta)$ tale che $f(x) \ge f(x_0), \forall x\in U(x_0) \cap D_f$. Il corrispondente valore $f(x_0)$ si dice minimo locale.**
+>**Sia $f:D_f\to {\mathbb{R}}, x_0 \in D_f$. Diremo che $x_0$ è punto di minimo locale se esiste un intorno $U(x_0)$ di $x_0$ $=(x_0 - \delta ; x_0 + \delta)$ tale che $f(x) \ge f(x_0), \forall x\in U(x_0) \cap D_f$. Il corrispondente valore $f(x_0)$ si dice minimo locale.**
 
 **Si dice inoltre che esso è stretto se $f(x) > f(x_0), \forall x\in U(x_0) \cap D_f$.**
 
 >Definizione: Massimo Globale
->**Sia $f:D_f\to \mathbb{R}, x_0 \in D_f$. Diremo che $x_0$ è punto di massimo globale se esiste un intorno $U(x_0)$ di $x_0$ $=(x_0 - \delta ; x_0 + \delta)$ tale che $f(x) \le f(x_0), \forall x\in  D_f$. Il corrispondente valore $f(x_0)$ si dice massimo globale.**
+>**Sia $f:D_f\to {\mathbb{R}}, x_0 \in D_f$. Diremo che $x_0$ è punto di massimo globale se esiste un intorno $U(x_0)$ di $x_0$ $=(x_0 - \delta ; x_0 + \delta)$ tale che $f(x) \le f(x_0), \forall x\in  D_f$. Il corrispondente valore $f(x_0)$ si dice massimo globale.**
 
 **Si dice inoltre che esso è stretto se $f(x) < f(x_0), \forall x\in  D_f$.**
 
 >Definizione: Minimo globale
->**Sia $f:D_f\to \mathbb{R}, x_0 \in D_f$. Diremo che $x_0$ è punto di minimo globale se esiste un intorno $U(x_0)$ di $x_0$ $=(x_0 - \delta ; x_0 + \delta)$ tale che $f(x) \ge f(x_0), \forall x\in D_f$. Il corrispondente valore $f(x_0)$ si dice minimo globale.**
+>**Sia $f:D_f\to {\mathbb{R}}, x_0 \in D_f$. Diremo che $x_0$ è punto di minimo globale se esiste un intorno $U(x_0)$ di $x_0$ $=(x_0 - \delta ; x_0 + \delta)$ tale che $f(x) \ge f(x_0), \forall x\in D_f$. Il corrispondente valore $f(x_0)$ si dice minimo globale.**
 
 **Si dice inoltre che esso è stretto se $f(x) > f(x_0), \forall x\in D_f$.**
 
@@ -91,7 +91,7 @@ In un estremante $f$ può essere continua oppure no, può essere derivabile oppu
 
 ## 3.1 Teorema di Fermat
 >Teorema di Fermat
-> **Sia $f:(a,b)\to \mathbb{R}, x_0 \in (a,b)$. Se $x_0$ è punto di estremo per $f$ e se $f$ è  derivabile in $x_0$, allora $f'(x_0)=0.$**
+> **Sia $f:(a,b)\to {\mathbb{R}}, x_0 \in (a,b)$. Se $x_0$ è punto di estremo per $f$ e se $f$ è  derivabile in $x_0$, allora $f'(x_0)=0.$**
 > 
 
 ### 3.1.1 Dimostrazione
@@ -127,7 +127,7 @@ Esistono punti stazionari che non sono né massimi, né minimi, né flessi.
 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
-Possiamo combinare l’uso dei Teoremi di **Weierstrass** [[16. Proprietà globali di funzioni continue o monotone su un intervallo](16%20Propriet%C3%A0%20globali%20di%20funzioni%20continue%20o%20monoto%2013634a78851580e9939afa57df101e20.md), paragrafo 2] e di **Fermat** per **studiare** **massimi** e **minimi assoluti** di una funzione $f:(a,b)\to\mathbb{R}$ **continua**.
+Possiamo combinare l’uso dei Teoremi di **Weierstrass** [[16. Proprietà globali di funzioni continue o monotone su un intervallo](16%20Propriet%C3%A0%20globali%20di%20funzioni%20continue%20o%20monoto%2013634a78851580e9939afa57df101e20.md), paragrafo 2] e di **Fermat** per **studiare** **massimi** e **minimi assoluti** di una funzione $f:(a,b)\to{\mathbb{R}}$ **continua**.
 
 Per Weierstrass $f$ **ammette massimo e minimo** assoluti $\in [a,b]$. 
 
@@ -142,7 +142,7 @@ Tra questi punti, dove $f$ assume il valore più grande sarà il massimo assolut
 
 ## 3.2 Teorema di Lagrange (o del valor medio)
 >Teorema di Lagrange
-> **Sia $f:[a,b]\to \mathbb{R}$ continua in $[a,b]$ e derivabile in $(a,b)$. Allora $\exists c \in (a,b)$ tale che $f'(c) = \frac{f(b)-f(a)}{b-a}$.**
+> **Sia $f:[a,b]\to {\mathbb{R}}$ continua in $[a,b]$ e derivabile in $(a,b)$. Allora $\exists c \in (a,b)$ tale che $f'(c) = \frac{f(b)-f(a)}{b-a}$.**
 > 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione (Teorema di Rolle)**
@@ -151,7 +151,7 @@ Se si aggiunge alle ipotesi del teorema di Lagrange che $f(b) = f(a)$  la tesi d
 
 ### 3.2.1 Dimostrazione
 
-Introduciamo una funzione ausiliaria $g:(a,b)\to\mathbb{R}$, 
+Introduciamo una funzione ausiliaria $g:(a,b)\to{\mathbb{R}}$, 
 $g(x) = f(x)-[\frac{f(b)-f(a)}{b-a}(x-a)+f(a)]$, in cui la funzione tra parentesi corrisponde alla retta passante per i punti $(a;f(a))$ e $(b;f(b))$.
 Allora:
 
@@ -169,11 +169,11 @@ $\Rightarrow$ $0 = g'(c)=f'(c)-\frac{f(b)-f(a)}{b-a}$ e per algebra dei limiti a
 
 ## 3.3 Teorema di caratterizzazione di funzioni costanti in un intervallo
 >Teorema 
-> **Sia $f:I\subseteq \mathbb{R}\to \mathbb{R}, I$  intervallo. Allora $f$ è costante in $I$ se e solo se $f$ è derivabile in $I$ e $f'(x) = 0,\forall x \in I$.**
+> **Sia $f:I\subseteq {\mathbb{R}}\to {\mathbb{R}}, I$  intervallo. Allora $f$ è costante in $I$ se e solo se $f$ è derivabile in $I$ e $f'(x) = 0,\forall x \in I$.**
 > 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
-Se $f:D_f \subseteq\mathbb{R}\to \mathbb{R}$ e $D_f\subseteq \mathbb{R}$ non è un intervallo, può accadere che 
+Se $f:D_f \subseteq{\mathbb{R}}\to {\mathbb{R}}$ e $D_f\subseteq {\mathbb{R}}$ non è un intervallo, può accadere che 
 $f'(x_0) = 0,\forall x \in D_f$   ma che $f$ non sia costante.
 
 
@@ -185,7 +185,7 @@ $f'(x_0) = 0,\forall x \in D_f$   ma che $f$ non sia costante.
 $f'(x_0) = \lim_{h\to 0}\frac{f(x_o+h)-f(x_0)}{h}= \lim_{h\to 0}\frac{\lambda-\lambda}{h} = 0$
 Quindi $f$ è derivabile in $I$ e $f'(x) =0$
 2. Siano $x_1,x_2 \in I$ . Sia $f'(x) =0$.
-Assumiamo per semplicità che sia $x_1<x_2$ e consideriamo la funzione $g:[x_1;x_2]\to \mathbb{R}$, $g(x) = f(x)$. Allora $g$ è derivabile e quindi continua in $[x_1;x_2]$ essendolo $f$ per ipotesi.
+Assumiamo per semplicità che sia $x_1<x_2$ e consideriamo la funzione $g:[x_1;x_2]\to {\mathbb{R}}$, $g(x) = f(x)$. Allora $g$ è derivabile e quindi continua in $[x_1;x_2]$ essendolo $f$ per ipotesi.
     
     Per il Teorema di Lagrange $\exists c\in (x_1,x_2)\sub I$ tale che $g'(c) = \frac{g(x_2)-g(x_1)}{x_2-x_1}$
     $\Rightarrow$  $f'(c) = \frac{f(x_2)-f(x_1)}{x_2-x_1}=0$
@@ -196,7 +196,7 @@ Assumiamo per semplicità che sia $x_1<x_2$ e consideriamo la funzione $g:[x_1;x
 
 ## 3.4 Test di monotonia
 >Test di monotonia
-> **Sia $f:(a,b)\to \mathbb{R}$ derivabile in $(a,b)$. Allora:**
+> **Sia $f:(a,b)\to {\mathbb{R}}$ derivabile in $(a,b)$. Allora:**
 > 
 > 1. **$f$ è crescente in $(a,b)$ $\Leftrightarrow$ $f'(x)\ge 0, \forall x\in (a,b)$**
 > 2. **$f$ è decrescente in $(a,b)$ $\Leftrightarrow$ $f'(x)\le 0, \forall x\in (a,b)$**
@@ -225,9 +225,9 @@ Il testo di monotonia permette di individuare massimi e minimi locali per $f$.
 ### 3.4.1 Dimostrazione
 
 1. **$f$ è crescente in $(a,b)$ $\Leftrightarrow$ $f'(x)\ge 0, \forall x\in (a,b)$**
-- Sia $f:(a,b)\to \mathbb{R}$ derivabile e crescente.
+- Sia $f:(a,b)\to {\mathbb{R}}$ derivabile e crescente.
     
-    Siano $x\in (a,b), h\in \mathbb{R}$ tale che $|h|$ sia abbastanza piccolo in modo che $x+h\in (a,b)$.
+    Siano $x\in (a,b), h\in {\mathbb{R}}$ tale che $|h|$ sia abbastanza piccolo in modo che $x+h\in (a,b)$.
     Essendo $f$ crescente abbiamo che:
     
     - $h>0\Rightarrow x+h>x\Rightarrow f(x+h)>f(x)$
@@ -238,7 +238,7 @@ Il testo di monotonia permette di individuare massimi e minimi locali per $f$.
     $f'(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}\ge 0$
     $\Rightarrow f'(x)\ge 0, \forall x\in (a,b)$
     
-- Sia $f:(a,b)\to \mathbb{R}$ derivabile e $f'(x)\ge 0, \forall x\in (a,b)$.
+- Sia $f:(a,b)\to {\mathbb{R}}$ derivabile e $f'(x)\ge 0, \forall x\in (a,b)$.
     
     Siano $x_1,x_2\in (a,b)$ e assumiamo sia $x_1<x_2$, per comodità. 
     $[x_1;x_2]\sub(a,b)$ e poiché $f$ è derivabile in $(a;b)$ essa lo sarà anche in $(x_1;x_2)$, e quindi sarà anche continua in $[x_1;x_2]$.
@@ -261,14 +261,14 @@ $\Rightarrow$  $f(x_2)> f(x_1)\Rightarrow f$ è strettamente crescente.
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
 
-Se $f(a,b)\to \mathbb{R}$ è derivabile, allora $f'(x_0)> 0\in (a,b)$ $\Rightarrow f$ è strettamente crescente in $(a,b)$ $\Rightarrow f$ è invertibile in $(a,b)$
+Se $f(a,b)\to {\mathbb{R}}$ è derivabile, allora $f'(x_0)> 0\in (a,b)$ $\Rightarrow f$ è strettamente crescente in $(a,b)$ $\Rightarrow f$ è invertibile in $(a,b)$
 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" />**Osservazione** sul rapporto tra funzioni e successioni
 
 Per dimostrare che una successione $a_n$ sia monotona serve dimostrare che $a_n \ge a_{n+1}, \forall n\in \mathbb{N}$ (o $a_n \ge a_{n+1}, \forall n\in \mathbb{N}$).
 
-Tuttavia se si riesce a definire una funzione $f(n):[0,+\infty)\to \mathbb{R}$ monotona crescente (o decrescente) tale che $f(n) = A_n ,\forall n \in \mathbb{N}$, allora si può dedurre che $a_n$ha la stessa monotonia della funzione.
+Tuttavia se si riesce a definire una funzione $f(n):[0,+\infty)\to {\mathbb{R}}$ monotona crescente (o decrescente) tale che $f(n) = A_n ,\forall n \in \mathbb{N}$, allora si può dedurre che $a_n$ha la stessa monotonia della funzione.
 
 $a_n = f(n) \le f(n+1)= a_{n+1}$ se $f$ cresce
 $a_n = f(n) \ge f(n+1)= a_{n+1}$  se $f$ decresce
@@ -280,12 +280,12 @@ Può accadere che $a_n$ sia monotona e che una sua interpolazione $f$ non lo sia
 
 # 4. Teorema di De L’Hôpital
 >Teorema di De L’Hôpital
-> **Siano $f,g:(a,b)\to\mathbb{R}$ derivabili, $g,g'\ne0\in (a,b)$. Se accade che**
+> **Siano $f,g:(a,b)\to{\mathbb{R}}$ derivabili, $g,g'\ne0\in (a,b)$. Se accade che**
 > 
 > 1. **$\lim _{x\to a^+}f(x)=\lim _{x\to a^+}g(x)=0$  oppure $\lim _{x\to a^+}f(x)=\pm \infty$ e $\lim _{x\to a^+}g(x)=\pm\infty$  (non necessariamente concordi in segno)**
-> 2. $\exists \lim _{x\to a^+}\frac{f'(x)}{g'(x)}=\ell\in \overline \mathbb{R}$
+> 2. $\exists \lim _{x\to a^+}\frac{f'(x)}{g'(x)}=\ell\in \overline {\mathbb{R}}$
 > 
-> **allora $\exists \lim _{x\to a^+}\frac{f(x)}{g(x)}=\ell\in \overline \mathbb{R}$.**
+> **allora $\exists \lim _{x\to a^+}\frac{f(x)}{g(x)}=\ell\in \overline {\mathbb{R}}$.**
 > 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" />**Osservazioni**
@@ -303,14 +303,14 @@ Mediante il Teorema di de L’Hôpital è possibile dimostrare la gerarchia degl
 
 # 5. Teorema del prolungamento della derivata prima
 >Teorema
-> **Sia $f:[a,b)\to\mathbb{R}$ continua in $[a,b)$ e derivabile in $(a,b)$. Supponiamo che $\lim_{x\to a^+}f'(x)= m \in \overline \mathbb{R}$. 
-Allora $\exists f_+'(a)=\lim_{h\to 0^+}\frac{f(a+h)-f(a)}{h}=m\in \overline \mathbb{R}$**
+> **Sia $f:[a,b)\to{\mathbb{R}}$ continua in $[a,b)$ e derivabile in $(a,b)$. Supponiamo che $\lim_{x\to a^+}f'(x)= m \in \overline {\mathbb{R}}$. 
+Allora $\exists f_+'(a)=\lim_{h\to 0^+}\frac{f(a+h)-f(a)}{h}=m\in \overline {\mathbb{R}}$**
 > 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" />**Osservazione**
 Sotto le ipotesi del teorema opportunamene modificate, vale il medesimo risultato anche per derivata sinistra $f_-'(b)$ e per la derivata $f'(x_0)$. La tesi diviene allora:
-$\exists f_-'(b)=\lim_{x\to b^+}f'(x)= m \in \overline \mathbb{R}$ nel primo caso;
-$\exists f'(x_0)=\lim_{x\to x_0}f'(x)= m \in \overline \mathbb{R}$ nel secondo caso.
+$\exists f_-'(b)=\lim_{x\to b^+}f'(x)= m \in \overline {\mathbb{R}}$ nel primo caso;
+$\exists f'(x_0)=\lim_{x\to x_0}f'(x)= m \in \overline {\mathbb{R}}$ nel secondo caso.
 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazioni**
@@ -329,11 +329,11 @@ $a\le c_h\le a+h$, quindi per $h\to 0, c_h\to a^+$ per il teorema del confronto.
 
 $\lim_{h\to0^+}\frac{f(a+h)-f(a)}{h}=\lim_{h\to0^+}f'(c_h)=\lim_{t\to a^+}f'(t)$, con il cambio di variabile $t= c_h$, in quanto $h\to0^+,  c_h\to a^+$. Sia $\lim_{t\to a^+}f'(t)=m$.
 
-Allora $\exists f'_+(a)=\lim_{h\to0^+}\frac{f(a+h)-f(a)}{h}=m\in \overline \mathbb{R}$.
+Allora $\exists f'_+(a)=\lim_{h\to0^+}\frac{f(a+h)-f(a)}{h}=m\in \overline {\mathbb{R}}$.
 
 ## 5.2 Corollario
 >Corollario
-> **Sia $f:I\subseteq\mathbb{R}\to\mathbb{R}$ con $I$  intervallo. Supponiamo $\exists f':I\to\mathbb{R}$, ossia $f$ sia derivabile $\forall x \in I$. Allora $f'$ può avere in $I$ solo punti di discontinuità di II specie**
+> **Sia $f:I\subseteq{\mathbb{R}}\to{\mathbb{R}}$ con $I$  intervallo. Supponiamo $\exists f':I\to{\mathbb{R}}$, ossia $f$ sia derivabile $\forall x \in I$. Allora $f'$ può avere in $I$ solo punti di discontinuità di II specie**
 > 
 
 La derivata prima non può quindi presentare discontinuità eliminabili o discontinuità a salto e la funzione non può pertanto avere punti angolosi.
@@ -342,11 +342,11 @@ La derivata prima non può quindi presentare discontinuità eliminabili o discon
 
 Per il Teorema di prolungamento della derivata $f_+'(x_0)=\lim_{x\to x_0^+}f'(x)$ e 
 
-$f_-'(x_0)=\lim_{x\to x_0^-}f'(x)$ se tali limiti esistono. Poiché $f'(x_0)\in \mathbb{R}$ per ipotesi, se tali limiti esistono, allora essi sono costretti a coincidere con $f'(x_0)$. In particolare $x_0$ non può essere punto di discontinuità eliminabile né a salto.
+$f_-'(x_0)=\lim_{x\to x_0^-}f'(x)$ se tali limiti esistono. Poiché $f'(x_0)\in {\mathbb{R}}$ per ipotesi, se tali limiti esistono, allora essi sono costretti a coincidere con $f'(x_0)$. In particolare $x_0$ non può essere punto di discontinuità eliminabile né a salto.
 
 # 6. Teorema di Darboux
 >Teorema
-> **Sia $f:I\subseteq\mathbb{R}\to\mathbb{R}$ con $I$  intervallo. Supponiamo $\exists f':I\to\mathbb{R}$. Allora per ogni coppia di punti $a,b\in I$  con $a<b$, la funzione $f'$ assume tutti i valori compresi tra $f'(a)$  e $f'(b)$ in $(a,b)\subseteq I$**
+> **Sia $f:I\subseteq{\mathbb{R}}\to{\mathbb{R}}$ con $I$  intervallo. Supponiamo $\exists f':I\to{\mathbb{R}}$. Allora per ogni coppia di punti $a,b\in I$  con $a<b$, la funzione $f'$ assume tutti i valori compresi tra $f'(a)$  e $f'(b)$ in $(a,b)\subseteq I$**
 > 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**

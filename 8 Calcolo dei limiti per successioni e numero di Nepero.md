@@ -5,7 +5,7 @@ Tags: Limiti, Successioni
 # 1. Teorema sull’algebra dei limiti
 
 >Teorema
->**Siano $a_n$  e $b_n$ due successioni ed $\exists\lim_{n\to\infty}a_n=a\in \mathbb{R}$ ed $\exists\lim_{n\to\infty}b_n=b\in \mathbb{R}$.
+>**Siano $a_n$  e $b_n$ due successioni ed $\exists\lim_{n\to\infty}a_n=a\in {\mathbb{R}}$ ed $\exists\lim_{n\to\infty}b_n=b\in {\mathbb{R}}$.
 Allora:**
 >
 >1. **$\lim_{n\to\infty}a_n\pm b_n = a \pm b$**
@@ -18,7 +18,7 @@ La dimostrazione del punto i. è relativamente semplice e fa uso della disuguagl
 ## 1.1 Corollario sull’algebra dei limiti
 
 >Corollario
->**Siano $a_n$  e $b_n$ due successioni ed $\exists\lim_{n\to\infty}a_n=a\in \mathbb{R}$ ed $\exists\lim_{n\to\infty}b_n=b\in \mathbb{R}$.**
+>**Siano $a_n$  e $b_n$ due successioni ed $\exists\lim_{n\to\infty}a_n=a\in {\mathbb{R}}$ ed $\exists\lim_{n\to\infty}b_n=b\in {\mathbb{R}}$.**
 >**Allora:**
 >1. **$a>b$ $\Rightarrow$ $a_n>b_n$ definitivamente in $n\in\mathbb{N}$**
 >2. **$a_n \ge b_n$ definitivamente in $n \in \mathbb{N}$ $\Rightarrow$  $a\ge b$**
@@ -27,8 +27,8 @@ La dimostrazione di ambedue i punti fa utilizzo di una successione $c_n = a_n-b_
 
 # 2. Teorema del confronto
 >Teorema del confronto
-> **Date tre successioni $a_n$, $b_n$ e $c_n$ : $a_n \le b_n \le c_n$ definitivamente in $n \in \mathbb{N}$ ed $\exists\lim_{n\to\infty}a_n=\lim_{n\to\infty}c_n=l\in \mathbb{R}$
-$\Rightarrow$  $\exists \lim_{n\to\infty}b_n = l \in \mathbb{R}$**
+> **Date tre successioni $a_n$, $b_n$ e $c_n$ : $a_n \le b_n \le c_n$ definitivamente in $n \in \mathbb{N}$ ed $\exists\lim_{n\to\infty}a_n=\lim_{n\to\infty}c_n=l\in {\mathbb{R}}$
+$\Rightarrow$  $\exists \lim_{n\to\infty}b_n = l \in {\mathbb{R}}$**
 > 
 
 ### 2.0 comma 1 - Dimostrazione
@@ -53,7 +53,7 @@ Come la precedente, anche questo teorema si basa sulla definizione di limite per
 
 > Corollario
 >1. **Date due successioni $a_n$ e $b_n$ : $|a_n| \le |b_n |$ definitivamente in $n \in \mathbb{N}$ ed 
->$\exists\lim_{n\to\infty}b_n=0 \in \mathbb{R}$ $\Rightarrow$ $\exists\lim_{n\to\infty}a_n=0 \in \mathbb{R}$**
+>$\exists\lim_{n\to\infty}b_n=0 \in {\mathbb{R}}$ $\Rightarrow$ $\exists\lim_{n\to\infty}a_n=0 \in {\mathbb{R}}$**
 >2. **Date due successioni $a_n$ e $b_n$ tali che $a_n$ sia limitata e $\exists\lim_{n\to\infty}b_n=0$ $\Rightarrow$ $\exists\lim_{n\to\infty}a_nb_n=0$**
 
 ### 2.2.1 Dimostrazione
@@ -76,15 +76,15 @@ Dai limiti appena scritti si può facilmente dedurre che per $n\to \infty$, $\lo
 
 Seguono una serie di **regole** per il calcolo dei limiti di successioni. Siano $a_n$  e $b_n$ due successioni qualunque.
 
-1. Se $\lim_{n\to\infty}a_n = \ell \in \mathbb{R}$ e $\lim_{n\to\infty}b_n = \pm \infty$
+1. Se $\lim_{n\to\infty}a_n = \ell \in {\mathbb{R}}$ e $\lim_{n\to\infty}b_n = \pm \infty$
 $\Rightarrow$ $\lim_{n\to\infty}a_n+b_n=\pm \infty$
 2. Se $\lim_{n\to\infty}a_n = \lim_{n\to\infty}b_n = \pm \infty$ 
 $\Rightarrow$ $\lim_{n\to\infty}a_n+b_n=\pm \infty$
-3. Se $\lim_{n\to\infty}a_n = \ell \in \overline \mathbb{R} \setminus\{0\}$ e $\lim_{n\to\infty}b_n = \pm \infty$
+3. Se $\lim_{n\to\infty}a_n = \ell \in \overline {\mathbb{R}} \setminus\{0\}$ e $\lim_{n\to\infty}b_n = \pm \infty$
 $\Rightarrow$ $\lim_{n\to\infty}a_nb_n=\pm \infty$ con le usuali regole del segno.
-4. Se $\lim_{n\to\infty}a_n = \ell \in \overline \mathbb{R} \setminus\{0\}$ e $\lim_{n\to\infty}b_n = 0^\pm$
+4. Se $\lim_{n\to\infty}a_n = \ell \in \overline {\mathbb{R}} \setminus\{0\}$ e $\lim_{n\to\infty}b_n = 0^\pm$
 $\Rightarrow$ $\lim_{n\to\infty}{a_n\over b_n}=\pm \infty$ con le usuali regole del segno.
-5. Se $\lim_{n\to\infty}a_n = \ell \in \mathbb{R}$ e $\lim_{n\to\infty}b_n = \pm \infty$
+5. Se $\lim_{n\to\infty}a_n = \ell \in {\mathbb{R}}$ e $\lim_{n\to\infty}b_n = \pm \infty$
 $\Rightarrow$ $\lim_{n\to\infty}{a_n\over b_n}=0$
 
 Prendono il nome di **forme di indeterminatezza** tutte le seguenti: $\infty-\infty$; $\infty \cdot 0$; $\infty \over \infty$; $0 \over 0$.
@@ -92,7 +92,7 @@ Prendono il nome di **forme di indeterminatezza** tutte le seguenti: $\infty-\in
 ## 4.1 Estensione dell’algebra dei limiti
 
 >Teorema 
-> **Se $a_b$ e $b_n$ sono successioni $\lim_{n\to\infty}a_n = a \in \overline \mathbb{R}, a>0$ e $\lim_{n\to\infty}b_b = b \in \overline \mathbb{R}$ $\Rightarrow$ $\lim_{n\to\infty}{a_n}^{b_n}= a^b$.**
+> **Se $a_b$ e $b_n$ sono successioni $\lim_{n\to\infty}a_n = a \in \overline {\mathbb{R}}, a>0$ e $\lim_{n\to\infty}b_b = b \in \overline {\mathbb{R}}$ $\Rightarrow$ $\lim_{n\to\infty}{a_n}^{b_n}= a^b$.**
 > 
 1. $a^{+\infty} = +\infty$, $\forall a>1$
 2. $a^{-\infty} = 0$, $\forall a>1$
@@ -113,7 +113,7 @@ NON sono forme di indeterminatezza le seguenti:
 # 5. Il numero di Nepero $e$
 
 >Teorema
-> **La successione $a_n = (1 + \frac{1}{n})^n$ è monotona crescente e limitata; in particolare essa ammette limite in $\mathbb{R}$.**
+> **La successione $a_n = (1 + \frac{1}{n})^n$ è monotona crescente e limitata; in particolare essa ammette limite in ${\mathbb{R}}$.**
 > 
 
 ## 5 comma 1 - Dimostrazione
@@ -142,13 +142,13 @@ Il numero di Nepero può essere anche visto come l’estremo superiore di $a_n$.
 
 ## 5.2 Corollario (conseguenza della definizione di $e$)
 >Corollario
-> **$$\forall a \in \mathbb{R}, \lim_{n\to\infty}(1 + \frac{a}{n})^n = e^a$$**
+> **$$\forall a \in {\mathbb{R}}, \lim_{n\to\infty}(1 + \frac{a}{n})^n = e^a$$**
 > 
 
 # 6. Criterio del rapporto tra successioni
 
 >Teorema: criterio del rapporto tra successioni
-> **Sia $a_n$ una successione tale che $a_n >0$ definitivamente e $\exists \ell=\lim_{n\to\infty}\frac{a_{n+1}}{a_n}\in \overline\mathbb{R}$.**
+> **Sia $a_n$ una successione tale che $a_n >0$ definitivamente e $\exists \ell=\lim_{n\to\infty}\frac{a_{n+1}}{a_n}\in \overline{\mathbb{R}}$.**
 > 
 > - **$\ell > 1 \Rightarrow \lim_{n\to\infty}a_n=+\infty$;**
 > - **$0< \ell < 1 \Rightarrow \lim_{n\to\infty}a_n=0$;**

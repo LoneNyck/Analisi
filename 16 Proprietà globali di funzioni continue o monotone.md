@@ -5,7 +5,7 @@ Data lezione: 06/11/2024
 
 # 1. Teorema degli zeri
 >Teorema degli zeri 
-> **Sia $f: [a,b]\to \mathbb{R}$, $a,b \in \mathbb{R}, a < b,$ $f$ continua nel dominio e tale che $f(a) f(b) <0$. Allora $\exists x_0 \in [a,b]$ tale che $f(x_0) = 0$. Inoltre se $f$ è strettamente monotona, allora tale $x_0$ è unico.**
+> **Sia $f: [a,b]\to {\mathbb{R}}$, $a,b \in {\mathbb{R}}, a < b,$ $f$ continua nel dominio e tale che $f(a) f(b) <0$. Allora $\exists x_0 \in [a,b]$ tale che $f(x_0) = 0$. Inoltre se $f$ è strettamente monotona, allora tale $x_0$ è unico.**
 > 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazioni**
@@ -50,23 +50,23 @@ Data lezione: 06/11/2024
 # 2. Teorema di Weierstrass
 
 >Definizone: minimo e massimo
->**Se $f: I \subseteq \mathbb{R} \to \mathbb{R}$ e $x_m\in I :  f(x_m) =\min f(x)$ per $x\in[a,b]$, $x_m$ si dice punto di minimo per $f$ e $f(x_m)$ si dice minimo della funzione.**
->**Se $f: I \subseteq \mathbb{R} \to \mathbb{R}$ e $x_M\in I :  f(x_M) =\max f(x)$ per $x\in[a,b]$, $x_M$ si dice punto di massimo per $f$ e $f(x_M)$ si dice massimo della funzione.**
+>**Se $f: I \subseteq {\mathbb{R}} \to {\mathbb{R}}$ e $x_m\in I :  f(x_m) =\min f(x)$ per $x\in[a,b]$, $x_m$ si dice punto di minimo per $f$ e $f(x_m)$ si dice minimo della funzione.**
+>**Se $f: I \subseteq {\mathbb{R}} \to {\mathbb{R}}$ e $x_M\in I :  f(x_M) =\max f(x)$ per $x\in[a,b]$, $x_M$ si dice punto di massimo per $f$ e $f(x_M)$ si dice massimo della funzione.**
 
 >Teorema di Weierstrass
-> **Sia $f: [a,b]\to \mathbb{R}$, $a,b \in \mathbb{R}, a < b,$ $f$ continua nel dominio. Allora $f$ ammette massimi e minimi assoluti in $[a,b]$, ossia $\exists x_m, x_M\in [a,b]: f(x_m) \le f(x)\le f(x_M) \forall x\in [a,b]$.
+> **Sia $f: [a,b]\to {\mathbb{R}}$, $a,b \in {\mathbb{R}}, a < b,$ $f$ continua nel dominio. Allora $f$ ammette massimi e minimi assoluti in $[a,b]$, ossia $\exists x_m, x_M\in [a,b]: f(x_m) \le f(x)\le f(x_M) \forall x\in [a,b]$.
 Inoltre $f(x_m) = \min f(x), x\in [a,b]$ e $f(x_M) = \max f(x), x\in [a,b]$.**
 > 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" />**Osservazioni**
 
-- Se $f:[a,b] \to \mathbb{R}$ è continua, per il teorema di Weierstrass essa è limitata in  $[a,b]$ in quanto $\sup f = \max f$ e $\inf f = \min f$
+- Se $f:[a,b] \to {\mathbb{R}}$ è continua, per il teorema di Weierstrass essa è limitata in  $[a,b]$ in quanto $\sup f = \max f$ e $\inf f = \min f$
 - Se $f$ non è continua o se $I$  non è chiuso o non è limitato, allora il teorema di Weierstrass è falso.
 
 # 3. Teorema dei valori intermedi
 
 >Teorema dei valori intermedi
-> **Sia $f:[a,b] \to \mathbb{R}$ continua. Allora $\forall \lambda \in \mathbb{R}$ compreso tra $m= \min f$ e $M = \max f$ (inclusi), esiste $x_0\in [a,b]: f(x_0 ) = \lambda$.**
+> **Sia $f:[a,b] \to {\mathbb{R}}$ continua. Allora $\forall \lambda \in {\mathbb{R}}$ compreso tra $m= \min f$ e $M = \max f$ (inclusi), esiste $x_0\in [a,b]: f(x_0 ) = \lambda$.**
 > 
 
 ## 3.1 Dimostrazione
@@ -76,32 +76,32 @@ Per il teorema di Weierstrass $f$ ammette massimo e minimo assoluti in $[a,b]$, 
 Se $\lambda = m$  oppure $\lambda = M$ abbiamo concluso, avendo trovato i valori per i quali questo si verifica.
 
 Se $\lambda \in (m,M)$, assumiamo $x_m<x_M$  per comodità. Consideriamo la funzione 
-$g:[x_m,x_M]\to \mathbb{R}$, $g(x) = f(x)-\lambda$. Possiamo dedurre che $g$ sia continua dal fatto che $[x_m,x_M]\subseteq [a,b]$ e dal fatto che $f$ sia continua. Avendo $m<\lambda< M$ - il caso uguale è già stato preso in considerazione - possiamo concludere che
+$g:[x_m,x_M]\to {\mathbb{R}}$, $g(x) = f(x)-\lambda$. Possiamo dedurre che $g$ sia continua dal fatto che $[x_m,x_M]\subseteq [a,b]$ e dal fatto che $f$ sia continua. Avendo $m<\lambda< M$ - il caso uguale è già stato preso in considerazione - possiamo concludere che
 $g(x_m)= f(x_m)-\lambda=m-\lambda<0$
 $g(x_M) = f(x_M)-\lambda = M-\lambda >0$
 Per il teorema degli zeri $\exists x_0\in (x_m,x_M)\subseteq(a,b)$ tale che $g(x_0) = 0$. Questo equivale a dire che $f(x_0)= \lambda$.
 
 ## 3.2 Conseguenza del teorema dei valori intermedi
 >Corollario
-> **Se $f:[a,b] \to \mathbb{R}$ è continua, allora $\operatorname{Im} f= [m,M]$ con $m = \min f$ e $M = \max f$.**
+> **Se $f:[a,b] \to {\mathbb{R}}$ è continua, allora $\operatorname{Im} f= [m,M]$ con $m = \min f$ e $M = \max f$.**
 > 
 
 >Corollario
-> **Se $f:I \subseteq \mathbb{R} \to \mathbb{R}$ è continua in $I$, con $I$  intervallo, allora $\operatorname{Im} f$ è un intervallo.**
+> **Se $f:I \subseteq {\mathbb{R}} \to {\mathbb{R}}$ è continua in $I$, con $I$  intervallo, allora $\operatorname{Im} f$ è un intervallo.**
 > 
 
 # 4. Teorema sul limite di funzioni monotone
 
 Segue un teorema per funzioni monotone: esse è stato diviso nei casi in cui la funzione sia crescente o decrescente.
 >Teorema
-> **Sia $f:(a,b) \to \mathbb{R}$  una funzione monotona crescente. Allora $\forall x_0\in (a,b)$ esistono finiti $\lim_{x\to {x_0}^-}f(x)$ e $\lim_{x\to {x_0}^+}f(x)$ $\in \mathbb{R}$.
+> **Sia $f:(a,b) \to {\mathbb{R}}$  una funzione monotona crescente. Allora $\forall x_0\in (a,b)$ esistono finiti $\lim_{x\to {x_0}^-}f(x)$ e $\lim_{x\to {x_0}^+}f(x)$ $\in {\mathbb{R}}$.
 Inoltre $\lim_{x\to {x_0}^-}f(x) = \sup f(x) , x \in (a,x_0)$ e $\lim_{x\to {x_0}^+}f(x)= \inf f(x), x \in (x_0,b)$.
 Ne consegue che $\lim_{x\to {x_0}^-}f(x)\le f(x_0) \le\lim_{x\to {x_0}^+}f(x)$**
 > 
 
 Inoltre esistono, eventualmente infiniti $\lim_{x\to {a}^+}f(x)= \inf f(x) , x \in (a,b)$ e $\lim_{x\to {b}^-}f(x)= \sup f(x), x \in (a,b)$.
 >Teorema
-> **Sia $f:(a,b) \to \mathbb{R}$  una funzione monotona decrescente. Allora $\forall x_0\in (a,b)$ esistono finiti $\lim_{x\to {x_0}^-}f(x)$ e $\lim_{x\to {x_0}^+}f(x)$ $\in \mathbb{R}$.
+> **Sia $f:(a,b) \to {\mathbb{R}}$  una funzione monotona decrescente. Allora $\forall x_0\in (a,b)$ esistono finiti $\lim_{x\to {x_0}^-}f(x)$ e $\lim_{x\to {x_0}^+}f(x)$ $\in {\mathbb{R}}$.
 Inoltre $\lim_{x\to {x_0}^-}f(x) = \inf f(x) , x \in (a,x_o)$ e $\lim_{x\to {x_0}^+}f(x)= \sup f(x), x \in (x_0,b)$.
 Ne consegue che $\lim_{x\to {x_0}^-}f(x)\ge f(x_0) \ge\lim_{x\to {x_0}^+}f(x)$**
 > 
@@ -110,17 +110,17 @@ Inoltre esistono, eventualmente infiniti $\lim_{x\to {a}^+}f(x)= \sup f(x) , x \
 
 
 >Corollario
-> **Se $f: (a,b)\to \mathbb{R}$ è monotona, i suoi eventuali punti di discontinuità in $(a,b)$  sono di tipo salto. Inoltre in $x= a$  e in $x = b$, $f$  ammette limite finito - ed è quindi ivi prolungabile per continuità - oppure infinito - ed è quindi ivi presenta un asintoto verticale.**
+> **Se $f: (a,b)\to {\mathbb{R}}$ è monotona, i suoi eventuali punti di discontinuità in $(a,b)$  sono di tipo salto. Inoltre in $x= a$  e in $x = b$, $f$  ammette limite finito - ed è quindi ivi prolungabile per continuità - oppure infinito - ed è quindi ivi presenta un asintoto verticale.**
 > 
 
 # 5. Continuità e invertibilità
 
 Abbiamo già visto in [6. Nozioni elementari sulle funzioni](6%20Nozioni%20elementari%20sulle%20funzioni%2011034a78851580bf8b22e74f29991a40.md), 8.1,  che la monotonia stretta implica l’invertibilità e che la funzione inversa così ottenuta sarà anch’essa monotona. Il viceversa in generale però non è vero, ossia una funzione invertibile non è strettamente monotona. Se $f$ è continua questo però non è vero.
 >Teorema
-> **Sia $f:I \subseteq \mathbb{R} \to \mathbb{R}$, con $I$  intervallo e $f$  continua. $f$ invertibile $\Leftrightarrow$  $f$ strettamente monotona.**
+> **Sia $f:I \subseteq {\mathbb{R}} \to {\mathbb{R}}$, con $I$  intervallo e $f$  continua. $f$ invertibile $\Leftrightarrow$  $f$ strettamente monotona.**
 > 
 
-In tal caso inoltre $f^{-1}: \operatorname{Im} f \subseteq \mathbb{R} \to \mathbb{R}$ è strettamente monotona come $f$, $f^{-1}$ ha come dominio un intervallo e $f^{-1}$ è continua nel suo dominio.
+In tal caso inoltre $f^{-1}: \operatorname{Im} f \subseteq {\mathbb{R}} \to {\mathbb{R}}$ è strettamente monotona come $f$, $f^{-1}$ ha come dominio un intervallo e $f^{-1}$ è continua nel suo dominio.
 
 Una funzione continua e invertibile ha inversa continua. In particolare sono continue nei loro domini: 
 

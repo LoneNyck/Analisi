@@ -9,13 +9,13 @@ Segue la definizione di asintotico ed o-piccolo, già vista anche per le success
 
 
 >Definizione: o-piccolo e asintotico
->**Date due funzioni $f$  e $g$ e $x_0 \in \overline \mathbb{R}$ diremo che**
+>**Date due funzioni $f$  e $g$ e $x_0 \in \overline {\mathbb{R}}$ diremo che**
 >- **${f(x)\sim g(x)}$ per $x\to x_0$ se $\lim_{x\to x_0}{f(x)\over g(x)} = 1$.**
 >- **${f(x) = o(g(x))}$ per $x\to x_0$ se $\lim_{x\to x_0}{f(x)\over g(x)} = 0$.**
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
 
-- $\lim_{x\to x_0}{f(x)\over g(x)} = \lambda \in \mathbb{R} \setminus \{0\}$ $\Rightarrow$ $f(x) \sim \lambda g(x)$ , $x\to x_0$.
+- $\lim_{x\to x_0}{f(x)\over g(x)} = \lambda \in {\mathbb{R}} \setminus \{0\}$ $\Rightarrow$ $f(x) \sim \lambda g(x)$ , $x\to x_0$.
 - $\lim_{x\to x_0}{f(x)\over g(x)} = \pm \infty$ $\Rightarrow$ $g(x) = o(f(x))$ , $x\to x_0$.
 
 Inoltre è possibile stabilire una relazione tra $o$-*piccolo* e asintotico
@@ -38,12 +38,12 @@ $f$ e $g$ sono asintotici tra loro se il limite del loro rapporto tende a $1$. O
 
 La relazione di asintotico può quindi essere usata senza limitazioni per quanto riguarda **prodotti**, **rapporti** e **potenze**.
 
-1. Se $f\sim g$ per $x\to x_0$ allora $\exists \lim_{x\to x_0}f(x)\in \overline\mathbb{R}$ $\Leftrightarrow$ $\exists \lim_{x\to x_0}g(x)\in \overline \mathbb{R}$. Inoltre, se i due limiti esistono, essi sono uguali.
+1. Se $f\sim g$ per $x\to x_0$ allora $\exists \lim_{x\to x_0}f(x)\in \overline{\mathbb{R}}$ $\Leftrightarrow$ $\exists \lim_{x\to x_0}g(x)\in \overline {\mathbb{R}}$. Inoltre, se i due limiti esistono, essi sono uguali.
 
 ### 1.1 comma 1 - Dimostrazione
 
 1. Tutte e tre le dimostrazioni consistono nello svolgere il rapporto tra il termine a sinistra e a destra dell’asintotico e utilizzare l’algebra dei limiti per verificare che quest’ultimo vada a $1$.
-2. È possibile riscrivere $f(x) = \frac{f(x)}{g(x)}g(x)$. Esistendo il limite di $g(x)$ per $x\to x_0$ in $\overline \mathbb{R}$, per algebra dei limiti ed aritmetizzazione di infinito possiamo scrivere che $\lim_{x\to x_0}\frac{f(x)}{g(x)}g(x)= 1\cdot\ell = \ell$ essendo le due funzioni asintotiche per ipotesi.
+2. È possibile riscrivere $f(x) = \frac{f(x)}{g(x)}g(x)$. Esistendo il limite di $g(x)$ per $x\to x_0$ in $\overline {\mathbb{R}}$, per algebra dei limiti ed aritmetizzazione di infinito possiamo scrivere che $\lim_{x\to x_0}\frac{f(x)}{g(x)}g(x)= 1\cdot\ell = \ell$ essendo le due funzioni asintotiche per ipotesi.
 
 ---
 
@@ -96,4 +96,4 @@ Si noti che se $\lim_{x\to x_0}f(x) = \infty$, allora $\lim_{x\to x_0}{(\log_a f
 
 # 4. Grafici locali
 
-Le stime tramite sviluppi asintotici servono per il calcolo dei limiti, ma anche per tenere traccia dei grafici qualitativi - probabili! -  di una funzione in un intorno di $x_o \in \overline \mathbb{R}$.  Si tenga a mente che per uno studio rigoroso e preciso è comunque necessario l’utilizzo di derivate. Si noti comunque che in generale non è vero che se $f\sim g$ per $x\to x_0$, allora vicino ad $x_0$  i grafici di $f$ e di $g$  si assomigliano.
+Le stime tramite sviluppi asintotici servono per il calcolo dei limiti, ma anche per tenere traccia dei grafici qualitativi - probabili! -  di una funzione in un intorno di $x_o \in \overline {\mathbb{R}}$.  Si tenga a mente che per uno studio rigoroso e preciso è comunque necessario l’utilizzo di derivate. Si noti comunque che in generale non è vero che se $f\sim g$ per $x\to x_0$, allora vicino ad $x_0$  i grafici di $f$ e di $g$  si assomigliano.

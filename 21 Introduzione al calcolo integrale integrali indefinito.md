@@ -6,27 +6,27 @@ Data lezione: 28/11/2024
 # 1. Primitiva della funzione
 
 >Definizione: Primitiva
->**Data $f:I\subseteq\mathbb{R}\to\mathbb{R}$ e $F:I\to\mathbb{R}$ diremo che $F$ è primitiva di $f$ in $I$ se**
+>**Data $f:I\subseteq{\mathbb{R}}\to{\mathbb{R}}$ e $F:I\to{\mathbb{R}}$ diremo che $F$ è primitiva di $f$ in $I$ se**
 >1. **$F$ è derivabile in $I$**
->2. **$F'(x) = f(x),\forall x\in \mathbb{R}$**
+>2. **$F'(x) = f(x),\forall x\in {\mathbb{R}}$**
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
-Data $f:I\subseteq\mathbb{R}\to\mathbb{R}$, $I$ intervallo, non è detto che essa ammetta primitiva in $I$.
+Data $f:I\subseteq{\mathbb{R}}\to{\mathbb{R}}$, $I$ intervallo, non è detto che essa ammetta primitiva in $I$.
 
 Un’esempio può essere la la funzione che vale 0 in $[-1,0)$ e 1 in $[0,1]$, oppure la funzione segno, le quali non ammettono primitiva perché hanno punti di discontinuità di tipo salto in $x_0$ e non soddisfano la proprietà dei valori intermedi (in particolare il teorema di Darboux). Per i teoremi visti sui punti di discontinuità delle funzioni definite e derivabili, $f$ non può essere derivata di alcuna funzione nell’intervallo $[-1,1]$
 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
-Data $f:I\subseteq\mathbb{R}\to\mathbb{R}$, $I$ intervallo, e $f$ continua in $I$, allora essa ammette primitiva. Questo prenderà il nome di Teorema fondamentale del calcolo integrale, che vedremo in seguito.
+Data $f:I\subseteq{\mathbb{R}}\to{\mathbb{R}}$, $I$ intervallo, e $f$ continua in $I$, allora essa ammette primitiva. Questo prenderà il nome di Teorema fondamentale del calcolo integrale, che vedremo in seguito.
 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
 Esistono funzioni non continue che ammettono comunque primitiva.
 
 >Teorema
-> **Se $F:I\subseteq\mathbb{R}\to\mathbb{R}$ è una primitiva di $f:I\subseteq \mathbb{R}\to\mathbb{R}$ in $I$ e $c\in \mathbb{R}$, allora anche $F(x)+c$ è una primitiva di $f$ in $I.$
-Analogamente se sono date due primitive $F_1,F_2$ di $f$ sempre dal medesimo intervallo a $\mathbb{R}$, allora
-$\exists c\in \mathbb{R}:F_1(x)=F_2(x)-c, \forall x \in \mathbb{R}$**
+> **Se $F:I\subseteq{\mathbb{R}}\to{\mathbb{R}}$ è una primitiva di $f:I\subseteq {\mathbb{R}}\to{\mathbb{R}}$ in $I$ e $c\in {\mathbb{R}}$, allora anche $F(x)+c$ è una primitiva di $f$ in $I.$
+Analogamente se sono date due primitive $F_1,F_2$ di $f$ sempre dal medesimo intervallo a ${\mathbb{R}}$, allora
+$\exists c\in {\mathbb{R}}:F_1(x)=F_2(x)-c, \forall x \in {\mathbb{R}}$**
 > 
 
 <img src="https://www.notion.so/icons/circle-alternate_red.svg" alt="https://www.notion.so/icons/circle-alternate_red.svg" width="15px" /> **Osservazione**
@@ -64,7 +64,7 @@ Segue una tabella con i principali integrali notevoli, ricavati mediante l’inv
 
 
 >Definizione: Integrale indefinito
->**L’insieme di tutte le primitive di $f:I\subseteq\mathbb{R}\to\mathbb{R}$ prende il nome di integrale indefinito di $f$ e si indica con**
+>**L’insieme di tutte le primitive di $f:I\subseteq{\mathbb{R}}\to{\mathbb{R}}$ prende il nome di integrale indefinito di $f$ e si indica con**
 >$$
 \int f(x)\ dx
 $$
@@ -83,7 +83,7 @@ $$
 ## 3.1 Linearità dell’integrale
 
 >Teorema
-> **Siano $f,g:I\subseteq\mathbb{R}\to\mathbb{R}, \alpha,\beta\in \mathbb{R}$. Allora**
+> **Siano $f,g:I\subseteq{\mathbb{R}}\to{\mathbb{R}}, \alpha,\beta\in {\mathbb{R}}$. Allora**
 > $$
 >   \int \alpha f(x)+\beta g(x) \ dx = \alpha \int f(x) \ dx + \beta \int g(x) \ dx
 > $$
@@ -91,7 +91,7 @@ $$
 
 ## 3.2 Integrazione per parti
 >Teorema
-> **Siano $f,g:I\subseteq\mathbb{R}\to\mathbb{R}, I$  intervallo,  funzioni derivabili in $I$. Allora**
+> **Siano $f,g:I\subseteq{\mathbb{R}}\to{\mathbb{R}}, I$  intervallo,  funzioni derivabili in $I$. Allora**
 > 
 > $$
 >  \int f'(x)g(x) \ dx = f(x)g(x)-\int f(x)g'(x) \ dx
@@ -100,7 +100,7 @@ $$
 
 ## 3.3 Integrale per sostituzione / integrazione di funzioni composte
 
-> **Siano $f:I\subseteq\mathbb{R}\to\mathbb{R}, I$  intervallo,  e $\psi :J\to I , J$  intervallo, $\psi$  derivabile in $J$. Allora**
+> **Siano $f:I\subseteq{\mathbb{R}}\to{\mathbb{R}}, I$  intervallo,  e $\psi :J\to I , J$  intervallo, $\psi$  derivabile in $J$. Allora**
 > 
 > 
 > $$

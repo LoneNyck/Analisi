@@ -4,16 +4,16 @@ Tags: Funzioni, Limiti
 Data lezione: 30/10/2024
 
 >Definizione: Definitivamente
-**Siano $f: I \subseteq \mathbb{R} \to \mathbb{R}$, $x_0 \in \mathbb{R}$ punto di accumulazione per $I$. Diremo che una funzione $f$ soddisfa una proprietà $p$ definitivamente per $x\to x_0$se $\exists U(x_0)$ intorno di $x_0$ tale che $p$ sia soddisfatta $\forall x \in U(x_0), x\ne x_0$.** 
+**Siano $f: I \subseteq {\mathbb{R}} \to {\mathbb{R}}$, $x_0 \in {\mathbb{R}}$ punto di accumulazione per $I$. Diremo che una funzione $f$ soddisfa una proprietà $p$ definitivamente per $x\to x_0$se $\exists U(x_0)$ intorno di $x_0$ tale che $p$ sia soddisfatta $\forall x \in U(x_0), x\ne x_0$.** 
 
 # 1. Teorema del confronto
 >Teorema del condronto
-> **Siano $f,g,h: I \subseteq \mathbb{R} \to \mathbb{R}$, $x_0 \in \overline\mathbb{R}$ punto di accumulazione per $I$. Se $\exists\lim_{x\to x_0}f(x)=\lim_{x\to x_0}h(x)=\ell$ e vale definitivamente che $f(x) \le g(x) \le h(x)$ allora $\exists\lim_{x\to x_0}g(x)= \ell$**
+> **Siano $f,g,h: I \subseteq {\mathbb{R}} \to {\mathbb{R}}$, $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $I$. Se $\exists\lim_{x\to x_0}f(x)=\lim_{x\to x_0}h(x)=\ell$ e vale definitivamente che $f(x) \le g(x) \le h(x)$ allora $\exists\lim_{x\to x_0}g(x)= \ell$**
 > 
 
 ## 1.1 Teorema del confronto per funzioni con limite infinito.
 >Teorema 
-> **Siano $f,g: I \subseteq \mathbb{R} \to \mathbb{R}$, $x_0 \in \overline\mathbb{R}$ punto di accumulazione per $I$. Supponiamo sia $f(x) \le g(x)$  definitivamente per $x\to x_0$.**
+> **Siano $f,g: I \subseteq {\mathbb{R}} \to {\mathbb{R}}$, $x_0 \in \overline{\mathbb{R}}$ punto di accumulazione per $I$. Supponiamo sia $f(x) \le g(x)$  definitivamente per $x\to x_0$.**
 > 
 > 1. $\exists\lim_{x\to x_0}f(x)= +\infty$ $\Rightarrow$ $\exists\lim_{x\to x_0}g(x)= +\infty$
 > 2. $\exists\lim_{x\to x_0}g(x)= -\infty$ $\Rightarrow$ $\exists\lim_{x\to x_0}f(x)= -\infty$
@@ -41,7 +41,7 @@ $\Rightarrow$ $f(x) < 0$ definitivamente per $x\to x_0$.**
 
 ### 2.1.1 Dimostrazione
 
-Assumiamo $x_0$  e $\ell \in \mathbb{R}$. 
+Assumiamo $x_0$  e $\ell \in {\mathbb{R}}$. 
 Per la definizione di limite abbiamo che 
 $\forall \epsilon >0 \exists \delta > 0:0<|x-x_0|<\delta \Rightarrow \ell-\epsilon < f(x)<\ell+\epsilon$.
 
@@ -69,7 +69,7 @@ Anche se $f(x) > 0$, il limite sarebbe ancora $\ell \ge 0$: basta pensare ad una
 
 # 3. Teorema sull’algebra dei limiti e aritmetizzazione parziale di infinito.
 
-Siano $f$ e $g$ due funzioni ed $\exists\lim_{x\to x_0}f(x)=\ell_1$ ed $\exists\lim_{x\to x_0}g(x)=\ell_2$, con $\ell_1, \ell_2, x_0 \in \overline \mathbb{R}$.
+Siano $f$ e $g$ due funzioni ed $\exists\lim_{x\to x_0}f(x)=\ell_1$ ed $\exists\lim_{x\to x_0}g(x)=\ell_2$, con $\ell_1, \ell_2, x_0 \in \overline {\mathbb{R}}$.
 Allora:
 
 1. $\lim_{x\to x_0}f(x)\pm g(x) = \ell_1\pm\ell_2$
@@ -78,11 +78,11 @@ Allora:
 4. $\lim_{x\to x_0}f(x)^{g(x)} = {\ell_1}^{\ell_2}$, con $f(x)^{g(x)}$ ben definita in un intorno di $x_0$, salvo al più $x_0$
 5. $\lim_{x\to x_0}f(x)^\alpha = {\ell_1}^\alpha$, con $f(x)^{\alpha}$ ben definita in un intorno di $x_0$, salvo al più $x_0$
 
-a meno di forme di indeterminazione $\infty - \infty, 0\cdot \infty, {0\over 0}, {\infty \over \infty}, 1^\infty, \infty^0, 0^0$ oppure del caso $c\over 0$, con $c\in \overline \mathbb{R}\setminus\{0\}$ e $0$ né $0^+$ né $0^-$.
+a meno di forme di indeterminazione $\infty - \infty, 0\cdot \infty, {0\over 0}, {\infty \over \infty}, 1^\infty, \infty^0, 0^0$ oppure del caso $c\over 0$, con $c\in \overline {\mathbb{R}}\setminus\{0\}$ e $0$ né $0^+$ né $0^-$.
 
 # 4. Teorema sull’algebra delle funzioni continue.
 
-Siano $f$ e $g$ sono funzioni continue in $x_0\in\mathbb{R}$, cioè $\lim_{x\to x_0}f(x)=f(x_0)$ e $\lim_{x\to x_0}g(x)=g(x_0)$.
+Siano $f$ e $g$ sono funzioni continue in $x_0\in{\mathbb{R}}$, cioè $\lim_{x\to x_0}f(x)=f(x_0)$ e $\lim_{x\to x_0}g(x)=g(x_0)$.
 Allora:
 
 1. $\lim_{x\to x_0}f(x)\pm g(x) = f(x_0)\pm g(x_0)$
@@ -112,7 +112,7 @@ Come conseguenza del teorema sono continue tutte le seguenti:
 $f \circ g= f(g(x))$ almeno in un intorno $U(x_0)$ di $x_0$ - salvo al più $x_0$. 
 Se:**
 > 
-> 1. **$\lim_{x\to x_0}g(x) = t_0\in \overline \mathbb{R}$**
+> 1. **$\lim_{x\to x_0}g(x) = t_0\in \overline {\mathbb{R}}$**
 > 2. **$\lim_{t\to t_0}f(t)= \ell**$
 > 3. **$g(x) \ne t_0$ definitivamente per $x \to x_0$**
 > 

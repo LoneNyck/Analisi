@@ -14,7 +14,7 @@ Data lezione: 17/10/2024
 
 ## 2.1 Dimostrazione
 
-L’idea della dimostrazione è mostrare che la successione delle somme parziali sia definitivamente crescente, ossia per il teorema di esistenza di successioni monotone [[7. Successioni e introduzione ai limiti](7%20Successioni%20e%20introduzione%20ai%20limiti%2011334a78851580b9b79fcb0887cf2531.md), par. 2.9.2] deve esistere il limite di $S_N \in \overline \mathbb{R}$, cioè $\sum_{n=0}^{+\infty} a_n = s \in \overline \mathbb{R}$. 
+L’idea della dimostrazione è mostrare che la successione delle somme parziali sia definitivamente crescente, ossia per il teorema di esistenza di successioni monotone [[7. Successioni e introduzione ai limiti](7%20Successioni%20e%20introduzione%20ai%20limiti%2011334a78851580b9b79fcb0887cf2531.md), par. 2.9.2] deve esistere il limite di $S_N \in \overline {\mathbb{R}}$, cioè $\sum_{n=0}^{+\infty} a_n = s \in \overline {\mathbb{R}}$. 
 
 Per ipotesi $a_n$ è definitivamente positiva, ossia $\exists n_0 \in \mathbb{N}: \forall n \ge n_0$  $a_n\ge0$. Di conseguenza $\forall N \ge n_0$  $S_N = S_{N-1} + a_N \ge S_{N-1}$$\Rightarrow$ $S_N$ è definitivamente crescente.
 
@@ -35,11 +35,11 @@ Supponiamo che $0\le a_n\le b_n \forall n\in \mathbb{N}$.
 
 Chiamiamo $S_N = \sum_{n=0}^{N} a_n$  e $\sigma_N = \sum_{n=0}^{N} b_n$ . Dalla condizione dell’ipotesi segue che $\sum_{n=0}^{N}a_n < \sum_{n=0}^{N}b_n$ ossia che $S_N <\sigma_N, \forall N\in \mathbb{N}$. 
 
-Per il teorema visto al punto 2. di questo capitolo $S_N$ e $\sigma_N$ sono entrambe monotone crescenti. Questo significa che esistono i due limiti delle due somme parziali $\in \overline \mathbb{R}$, che chiameremo $s$  e $\sigma$. 
+Per il teorema visto al punto 2. di questo capitolo $S_N$ e $\sigma_N$ sono entrambe monotone crescenti. Questo significa che esistono i due limiti delle due somme parziali $\in \overline {\mathbb{R}}$, che chiameremo $s$  e $\sigma$. 
 
 1. Se $\sum_{n=0}^{N}a_n$ diverge $\Rightarrow$  $s = +\infty$ ed essendo $S_N <\sigma_N, \forall N\in \mathbb{N}$, allora $s<\sigma$ 
 $\Rightarrow \sigma = +\infty$ $\Rightarrow \sum_{n=0}^{N}b_n$ diverge.
-2. Se $\sum_{n=0}^{N}b_n$ converge $\Rightarrow$  $\sigma \in \mathbb{R}$. $S_N \le \sigma_N \le \sigma$ $\Rightarrow S_N$ è crescente e limitata
+2. Se $\sum_{n=0}^{N}b_n$ converge $\Rightarrow$  $\sigma \in {\mathbb{R}}$. $S_N \le \sigma_N \le \sigma$ $\Rightarrow S_N$ è crescente e limitata
 $\Rightarrow \sum_{n=0}^{N}a_n$ converge
 
 ## 3.2 Alcune serie per svolgere il confronto
@@ -94,7 +94,7 @@ Applicando quindi il teorema del confronto al caso i. segue che se la serie di $
 
 ## **5.1 Criterio del rapporto per serie**
 >Teorema: Criterio del rapporto per serie
-> **Sia $a_n$ una successione di termini definitivamente positivi in $n \in \mathbb{N}$ e $\exists \lim_{n\to\infty}\frac{a_{n+1}}{a_n}= \ell\in \overline \mathbb{R}$. Allora se**
+> **Sia $a_n$ una successione di termini definitivamente positivi in $n \in \mathbb{N}$ e $\exists \lim_{n\to\infty}\frac{a_{n+1}}{a_n}= \ell\in \overline {\mathbb{R}}$. Allora se**
 > 
 > 1. **$\ell > 1\Rightarrow \sum_{n=0}^{+\infty} a_n$  diverge e  $\lim_{n\to\infty}{a_n}= +\infty$**
 > 2. **$0\le \ell < 1\Rightarrow \sum_{n=0}^{+\infty} a_n$  converge e  $\lim_{n\to\infty}{a_n}= 0$**
@@ -116,7 +116,7 @@ Supponiamo $a_n > 0, \forall n \in \mathbb{N}$ e sia $\ell = \lim_{n \to \infty}
     Poiché $0< q< 1$  per costruzione, per il criterio del confronto la serie degli $a_n$ convergerà, convergendo quella di $q^n$.
     
 2. Assumiamo ora che sia $\ell > 1$. 
-    1. Se $\ell \in \mathbb{R}$, assumiamo $\epsilon = \frac{\ell-1}{2}$, da cui $\exists N \in \mathbb{N} :\forall n> N \, { a_{n+1}\over a_n} > \ell-\epsilon>1$. Questo significa che ${a_{n+1}\over a_n} > {1+\ell\over 2} > 1$.
+    1. Se $\ell \in {\mathbb{R}}$, assumiamo $\epsilon = \frac{\ell-1}{2}$, da cui $\exists N \in \mathbb{N} :\forall n> N \, { a_{n+1}\over a_n} > \ell-\epsilon>1$. Questo significa che ${a_{n+1}\over a_n} > {1+\ell\over 2} > 1$.
         
         Chiamiamo $q = {1+\ell\over 2}$. Questo implica che ${a_{n+1}} > q \cdot a_n > 1$.
         
@@ -130,7 +130,7 @@ Supponiamo $a_n > 0, \forall n \in \mathbb{N}$ e sia $\ell = \lim_{n \to \infty}
 ## 5.2 Criterio della radice *n-esima*
 
 >Teorema: Criterio della radice N-esima
-> **Sia $a_n$ una successione di termini definitivamente positivi in $n \in \mathbb{N}$ e $\exists \lim_{n\to\infty}\sqrt[n]{a_n}= \ell\in \overline \mathbb{R}$. Allora se**
+> **Sia $a_n$ una successione di termini definitivamente positivi in $n \in \mathbb{N}$ e $\exists \lim_{n\to\infty}\sqrt[n]{a_n}= \ell\in \overline {\mathbb{R}}$. Allora se**
 > 
 > 1. **$\ell > 1\Rightarrow \sum_{n=0}^{+\infty} a_n$  diverge e  $\lim_{n\to\infty}{a_n}= +\infty$**
 > 2. **$0\le \ell < 1\Rightarrow \sum_{n=0}^{+\infty} a_n$  converge e  $\lim_{n\to\infty}{a_n}= 0$**
@@ -144,7 +144,7 @@ Se $\ell = 1$  non è possibile concludere nulla sul carattere della serie, in q
 Dai vari teoremi visti fin ora per le serie a termini definitivamente positivi è possibile trovare altre serie da aggiungere a quelle viste al paragrafo 3.2 di questo capitolo da poter utilizzare per svolgere il confronto.
 
 - La serie $\sum_{n=1}^{+\infty} \frac{a^n}{n^n}$ **converge** $\forall a > 0$
-- La serie $\sum_{n=1}^{+\infty} {a^n}{n^\alpha}, a > 0, \alpha \in \mathbb{R}$
-    - **converge** per $0<a<1 \vee \forall\alpha\in \mathbb{R}$ e per $a = 1 \wedge \alpha < -1$
-    - **diverge** per $a>1 \vee \forall\alpha\in \mathbb{R}$ e per $a = 1 \wedge \alpha \ge -1$.
+- La serie $\sum_{n=1}^{+\infty} {a^n}{n^\alpha}, a > 0, \alpha \in {\mathbb{R}}$
+    - **converge** per $0<a<1 \vee \forall\alpha\in {\mathbb{R}}$ e per $a = 1 \wedge \alpha < -1$
+    - **diverge** per $a>1 \vee \forall\alpha\in {\mathbb{R}}$ e per $a = 1 \wedge \alpha \ge -1$.
 - La serie $\sum_{n=1}^{+\infty} \frac{n!}{n^n}$ **converge**
