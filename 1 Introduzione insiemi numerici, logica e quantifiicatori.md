@@ -1,4 +1,4 @@
-# 1. Introduzione: insiemi numerici, logica e quantificatori
+# 01. Introduzione: insiemi numerici, logica e quantificatori
 
 Tags: Insiemi numerici\
 Data lezione: 18/09/2024
@@ -31,7 +31,7 @@ All’interno di $\mathbb{Q}$ la rappresentazione decimale non è unica.
 Un esempio può essere costituito dal caso $0,\bar9 = 1$
 
 
-## 1.4 I numeri reali $athbb{R}$
+## 1.4 I numeri reali $\mathbb{R}$
 
 L’insieme dei numeri reali è definito come 
 $\mathbb{R} = \{r=\pm a_0,a_1a_2...a_k, a_0\in\mathbb{N}, a_k\in\{0,1,...,9\} \forall k \in \mathbb{N}, k\neq 0\}$ 
